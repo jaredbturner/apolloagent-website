@@ -1,0 +1,23 @@
+name: Index new pages in Google Search Console
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  index:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger GSC indexer after deploy
+        run: |
+          # Wait for Cloudflare Pages to finish deploying (~30s)
+          sleep 45
+          
+          # Call the Cloudflare Worker to submit new/changed URLs to Google
+          RESPONSE=$(curl -s -X POST \
+            "https://apolloagent-indexer.jared-turner-f80.workers.dev?secret=${{ secrets.INDEXER_WEBHOOK_SECRET }}" \
+            -H "Content-Type: application/json" \
+            -d '{"event":"github_push","ref":"${{ github.ref }}","sha":"${{ github.sha }}"}')
+          
+          echo "GSC Indexer response:"
+          echo "$RESPONSE" | python3 -m json.tool || echo "$RESPONSE"
