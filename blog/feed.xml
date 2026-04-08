@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Apollo Intelligence Blog</title>
+    <link>https://apolloagent.ai/blog/</link>
+    <description>Practical AI insights for business leaders. No hype, just signal.</description>
+    <language>en-us</language>
+    <managingEditor>hello@apolloagent.ai (Apollo Intelligence)</managingEditor>
+    <webMaster>hello@apolloagent.ai (Apollo Intelligence)</webMaster>
+    <lastBuildDate>Fri, 11 Apr 2026 12:00:00 GMT</lastBuildDate>
+    <atom:link href="https://apolloagent.ai/blog/feed.xml" rel="self" type="application/rss+xml" />
+
+    <item>
+      <title>5 AI Automations Every Small Business Should Set Up This Quarter</title>
+      <link>https://apolloagent.ai/blog/5-ai-automations-small-business.html</link>
+      <description>Five practical AI automations — email triage, scheduling, customer support, social media, and weekly reporting — that small businesses can set up this quarter to save 10+ hours per week.</description>
+      <pubDate>Sat, 11 Apr 2026 12:00:00 GMT</pubDate>
+      <guid>https://apolloagent.ai/blog/5-ai-automations-small-business.html</guid>
+    </item>
+
+    <item>
+      <title>AI-Powered Business Intelligence: From Raw Data to Weekly Insights</title>
+      <link>https://apolloagent.ai/blog/ai-powered-business-intelligence.html</link>
+      <description>Dashboards don't drive decisions — insights do. Learn how automated AI reporting turns raw business data into plain-English weekly intelligence your team can actually act on.</description>
+      <pubDate>Thu, 10 Apr 2026 12:00:00 GMT</pubDate>
+      <guid>https://apolloagent.ai/blog/ai-powered-business-intelligence.html</guid>
+    </item>
+
+    <item>
+      <title>The Business Leader's Guide to AI Agents: What They Are and Why They Matter</title>
+      <link>https://apolloagent.ai/blog/ai-agents-guide-2026.html</link>
+      <description>AI agents don't just answer questions — they take action. Learn what AI agents are, how they work, real use cases, and what to ask vendors before you buy.</description>
+      <pubDate>Wed, 08 Apr 2026 12:00:00 GMT</pubDate>
+      <guid>https://apolloagent.ai/blog/ai-agents-guide-2026.html</guid>
+    </item>
+
+    <item>
+      <title>The AI Tools Reshaping How Businesses Operate in 2026</title>
+      <link>https://apolloagent.ai/blog/ai-news-march-2026.html</link>
+      <description>Claude 4, GPT-5, and AI agents that take action — here's what actually matters for your business in 2026.</description>
+      <pubDate>Wed, 25 Mar 2026 12:00:00 GMT</pubDate>
+      <guid>https://apolloagent.ai/blog/ai-news-march-2026.html</guid>
+    </item>
+
+  </channel>
+</rss>
