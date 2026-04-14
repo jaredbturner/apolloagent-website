@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apollo Intelligence — Live Demo</title>
+  <meta name="description" content="See what your first 30 days with Apollo Intelligence looks like. Live demo for Morrison & Associates." />
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'sans-serif'] },
+          colors: {
+            brand: { DEFAULT: '#4F6EF7', dark: '#3B57E8', light: '#EEF1FE' }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; background: #f8fafc; color: #0f172a; }
+
+    /* Chat widget styles */
+    .chat-widget { background: white; border-radius: 16px; box-shadow: 0 4px 24px rgba(0,0,0,0.10); overflow: hidden; }
+    .chat-header { background: linear-gradient(135deg, #3B52D4, #4F6EF7); padding: 1rem 1.25rem; }
+    .chat-body { height: 360px; overflow-y: auto; padding: 1.25rem; display: flex; flex-direction: column; gap: 0.875rem; background: #f8fafc; }
+    .chat-msg { max-width: 80%; }
+    .chat-msg.ai { align-self: flex-start; }
+    .chat-msg.user { align-self: flex-end; }
+    .chat-bubble { padding: 0.75rem 1rem; border-radius: 12px; font-size: 0.875rem; line-height: 1.6; }
+    .chat-msg.ai .chat-bubble { background: white; border: 1px solid #e2e8f0; color: #334155; border-bottom-left-radius: 4px; }
+    .chat-msg.user .chat-bubble { background: #4F6EF7; color: white; border-bottom-right-radius: 4px; }
+    .chat-label { font-size: 0.7rem; font-weight: 600; color: #94a3b8; margin-bottom: 0.25rem; }
+    .chat-msg.user .chat-label { text-align: right; }
+    .chat-time { font-size: 0.65rem; color: #94a3b8; margin-top: 0.25rem; }
+    .chat-msg.user .chat-time { text-align: right; }
+
+    /* BI Report styles */
+    .metric-card { background: white; border: 1px solid #e2e8f0; border-radius: 12px; padding: 1.25rem; }
+    .metric-up { color: #16a34a; }
+    .metric-down { color: #dc2626; }
+    .metric-neutral { color: #64748b; }
+
+    /* Section headers */
+    .demo-section { background: white; border-radius: 20px; box-shadow: 0 2px 12px rgba(0,0,0,0.06); padding: 2rem; margin-bottom: 2rem; }
+
+    /* LinkedIn post */
+    .linkedin-post { background: white; border: 1px solid #e2e8f0; border-radius: 12px; padding: 1.25rem; margin-bottom: 1rem; }
+
+    /* Lead card */
+    .lead-card { background: white; border: 1px solid #e2e8f0; border-radius: 12px; padding: 1.25rem; margin-bottom: 0.875rem; }
+
+    /* Status badge */
+    .badge { display: inline-block; padding: 0.2rem 0.6rem; border-radius: 9999px; font-size: 0.7rem; font-weight: 600; }
+    .badge-green { background: #dcfce7; color: #16a34a; }
+    .badge-blue { background: #dbeafe; color: #1d4ed8; }
+    .badge-purple { background: #f3e8ff; color: #7c3aed; }
+    .badge-amber { background: #fef9c3; color: #a16207; }
+  </style>
+</head>
+<body class="antialiased">
+
+  <!-- TOP BANNER -->
+  <div class="bg-brand text-white text-center py-3 px-4 text-sm font-medium">
+    🔒 Private Demo — Prepared for: <strong>Morrison &amp; Associates</strong> &nbsp;|&nbsp;
+    <a href="https://calendly.com/hello-apolloagent/30min" target="_blank" rel="noopener" class="underline font-semibold hover:text-blue-200">Book Your Strategy Call to Get Started</a>
+  </div>
+
+  <!-- NAV -->
+  <nav class="sticky top-0 z-50 bg-white border-b border-slate-100">
+    <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="/" class="flex items-center gap-2">
+        <img src="/logo.png" alt="Apollo Intelligence" class="h-12 w-auto" />
+      </a>
+      <a href="https://calendly.com/hello-apolloagent/30min" target="_blank" rel="noopener" class="bg-brand text-white text-sm font-semibold px-4 py-2 rounded-lg hover:bg-brand-dark transition">Get Started — Free Call</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="bg-gradient-to-br from-slate-900 via-slate-800 to-brand-dark py-16 px-6 text-center">
+    <div class="max-w-3xl mx-auto">
+      <div class="inline-flex items-center gap-2 bg-white/10 text-white text-xs font-semibold px-3 py-1.5 rounded-full mb-6">
+        <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
+        Live Demo — Apollo Intelligence
+      </div>
+      <h1 class="text-4xl md:text-5xl font-extrabold text-white leading-tight mb-4">Apollo Intelligence — Live Demo</h1>
+      <p class="text-lg text-slate-300 leading-relaxed max-w-2xl mx-auto">This demo shows what your first 30 days with Apollo Intelligence looks like — built specifically for <strong class="text-white">Morrison &amp; Associates</strong>, a mid-size personal injury law firm.</p>
+      <div class="mt-8 flex flex-wrap justify-center gap-4">
+        <a href="#ai-intake" class="bg-white text-brand font-semibold px-5 py-2.5 rounded-lg text-sm hover:bg-slate-100 transition">AI Intake Agent ↓</a>
+        <a href="#bi-report" class="bg-white/10 text-white font-semibold px-5 py-2.5 rounded-lg text-sm hover:bg-white/20 transition">Weekly BI Report ↓</a>
+        <a href="#social" class="bg-white/10 text-white font-semibold px-5 py-2.5 rounded-lg text-sm hover:bg-white/20 transition">Social Posts ↓</a>
+        <a href="#leads" class="bg-white/10 text-white font-semibold px-5 py-2.5 rounded-lg text-sm hover:bg-white/20 transition">Lead Research ↓</a>
+      </div>
+    </div>
+  </section>
+
+  <main class="max-w-5xl mx-auto px-6 py-12">
+
+    <!-- STATS ROW -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">
+      <div class="bg-white rounded-2xl border border-slate-100 p-5 text-center shadow-sm">
+        <div class="text-3xl font-extrabold text-brand">24/7</div>
+        <div class="text-xs text-slate-500 mt-1 font-medium">AI Intake Coverage</div>
+      </div>
+      <div class="bg-white rounded-2xl border border-slate-100 p-5 text-center shadow-sm">
+        <div class="text-3xl font-extrabold text-brand">+40%</div>
+        <div class="text-xs text-slate-500 mt-1 font-medium">Leads Captured</div>
+      </div>
+      <div class="bg-white rounded-2xl border border-slate-100 p-5 text-center shadow-sm">
+        <div class="text-3xl font-extrabold text-brand">15+</div>
+        <div class="text-xs text-slate-500 mt-1 font-medium">Hours Saved/Week</div>
+      </div>
+      <div class="bg-white rounded-2xl border border-slate-100 p-5 text-center shadow-sm">
+        <div class="text-3xl font-extrabold text-brand">48h</div>
+        <div class="text-xs text-slate-500 mt-1 font-medium">Live in 48 Hours</div>
+      </div>
+    </div>
+
+    <!-- SECTION 1: AI SUPPORT CHAT WIDGET -->
+    <div id="ai-intake" class="demo-section">
+      <div class="flex items-center gap-3 mb-2">
+        <div class="w-10 h-10 rounded-xl bg-brand-light flex items-center justify-center text-brand font-bold text-lg">💬</div>
+        <div>
+          <h2 class="text-xl font-bold text-slate-900">AI Intake Agent</h2>
+          <p class="text-sm text-slate-500">Handles inbound leads 24/7, qualifies prospects, and books consultations</p>
+        </div>
+        <span class="ml-auto badge badge-green">Live Demo</span>
+      </div>
+
+      <p class="text-slate-500 text-sm mb-5 leading-relaxed">This is what a prospect experiences when they visit Morrison &amp; Associates' website at 11pm on a Saturday — after hours when no one is available. The AI intake agent engages them, qualifies the case, and books a consultation automatically.</p>
+
+      <div class="chat-widget max-w-lg mx-auto">
+        <div class="chat-header flex items-center gap-3">
+          <div class="w-9 h-9 bg-white/20 rounded-full flex items-center justify-center text-white font-bold text-sm">M</div>
+          <div>
+            <div class="text-white font-semibold text-sm">Morrison &amp; Associates — Legal AI</div>
+            <div class="flex items-center gap-1 text-xs text-blue-200">
+              <span class="w-1.5 h-1.5 bg-green-400 rounded-full"></span>
+              Online now
+            </div>
+          </div>
+        </div>
+        <div class="chat-body">
+
+          <div class="chat-msg ai">
+            <div class="chat-label">Morrison AI Intake</div>
+            <div class="chat-bubble">Hi! 👋 I'm here to help you get started with Morrison &amp; Associates. Whether you've been in an accident, suffered a workplace injury, or need to discuss a personal injury case, I can connect you with the right attorney. What brings you here tonight?</div>
+            <div class="chat-time">11:14 PM</div>
+          </div>
+
+          <div class="chat-msg user">
+            <div class="chat-label">Prospect</div>
+            <div class="chat-bubble">I was in a car accident two days ago and I'm not sure if I have a case. The other driver ran a red light and I have a police report.</div>
+            <div class="chat-time">11:15 PM</div>
+          </div>
+
+          <div class="chat-msg ai">
+            <div class="chat-label">Morrison AI Intake</div>
+            <div class="chat-bubble">I'm sorry to hear that — that sounds really stressful. A police report documenting fault is actually very significant for a personal injury claim. A few quick questions to help me connect you with the right attorney: <br/><br/>Were you or any passengers injured? And have you received any medical attention since the accident?</div>
+            <div class="chat-time">11:15 PM</div>
+          </div>
+
+          <div class="chat-msg user">
+            <div class="chat-label">Prospect</div>
+            <div class="chat-bubble">Yes, I went to urgent care. My neck and back are pretty sore. The other driver's insurance already called me this morning.</div>
+            <div class="chat-time">11:16 PM</div>
+          </div>
+
+          <div class="chat-msg ai">
+            <div class="chat-label">Morrison AI Intake</div>
+            <div class="chat-bubble">⚠️ Important: please don't give a recorded statement to the other driver's insurance company before speaking with an attorney. They'll often use it to minimize your claim.<br/><br/>Based on what you've shared — documented fault, documented injuries, and insurance contact already initiated — this looks like a strong case. Our attorneys handle exactly this type of situation on a contingency basis, meaning no fees unless you win.<br/><br/>Can I schedule a free 20-minute consultation with one of our attorneys for tomorrow morning? We have availability at 9:00 AM and 11:30 AM.</div>
+            <div class="chat-time">11:16 PM</div>
+          </div>
+
+          <div class="chat-msg user">
+            <div class="chat-label">Prospect</div>
+            <div class="chat-bubble">9am works. What do I need to bring?</div>
+            <div class="chat-time">11:17 PM</div>
+          </div>
+
+          <div class="chat-msg ai">
+            <div class="chat-label">Morrison AI Intake</div>
+            <div class="chat-bubble">✅ You're booked for 9:00 AM tomorrow with Attorney Sarah Chen. You'll receive a confirmation email shortly.<br/><br/>Please bring (or have ready): <br/>• The police report<br/>• Any medical records or bills from urgent care<br/>• Photos of the damage and scene if you have them<br/>• Insurance information for both vehicles<br/><br/>Is there anything else I can help you with tonight?</div>
+            <div class="chat-time">11:18 PM</div>
+          </div>
+
+        </div>
+        <div class="px-4 py-3 bg-white border-t border-slate-100 flex items-center gap-2">
+          <input type="text" placeholder="Type a message..." class="flex-1 text-sm bg-slate-50 border border-slate-200 rounded-full px-4 py-2 outline-none focus:ring-2 focus:ring-brand/30" disabled />
+          <button class="w-8 h-8 bg-brand rounded-full flex items-center justify-center text-white" disabled>
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="mt-5 grid grid-cols-3 gap-4 text-center">
+        <div class="bg-slate-50 rounded-xl p-4">
+          <div class="text-2xl font-bold text-brand">4 min</div>
+          <div class="text-xs text-slate-500 mt-1">Avg. intake time</div>
+        </div>
+        <div class="bg-slate-50 rounded-xl p-4">
+          <div class="text-2xl font-bold text-brand">100%</div>
+          <div class="text-xs text-slate-500 mt-1">After-hours coverage</div>
+        </div>
+        <div class="bg-slate-50 rounded-xl p-4">
+          <div class="text-2xl font-bold text-brand">$0</div>
+          <div class="text-xs text-slate-500 mt-1">Extra staff cost</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 2: WEEKLY BI REPORT -->
+    <div id="bi-report" class="demo-section">
+      <div class="flex items-center gap-3 mb-2">
+        <div class="w-10 h-10 rounded-xl bg-emerald-50 flex items-center justify-center text-emerald-600 font-bold text-lg">📊</div>
+        <div>
+          <h2 class="text-xl font-bold text-slate-900">Weekly BI Report</h2>
+          <p class="text-sm text-slate-500">Delivered every Monday morning — no dashboards required</p>
+        </div>
+        <span class="ml-auto badge badge-green">Sample Report</span>
+      </div>
+
+      <div class="bg-slate-50 rounded-2xl p-6 mt-5">
+        <div class="flex items-center justify-between mb-4">
+          <div>
+            <div class="text-xs font-bold uppercase tracking-widest text-slate-400 mb-1">Morrison &amp; Associates</div>
+            <div class="text-lg font-bold text-slate-900">Weekly Intelligence Report</div>
+            <div class="text-sm text-slate-500">Week of April 7–11, 2026</div>
+          </div>
+          <img src="/logo.png" alt="Apollo Intelligence" class="h-10 opacity-60" />
+        </div>
+
+        <!-- Executive Summary -->
+        <div class="bg-white rounded-xl p-4 mb-4 border border-slate-200">
+          <div class="text-xs font-bold uppercase tracking-widest text-slate-400 mb-2">Executive Summary</div>
+          <p class="text-sm text-slate-700 leading-relaxed">Strong intake week. New case inquiries are up 28% vs. last week, driven primarily by increased after-hours AI intake activity (Friday and Saturday evenings). Consultation-to-retained rate improved to 61% — the highest in 8 weeks. One concern: average case review time increased to 4.2 days; if this continues, consider reviewing the case file handoff process.</p>
+        </div>
+
+        <!-- Metrics Grid -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-4">
+          <div class="metric-card">
+            <div class="text-xs text-slate-400 mb-1 font-medium">New Inquiries</div>
+            <div class="text-2xl font-bold text-slate-900">47</div>
+            <div class="text-xs metric-up font-semibold mt-1">↑ 28% vs last week</div>
+          </div>
+          <div class="metric-card">
+            <div class="text-xs text-slate-400 mb-1 font-medium">Consultations Booked</div>
+            <div class="text-2xl font-bold text-slate-900">31</div>
+            <div class="text-xs metric-up font-semibold mt-1">↑ 19% vs last week</div>
+          </div>
+          <div class="metric-card">
+            <div class="text-xs text-slate-400 mb-1 font-medium">Cases Retained</div>
+            <div class="text-2xl font-bold text-slate-900">19</div>
+            <div class="text-xs metric-up font-semibold mt-1">61% consult → retained</div>
+          </div>
+          <div class="metric-card">
+            <div class="text-xs text-slate-400 mb-1 font-medium">Avg Review Time</div>
+            <div class="text-2xl font-bold text-slate-900">4.2d</div>
+            <div class="text-xs metric-down font-semibold mt-1">↑ 0.8d vs target (3.5d)</div>
+          </div>
+        </div>
+
+        <!-- Insights -->
+        <div class="bg-white rounded-xl p-4 mb-4 border border-slate-200">
+          <div class="text-xs font-bold uppercase tracking-widest text-slate-400 mb-3">Key Insights</div>
+          <div class="space-y-3">
+            <div class="flex gap-3">
+              <span class="text-green-500 mt-0.5 shrink-0">✅</span>
+              <p class="text-sm text-slate-700"><strong class="text-slate-900">After-hours AI intake is working.</strong> 14 of this week's 47 inquiries came in between 7pm and 9am — all handled by the AI agent. Under the old system, most of these would have been missed voicemails.</p>
+            </div>
+            <div class="flex gap-3">
+              <span class="text-amber-500 mt-0.5 shrink-0">⚠️</span>
+              <p class="text-sm text-slate-700"><strong class="text-slate-900">Case review time is creeping up.</strong> The 4.2-day average suggests a handoff bottleneck, possibly related to Attorney Chen's trial schedule this week. Monitor next week; if it persists, consider a second case reviewer.</p>
+            </div>
+            <div class="flex gap-3">
+              <span class="text-blue-500 mt-0.5 shrink-0">💡</span>
+              <p class="text-sm text-slate-700"><strong class="text-slate-900">Auto-accident inquiries up 34%</strong> — likely correlated with last week's weather and the I-25 construction news cycle. Consider a targeted social post this week addressing auto accident FAQs to capture organic search traffic.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Priorities -->
+        <div class="bg-brand-light rounded-xl p-4 border border-brand/20">
+          <div class="text-xs font-bold uppercase tracking-widest text-brand mb-3">3 Priorities for Next Week</div>
+          <ol class="space-y-2">
+            <li class="flex gap-2 text-sm text-slate-700"><span class="font-bold text-brand shrink-0">1.</span> Address the case review time issue — check if it's Attorney Chen's schedule or a systemic handoff problem</li>
+            <li class="flex gap-2 text-sm text-slate-700"><span class="font-bold text-brand shrink-0">2.</span> Post auto accident FAQ content on LinkedIn and Facebook to capture the current traffic surge</li>
+            <li class="flex gap-2 text-sm text-slate-700"><span class="font-bold text-brand shrink-0">3.</span> Review the 12 consultations that didn't retain — 3 were marked "called competitor first," suggesting speed-to-consult is still a factor</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 3: SOCIAL MEDIA BATCH -->
+    <div id="social" class="demo-section">
+      <div class="flex items-center gap-3 mb-2">
+        <div class="w-10 h-10 rounded-xl bg-blue-50 flex items-center justify-center text-blue-600 font-bold text-lg">📱</div>
+        <div>
+          <h2 class="text-xl font-bold text-slate-900">Social Post Batch</h2>
+          <p class="text-sm text-slate-500">3 LinkedIn posts ready to publish — generated in your firm's voice</p>
+        </div>
+        <span class="ml-auto badge badge-blue">Ready to Publish</span>
+      </div>
+
+      <div class="mt-5 space-y-4">
+
+        <div class="linkedin-post">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-10 h-10 bg-slate-800 rounded-xl flex items-center justify-center text-white font-bold text-sm">M&A</div>
+            <div>
+              <div class="font-semibold text-slate-900 text-sm">Morrison &amp; Associates</div>
+              <div class="text-xs text-slate-400">Personal Injury Law &bull; Denver, CO</div>
+            </div>
+            <span class="ml-auto badge badge-blue">Post 1 of 3</span>
+          </div>
+          <p class="text-slate-700 text-sm leading-relaxed mb-3">🚨 If you've been in a car accident in the last 72 hours, here's the most important thing you need to know before you talk to the other driver's insurance company:</p>
+          <p class="text-slate-700 text-sm leading-relaxed mb-3"><strong>Do not give a recorded statement.</strong></p>
+          <p class="text-slate-700 text-sm leading-relaxed mb-3">Insurance adjusters are trained to ask questions that minimize your claim — sometimes in ways that aren't obvious. A single statement made before you understand your rights can significantly affect the value of your case.</p>
+          <p class="text-slate-700 text-sm leading-relaxed mb-3">What to do instead: get medical attention, document everything, and speak with a personal injury attorney first. Most initial consultations are free and take less than 20 minutes.</p>
+          <p class="text-slate-500 text-xs">📍 We serve clients throughout the Denver metro area. <br/>#PersonalInjury #CarAccident #LegalAdvice #DenverLaw #MorrisonAssociates</p>
+        </div>
+
+        <div class="linkedin-post">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-10 h-10 bg-slate-800 rounded-xl flex items-center justify-center text-white font-bold text-sm">M&A</div>
+            <div>
+              <div class="font-semibold text-slate-900 text-sm">Morrison &amp; Associates</div>
+              <div class="text-xs text-slate-400">Personal Injury Law &bull; Denver, CO</div>
+            </div>
+            <span class="ml-auto badge badge-blue">Post 2 of 3</span>
+          </div>
+          <p class="text-slate-700 text-sm leading-relaxed mb-3">A question we hear every week: <em>"I wasn't hurt that badly — is it even worth talking to a lawyer?"</em></p>
+          <p class="text-slate-700 text-sm leading-relaxed mb-3">Here's the honest answer: soft tissue injuries (neck pain, back pain, headaches) are among the most common — and most underestimated — outcomes of car accidents. Symptoms often worsen over 48–72 hours and can become long-term issues that weren't apparent at the scene.</p>
+          <p class="text-slate-700 text-sm leading-relaxed mb-3">The consultation is free. The information you get can be worth a lot more than you'd expect.</p>
+          <p class="text-slate-500 text-xs">#PersonalInjury #SoftTissueInjury #LegalHelp #DenverAttorney</p>
+        </div>
+
+        <div class="linkedin-post">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-10 h-10 bg-slate-800 rounded-xl flex items-center justify-center text-white font-bold text-sm">M&A</div>
+            <div>
+              <div class="font-semibold text-slate-900 text-sm">Morrison &amp; Associates</div>
+              <div class="text-xs text-slate-400">Personal Injury Law &bull; Denver, CO</div>
+            </div>
+            <span class="ml-auto badge badge-blue">Post 3 of 3</span>
+          </div>
+          <p class="text-slate-700 text-sm leading-relaxed mb-3">We work on a contingency fee basis. That means:</p>
+          <p class="text-slate-700 text-sm leading-relaxed mb-3">✅ No upfront fees<br/>✅ No hourly billing<br/>✅ You pay nothing unless we win your case</p>
+          <p class="text-slate-700 text-sm leading-relaxed mb-3">It's the fairest way we know how to practice law. When your interests are our interests, we work harder for you. It's that simple.</p>
+          <p class="text-slate-700 text-sm leading-relaxed mb-3">If you have a question about a personal injury case in Colorado, message us or visit our website for a free consultation. No obligation, no pressure.</p>
+          <p class="text-slate-500 text-xs">#ContingencyFee #PersonalInjuryLawyer #Denver #NoWinNoFee #MorrisonAssociates</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- SECTION 4: LEAD RESEARCH -->
+    <div id="leads" class="demo-section">
+      <div class="flex items-center gap-3 mb-2">
+        <div class="w-10 h-10 rounded-xl bg-purple-50 flex items-center justify-center text-purple-600 font-bold text-lg">🎯</div>
+        <div>
+          <h2 class="text-xl font-bold text-slate-900">Lead Research List</h2>
+          <p class="text-sm text-slate-500">5 high-fit referral partners identified and researched — with outreach drafts</p>
+        </div>
+        <span class="ml-auto badge badge-purple">AI Researched</span>
+      </div>
+
+      <p class="text-sm text-slate-500 mb-5 leading-relaxed">AI identified and researched these 5 potential referral partners (chiropractors, physical therapists, and urgent care centers) who regularly see auto accident patients in the Denver metro area — prime sources of qualified referrals for Morrison &amp; Associates.</p>
+
+      <div class="space-y-3">
+
+        <div class="lead-card">
+          <div class="flex items-start justify-between gap-3 mb-2">
+            <div>
+              <div class="font-semibold text-slate-900 text-sm">Dr. Angela Reyes</div>
+              <div class="text-xs text-slate-500">Owner — Denver Peak Chiropractic | Cherry Creek, Denver CO</div>
+            </div>
+            <span class="badge badge-green shrink-0">High Fit</span>
+          </div>
+          <div class="text-xs text-slate-600 mb-3"><strong>Why they're a fit:</strong> 340+ Google reviews, specialty in auto injury treatment, website explicitly mentions working with attorneys. Active on LinkedIn. Located 1.2 miles from Morrison &amp; Associates main office.</div>
+          <details class="text-xs">
+            <summary class="font-semibold text-brand cursor-pointer hover:underline">View Outreach Draft →</summary>
+            <div class="mt-2 bg-slate-50 rounded-lg p-3 text-slate-700 leading-relaxed">Subject: Referral Partnership — Morrison &amp; Associates<br/><br/>Hi Dr. Reyes,<br/><br/>I'm Jared Turner with Morrison &amp; Associates. We're a personal injury firm based in Cherry Creek and we work with a lot of auto accident patients in your area.<br/><br/>I noticed you specialize in auto injury treatment and I'd love to explore a referral partnership — we refer clients who need chiropractic care, you refer patients who need legal representation. It's a natural fit and we've had great outcomes with similar partnerships.<br/><br/>Would you be open to a 15-minute call this week or next?<br/><br/>Best, Jared</div>
+          </details>
+        </div>
+
+        <div class="lead-card">
+          <div class="flex items-start justify-between gap-3 mb-2">
+            <div>
+              <div class="font-semibold text-slate-900 text-sm">FastMed Urgent Care — Lakewood</div>
+              <div class="text-xs text-slate-500">Office Manager: Marcus T. | Lakewood, CO</div>
+            </div>
+            <span class="badge badge-green shrink-0">High Fit</span>
+          </div>
+          <div class="text-xs text-slate-600 mb-3"><strong>Why they're a fit:</strong> High-volume urgent care with documented focus on accident injury treatment. Sees 200+ patients/week; no current attorney referral partner listed. Website has a "Legal Resources" section that's currently blank — clear opportunity.</div>
+          <details class="text-xs">
+            <summary class="font-semibold text-brand cursor-pointer hover:underline">View Outreach Draft →</summary>
+            <div class="mt-2 bg-slate-50 rounded-lg p-3 text-slate-700 leading-relaxed">Subject: Attorney Partnership for Auto Injury Patients<br/><br/>Hi Marcus,<br/><br/>I work with Morrison &amp; Associates, a personal injury law firm in Denver. I noticed FastMed Lakewood has a Legal Resources section on your website — if you're looking to fill that with a trusted attorney referral, I'd love to chat.<br/><br/>We handle cases on contingency (no cost to patients), move quickly, and keep referring partners updated on case outcomes. A lot of urgent care centers find this partnership adds real value to their patients.<br/><br/>Happy to bring lunch by the office if that's easier. Let me know!</div>
+          </details>
+        </div>
+
+        <div class="lead-card">
+          <div class="flex items-start justify-between gap-3 mb-2">
+            <div>
+              <div class="font-semibold text-slate-900 text-sm">Colorado Spine &amp; Sport PT</div>
+              <div class="text-xs text-slate-500">Owner: Dr. Kenji Watanabe, PT, DPT | Englewood, CO</div>
+            </div>
+            <span class="badge badge-amber shrink-0">Medium Fit</span>
+          </div>
+          <div class="text-xs text-slate-600 mb-3"><strong>Why they're a fit:</strong> Specialty PT practice with strong auto injury caseload. Currently refers to another firm (mentioned in a 2024 blog post) — but that firm primarily handles workers' comp. Morrison's PI focus is differentiated. Worth a conversation.</div>
+          <details class="text-xs">
+            <summary class="font-semibold text-brand cursor-pointer hover:underline">View Outreach Draft →</summary>
+            <div class="mt-2 bg-slate-50 rounded-lg p-3 text-slate-700 leading-relaxed">Subject: Personal Injury Referral Partner — Filling a Gap<br/><br/>Dr. Watanabe,<br/><br/>I know you work with a legal partner already — I'm not trying to displace that relationship. But I noticed their focus is primarily workers' comp, and I suspect you see plenty of auto injury patients whose needs are different.<br/><br/>Morrison &amp; Associates specializes exclusively in personal injury, and we'd love to be your go-to for those cases specifically. Happy to connect and see if there's a fit.</div>
+          </details>
+        </div>
+
+        <div class="lead-card">
+          <div class="flex items-start justify-between gap-3 mb-2">
+            <div>
+              <div class="font-semibold text-slate-900 text-sm">Summit Acupuncture &amp; Wellness</div>
+              <div class="text-xs text-slate-500">Owner: Linda Park | Highlands Ranch, CO</div>
+            </div>
+            <span class="badge badge-amber shrink-0">Medium Fit</span>
+          </div>
+          <div class="text-xs text-slate-600 mb-3"><strong>Why they're a fit:</strong> Growing practice with a strong auto injury patient base. Recent LinkedIn post mentioned frustration with patients who don't know their legal rights. No current attorney referral relationship visible.</div>
+          <details class="text-xs">
+            <summary class="font-semibold text-brand cursor-pointer hover:underline">View Outreach Draft →</summary>
+            <div class="mt-2 bg-slate-50 rounded-lg p-3 text-slate-700 leading-relaxed">Subject: Re: your post about patients and legal rights<br/><br/>Hi Linda,<br/><br/>Saw your LinkedIn post last week about patients not knowing their options — it resonated. We work with a lot of patients in that exact situation.<br/><br/>Would love to connect about a referral partnership. We can often help your patients get the compensation to cover treatment costs they'd otherwise have to pay out of pocket. Quick call this week?</div>
+          </details>
+        </div>
+
+        <div class="lead-card">
+          <div class="flex items-start justify-between gap-3 mb-2">
+            <div>
+              <div class="font-semibold text-slate-900 text-sm">Denver Community Health Network</div>
+              <div class="text-xs text-slate-500">Director of Partnerships: Carla Nguyen | Denver, CO</div>
+            </div>
+            <span class="badge badge-blue shrink-0">Strategic</span>
+          </div>
+          <div class="text-xs text-slate-600 mb-3"><strong>Why they're a fit:</strong> Serves underinsured patients who often don't pursue legal action due to cost concerns — exactly the demographic that benefits most from contingency-fee representation. High-volume, mission-aligned partnership opportunity. Longer cycle but high value.</div>
+          <details class="text-xs">
+            <summary class="font-semibold text-brand cursor-pointer hover:underline">View Outreach Draft →</summary>
+            <div class="mt-2 bg-slate-50 rounded-lg p-3 text-slate-700 leading-relaxed">Subject: Legal Resources for Your Patients — Partnership Opportunity<br/><br/>Hi Carla,<br/><br/>Morrison &amp; Associates works on a 100% contingency basis, which means cost is never a barrier to legal representation for our clients. We serve a lot of patients who assume they can't afford an attorney — and we'd love to make sure Denver Community Health's patients know their options.<br/><br/>Would you have 20 minutes to explore what a formal resource partnership might look like?</div>
+          </details>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- FINAL CTA -->
+    <div class="bg-gradient-to-br from-brand-dark to-brand rounded-2xl p-8 text-center text-white">
+      <h2 class="text-2xl font-bold mb-3">This is your first 30 days with Apollo Intelligence.</h2>
+      <p class="text-blue-100 mb-6 max-w-2xl mx-auto">AI intake running 24/7. Weekly BI reports in your inbox. Social content batched and scheduled. Referral partners researched and ready to contact. All of it built and managed for you — live in 48 hours.</p>
+      <a href="https://calendly.com/hello-apolloagent/30min" target="_blank" rel="noopener" class="inline-block bg-white text-brand font-bold px-8 py-3.5 rounded-xl hover:bg-slate-100 transition text-base shadow-sm">Book Your Free Strategy Call &rarr;</a>
+      <div class="mt-4 text-xs text-blue-200">hello@apolloagent.ai &nbsp;|&nbsp; apolloagent.ai</div>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-white border-t border-slate-100 py-6 px-6 mt-8">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-slate-400">
+      <a href="/"><img src="/logo.png" alt="Apollo Intelligence" class="h-10 w-auto opacity-60" /></a>
+      <div class="text-slate-400 text-xs">This is a private sales demo prepared by Apollo Intelligence LLC. &copy; 2026 Apollo Intelligence LLC.</div>
+      <a href="mailto:hello@apolloagent.ai" class="text-slate-500 hover:text-slate-900 transition text-xs">hello@apolloagent.ai</a>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -7,8 +7,16 @@
     <language>en-us</language>
     <managingEditor>hello@apolloagent.ai (Apollo Intelligence)</managingEditor>
     <webMaster>hello@apolloagent.ai (Apollo Intelligence)</webMaster>
-    <lastBuildDate>Wed, 08 Apr 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 14 Apr 2026 12:00:00 GMT</lastBuildDate>
     <atom:link href="https://apolloagent.ai/blog/feed.xml" rel="self" type="application/rss+xml" />
+
+    <item>
+      <title>How a 12-Person Agency Cut Admin Work by 60% with AI</title>
+      <link>https://apolloagent.ai/blog/agency-60-percent-admin-reduction-case-study.html</link>
+      <description>A composite case study showing how a 12-person marketing agency used AI automation to reclaim 400+ hours per quarter — without adding headcount. Based on typical results across similar engagements.</description>
+      <pubDate>Tue, 14 Apr 2026 12:00:00 GMT</pubDate>
+      <guid>https://apolloagent.ai/blog/agency-60-percent-admin-reduction-case-study.html</guid>
+    </item>
 
     <item>
       <title>5 AI Automations Every Small Business Should Set Up This Quarter</title>

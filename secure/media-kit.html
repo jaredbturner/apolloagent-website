@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Media Kit 2026 — The Intelligence Brief</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --brand: #3B52D4;
+      --brand-light: #eef0fb;
+      --brand-dark: #2a3aaa;
+      --slate-900: #0f172a;
+      --slate-700: #334155;
+      --slate-500: #64748b;
+      --slate-300: #cbd5e1;
+      --slate-100: #f1f5f9;
+      --white: #ffffff;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      color: var(--slate-900);
+      background: var(--white);
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    /* ── Header Bar ── */
+    .header-bar {
+      background: var(--brand);
+      color: var(--white);
+      padding: 28px 48px 24px;
+    }
+
+    .header-bar .logo {
+      font-size: 26px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      color: var(--white);
+    }
+
+    .header-bar .tagline {
+      font-size: 13px;
+      font-weight: 500;
+      color: rgba(255,255,255,0.82);
+      margin-top: 4px;
+      letter-spacing: 0.3px;
+    }
+
+    .header-bar .kit-label {
+      display: inline-block;
+      margin-top: 12px;
+      background: rgba(255,255,255,0.18);
+      border: 1px solid rgba(255,255,255,0.35);
+      color: var(--white);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      padding: 4px 12px;
+      border-radius: 4px;
+    }
+
+    /* ── Main Content ── */
+    .content {
+      padding: 36px 48px 40px;
+    }
+
+    /* ── Section ── */
+    .section {
+      margin-bottom: 32px;
+    }
+
+    .section-title {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
+      color: var(--brand);
+      border-bottom: 2px solid var(--brand);
+      padding-bottom: 6px;
+      margin-bottom: 14px;
+    }
+
+    .section p {
+      color: var(--slate-700);
+      margin-bottom: 8px;
+      font-size: 13.5px;
+    }
+
+    .section p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* ── Two-column stats grid ── */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-top: 4px;
+    }
+
+    .stat-card {
+      background: var(--brand-light);
+      border-left: 3px solid var(--brand);
+      border-radius: 4px;
+      padding: 12px 14px;
+    }
+
+    .stat-card .stat-label {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--slate-500);
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+    }
+
+    .stat-card .stat-value {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--brand);
+      margin-top: 2px;
+    }
+
+    /* ── Audience grid ── */
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .info-block {
+      background: var(--slate-100);
+      border-radius: 6px;
+      padding: 14px 16px;
+    }
+
+    .info-block .block-title {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      color: var(--slate-500);
+      margin-bottom: 8px;
+    }
+
+    .info-block ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .info-block ul li {
+      font-size: 13px;
+      color: var(--slate-700);
+      padding: 2px 0;
+      padding-left: 14px;
+      position: relative;
+    }
+
+    .info-block ul li::before {
+      content: '·';
+      position: absolute;
+      left: 4px;
+      color: var(--brand);
+      font-weight: 700;
+    }
+
+    /* ── Content format ── */
+    .format-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .format-list li {
+      padding: 7px 0;
+      border-bottom: 1px solid var(--slate-300);
+      font-size: 13.5px;
+      color: var(--slate-700);
+    }
+
+    .format-list li:last-child {
+      border-bottom: none;
+    }
+
+    .format-list li strong {
+      color: var(--slate-900);
+    }
+
+    /* ── Partnership cards ── */
+    .partner-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .partner-card {
+      border: 1px solid var(--slate-300);
+      border-radius: 6px;
+      padding: 14px 16px;
+    }
+
+    .partner-card .partner-name {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--slate-900);
+      margin-bottom: 4px;
+    }
+
+    .partner-card .partner-desc {
+      font-size: 12.5px;
+      color: var(--slate-500);
+      line-height: 1.5;
+    }
+
+    /* ── Why Partner ── */
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+
+    .why-item {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+    }
+
+    .why-item .why-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--brand);
+      margin-top: 5px;
+      flex-shrink: 0;
+    }
+
+    .why-item .why-text strong {
+      display: block;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--slate-900);
+    }
+
+    .why-item .why-text span {
+      font-size: 12.5px;
+      color: var(--slate-500);
+    }
+
+    /* ── Footer ── */
+    .footer {
+      background: var(--slate-900);
+      color: var(--slate-300);
+      padding: 16px 48px;
+      font-size: 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .footer a {
+      color: var(--brand-light);
+      text-decoration: none;
+    }
+
+    .footer .footer-right {
+      color: var(--slate-500);
+      font-size: 11px;
+    }
+
+    /* ── Note callout ── */
+    .note {
+      background: #fffbeb;
+      border-left: 3px solid #f59e0b;
+      border-radius: 4px;
+      padding: 10px 14px;
+      margin-top: 10px;
+      font-size: 12.5px;
+      color: #78350f;
+    }
+
+    /* ── Print styles ── */
+    @media print {
+      @page {
+        size: letter;
+        margin: 0.75in;
+      }
+
+      body {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+
+      .header-bar {
+        padding: 22px 40px 20px;
+      }
+
+      .content {
+        padding: 28px 40px 32px;
+      }
+
+      .footer {
+        padding: 14px 40px;
+      }
+
+      .section {
+        break-inside: avoid;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ── Header ── -->
+  <header class="header-bar">
+    <div class="logo">Apollo Intelligence</div>
+    <div class="tagline">The Intelligence Brief — AI Insights for Business Leaders</div>
+    <div class="kit-label">Media Kit 2026</div>
+  </header>
+
+  <main class="content">
+
+    <!-- ── Section 1: About ── -->
+    <section class="section">
+      <div class="section-title">About the Publication</div>
+      <p><strong>The Intelligence Brief</strong> is a weekly AI newsletter for small and mid-size business owners and operators. Published every <strong>Tuesday</strong>, each issue delivers practical AI tools, strategies, and curated news — designed for SMB leaders who want <em>signal over hype</em>.</p>
+      <p><strong>Publisher:</strong> Jared Turner, Apollo Intelligence LLC &nbsp;|&nbsp; <strong>Website:</strong> apolloagent.ai &nbsp;|&nbsp; <strong>Contact:</strong> hello@apolloagent.ai</p>
+    </section>
+
+    <!-- ── Section 2: Audience ── -->
+    <section class="section">
+      <div class="section-title">Audience Profile</div>
+      <div class="two-col">
+        <div class="info-block">
+          <div class="block-title">Who They Are</div>
+          <ul>
+            <li>Business owners, founders &amp; operators</li>
+            <li>SMBs with 5–500 employees</li>
+            <li>85% are primary decision-makers for software/tools</li>
+            <li>Actively evaluating &amp; adopting AI tools</li>
+          </ul>
+        </div>
+        <div class="info-block">
+          <div class="block-title">Industries &amp; Geography</div>
+          <ul>
+            <li>Professional services, marketing agencies</li>
+            <li>E-commerce, real estate, legal, healthcare</li>
+            <li>United States: <strong>80%</strong></li>
+            <li>Canada / UK: <strong>20%</strong></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Section 3: Stats ── -->
+    <section class="section">
+      <div class="section-title">Newsletter Stats — Launch Edition</div>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-label">Launch Date</div>
+          <div class="stat-value">May 2026</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Cadence</div>
+          <div class="stat-value">Weekly (Tuesdays)</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Platform</div>
+          <div class="stat-value">Beehiiv</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Audience</div>
+          <div class="stat-value">Growing — Early Access</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Open Rate Target</div>
+          <div class="stat-value">45%+ <span style="font-size:11px;font-weight:500;color:var(--slate-500)">(avg: 21%)</span></div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Click Rate Target</div>
+          <div class="stat-value">8%+ <span style="font-size:11px;font-weight:500;color:var(--slate-500)">(avg: 2.5%)</span></div>
+        </div>
+      </div>
+      <div class="note">
+        We launched in May 2026. Engagement metrics will be updated monthly as the list grows.
+      </div>
+    </section>
+
+    <!-- ── Section 4: Content Format ── -->
+    <section class="section">
+      <div class="section-title">Content Format</div>
+      <ul class="format-list">
+        <li>🔥 <strong>This Week's Biggest Story</strong> — One key AI development with business context</li>
+        <li>🛠 <strong>3 Tools Worth Trying</strong> — Curated tool recommendations with honest takes</li>
+        <li>💡 <strong>Tip of the Week</strong> — One actionable thing readers can implement today</li>
+        <li>📖 <strong>Worth Reading</strong> — 2–3 external links with brief context</li>
+        <li>✍️ <strong>From the Blog</strong> — One Apollo Intelligence deep-dive article</li>
+      </ul>
+    </section>
+
+    <!-- ── Section 5: Partnership Opportunities ── -->
+    <section class="section">
+      <div class="section-title">Partnership Opportunities</div>
+      <div class="partner-grid">
+        <div class="partner-card">
+          <div class="partner-name">Sponsored Tool Feature</div>
+          <div class="partner-desc">Your tool featured in "3 Tools Worth Trying" with an honest, editorial-style review and your brand front and center.</div>
+        </div>
+        <div class="partner-card">
+          <div class="partner-name">Newsletter Sponsorship</div>
+          <div class="partner-desc">Top-of-issue placement with your logo, description, and a direct call-to-action for maximum visibility.</div>
+        </div>
+        <div class="partner-card">
+          <div class="partner-name">Affiliate / Referral</div>
+          <div class="partner-desc">Revenue share on referred signups. Our preferred partnership model — aligned incentives for both parties.</div>
+        </div>
+        <div class="partner-card">
+          <div class="partner-name">FTC Compliance</div>
+          <div class="partner-desc">All paid placements are clearly disclosed as sponsored per FTC guidelines. We never compromise reader trust.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Section 6: Why Partner ── -->
+    <section class="section">
+      <div class="section-title">Why Partner With Us</div>
+      <div class="why-grid">
+        <div class="why-item">
+          <div class="why-dot"></div>
+          <div class="why-text">
+            <strong>Hyper-targeted audience</strong>
+            <span>Every reader is an SMB operator actively evaluating AI tools — no wasted impressions.</span>
+          </div>
+        </div>
+        <div class="why-item">
+          <div class="why-dot"></div>
+          <div class="why-text">
+            <strong>High intent</strong>
+            <span>Subscribers opted in specifically for AI tool recommendations. They're ready to buy.</span>
+          </div>
+        </div>
+        <div class="why-item">
+          <div class="why-dot"></div>
+          <div class="why-text">
+            <strong>Trusted voice</strong>
+            <span>No hype, honest reviews. Readers trust our recommendations — because we say no to bad fits.</span>
+          </div>
+        </div>
+        <div class="why-item">
+          <div class="why-dot"></div>
+          <div class="why-text">
+            <strong>Growth trajectory</strong>
+            <span>Early-stage with an aggressive growth plan. Partner now at founder rates.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── Footer ── -->
+  <footer class="footer">
+    <div>
+      <strong style="color:var(--white)">Apollo Intelligence LLC</strong> &nbsp;|&nbsp;
+      <a href="mailto:hello@apolloagent.ai">hello@apolloagent.ai</a> &nbsp;|&nbsp;
+      <a href="mailto:newsletter@apolloagent.ai">newsletter@apolloagent.ai</a> &nbsp;|&nbsp;
+      <a href="https://apolloagent.ai">apolloagent.ai</a>
+    </div>
+    <div class="footer-right">© 2026 Apollo Intelligence LLC. All rights reserved.</div>
+  </footer>
+
+</body>
+</html>

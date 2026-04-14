@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /secure/
 
 Sitemap: https://apolloagent.ai/sitemap.xml
