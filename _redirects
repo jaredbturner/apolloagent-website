@@ -2,10 +2,13 @@
 /blog/article-template.html  /blog/  301
 
 # Affiliate redirect links — update URLs once affiliate accounts are approved
-/go/zapier        https://zapier.com/?via=PENDING          302
+# /go/zapier — approved but no affiliate URL; leads submitted manually via Zapier Partner Portal
+/go/zapier        /zapier-automation                           302
 /go/make          https://www.make.com/en/register?pc=apolloagent  302
 /go/beehiiv       https://www.beehiiv.com?via=Jared-Turner  302
-/go/hubspot       https://hubspot.com/?via=PENDING         302
+# /go/hubspot — affiliate application declined Apr 20, 2026
+/go/pipedrive      https://pipedrive.com/?via=PENDING          302
+/go/activecampaign https://activecampaign.com/?via=PENDING      302
 /go/notion        https://notion.so/?via=PENDING           302
 /go/calendly      https://calendly.com/?via=PENDING        302
 /go/clay          https://clay.com/?via=PENDING            302
