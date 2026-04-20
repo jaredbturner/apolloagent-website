@@ -10,39 +10,51 @@
   <meta property="og:description" content="Ready to connect your apps and automate repetitive work? Tell us about your business and we'll help you get started with the right Zapier plan." />
   <meta property="og:url" content="https://apolloagent.ai/zapier-automation" />
   <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://apolloagent.ai/favicon-512.png" />
   <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
+  <link rel="apple-touch-icon" sizes="192x192" href="/favicon-192.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/styles.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'sans-serif'] },
+          colors: {
+            brand: { DEFAULT: '#4F6EF7', dark: '#3B57E8', light: '#EEF1FE' }
+          }
+        }
+      }
+    }
+  </script>
   <style>
-    body { font-family: 'Inter', sans-serif; }
-    .text-brand { color: #4f46e5; }
-    .bg-brand { background-color: #4f46e5; }
-    .bg-brand-light { background-color: #eef2ff; }
-    .border-brand { border-color: #4f46e5; }
-    .focus-brand:focus { outline: none; border-color: #4f46e5; box-shadow: 0 0 0 3px rgba(79,70,229,0.15); }
-    .zapier-orange { color: #ff4a00; }
-    .bg-zapier { background-color: #ff4a00; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; background: #ffffff; color: #0f172a; }
+    input:focus, select:focus, textarea:focus {
+      outline: none;
+      border-color: #4F6EF7;
+      box-shadow: 0 0 0 3px rgba(79, 110, 247, 0.15);
+    }
   </style>
 </head>
-<body class="bg-white text-slate-900">
+<body class="antialiased">
 
   <!-- NAV -->
-  <nav class="bg-white border-b border-slate-100 sticky top-0 z-50 px-6 py-4">
-    <div class="max-w-6xl mx-auto flex items-center justify-between">
-      <a href="https://apolloagent.ai">
-        <picture>
-          <source srcset="/logo.webp" type="image/webp" />
-          <img src="/logo.png" alt="Apollo Intelligence" class="h-10 w-auto" width="353" height="120" />
-        </picture>
+  <nav class="sticky top-0 z-50 bg-white border-b border-slate-100">
+    <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+      <a href="/" class="flex items-center">
+        <img src="/logo.png" alt="Apollo Intelligence" class="h-16 w-auto" />
       </a>
       <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
-        <a href="https://apolloagent.ai/#services" class="hover:text-slate-900 transition">Services</a>
-        <a href="https://apolloagent.ai/#pricing" class="hover:text-slate-900 transition">Pricing</a>
+        <a href="/#services" class="hover:text-slate-900 transition">Services</a>
+        <a href="/#pricing" class="hover:text-slate-900 transition">Pricing</a>
         <a href="/blog/" class="hover:text-slate-900 transition">Blog</a>
-        <a href="https://calendly.com/hello-apolloagent/30min" target="_blank" rel="noopener" class="bg-brand text-white px-5 py-2 rounded-lg hover:opacity-90 transition">Book a Call</a>
+        <a href="/#faq" class="hover:text-slate-900 transition">FAQ</a>
       </div>
+      <a href="https://calendly.com/hello-apolloagent/30min" target="_blank" rel="noopener" class="bg-brand text-white text-sm font-semibold px-4 py-2 rounded-lg hover:bg-brand-dark transition">Book a Call</a>
     </div>
   </nav>
 
@@ -51,13 +63,13 @@
     <!-- HERO -->
     <section class="bg-slate-50 py-20 px-6 border-b border-slate-100">
       <div class="max-w-3xl mx-auto text-center">
-        <div class="inline-flex items-center gap-2 bg-white border border-slate-200 rounded-full px-4 py-2 text-sm font-medium text-slate-600 mb-6 shadow-sm">
-          <svg class="w-4 h-4" style="color:#ff4a00" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+        <div class="inline-flex items-center gap-2 text-slate-600 text-sm font-medium bg-white border border-slate-200 px-3 py-1 rounded-full mb-6 shadow-sm">
+          <svg class="w-4 h-4" style="color:#ff4a00" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd"/></svg>
           Powered by Zapier
         </div>
-        <h1 class="text-4xl md:text-5xl font-bold text-slate-900 mb-5 leading-tight">Stop doing work<br/>your apps could do for you.</h1>
+        <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-5 leading-tight">Stop doing work<br/>your apps could do for you.</h1>
         <p class="text-lg text-slate-500 mb-8 leading-relaxed max-w-2xl mx-auto">Zapier connects 7,000+ apps and automates the repetitive tasks eating your team's time. We help businesses set it up right — from selecting the correct plan to building workflows that actually stick.</p>
-        <a href="#get-started" class="bg-brand text-white font-bold px-8 py-4 rounded-xl hover:opacity-90 transition text-lg inline-block shadow-sm">Get Started →</a>
+        <a href="#get-started" class="bg-brand text-white font-bold px-8 py-4 rounded-xl hover:bg-brand-dark transition text-lg inline-block shadow-sm">Get Started →</a>
       </div>
     </section>
 
@@ -65,7 +77,7 @@
     <section class="py-20 px-6">
       <div class="max-w-5xl mx-auto">
         <div class="text-center mb-14">
-          <h2 class="text-3xl font-bold text-slate-900 mb-3">What automation actually looks like</h2>
+          <h2 class="text-3xl font-extrabold text-slate-900 mb-3">What automation actually looks like</h2>
           <p class="text-slate-500 text-lg">Real workflows our clients run on Zapier — no code, no developer required.</p>
         </div>
         <div class="grid md:grid-cols-3 gap-8">
@@ -87,7 +99,7 @@
             <div class="w-11 h-11 bg-brand-light rounded-xl flex items-center justify-center mb-4">
               <svg class="w-5 h-5 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
             </div>
-            <h3 class="font-bold text-slate-900 mb-2">Scheduling & follow-ups</h3>
+            <h3 class="font-bold text-slate-900 mb-2">Scheduling &amp; follow-ups</h3>
             <p class="text-slate-500 text-sm leading-relaxed">New Calendly booking? Zapier fires a confirmation email, creates a task in your project tool, and schedules a follow-up reminder — before you even see the notification.</p>
           </div>
         </div>
@@ -96,9 +108,9 @@
 
     <!-- HOW IT WORKS -->
     <section class="bg-slate-50 py-20 px-6 border-y border-slate-100">
-      <div class="max-w-3xl mx-auto text-center">
-        <h2 class="text-3xl font-bold text-slate-900 mb-12">How we help you get started</h2>
-        <div class="space-y-8 text-left">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-3xl font-extrabold text-slate-900 mb-12 text-center">How we help you get started</h2>
+        <div class="space-y-8">
           <div class="flex gap-5 items-start">
             <div class="w-10 h-10 bg-brand text-white rounded-full flex items-center justify-center font-bold text-lg shrink-0">1</div>
             <div>
@@ -128,7 +140,7 @@
     <section id="get-started" class="py-20 px-6">
       <div class="max-w-2xl mx-auto">
         <div class="text-center mb-10">
-          <h2 class="text-3xl font-bold text-slate-900 mb-3">Tell us about your business</h2>
+          <h2 class="text-3xl font-extrabold text-slate-900 mb-3">Tell us about your business</h2>
           <p class="text-slate-500">We'll review your information and reach out within one business day with a recommended Zapier plan and next steps.</p>
         </div>
 
@@ -138,54 +150,48 @@
           <input type="hidden" name="_captcha" value="false" />
           <input type="hidden" name="lead_source" value="apolloagent.ai/zapier-automation" />
 
-          <!-- Name row -->
           <div class="grid grid-cols-2 gap-4">
             <div>
               <label class="block text-sm font-semibold text-slate-700 mb-1">First Name <span class="text-red-500">*</span></label>
               <input type="text" name="first_name" required placeholder="Jane"
-                class="w-full border border-slate-200 rounded-lg px-4 py-3 text-sm focus-brand transition" />
+                class="w-full border border-slate-200 rounded-lg px-4 py-3 text-sm transition" />
             </div>
             <div>
               <label class="block text-sm font-semibold text-slate-700 mb-1">Last Name <span class="text-red-500">*</span></label>
               <input type="text" name="last_name" required placeholder="Smith"
-                class="w-full border border-slate-200 rounded-lg px-4 py-3 text-sm focus-brand transition" />
+                class="w-full border border-slate-200 rounded-lg px-4 py-3 text-sm transition" />
             </div>
           </div>
 
-          <!-- Email -->
           <div>
             <label class="block text-sm font-semibold text-slate-700 mb-1">Work Email <span class="text-red-500">*</span></label>
             <input type="email" name="work_email" required placeholder="jane@yourcompany.com"
-              class="w-full border border-slate-200 rounded-lg px-4 py-3 text-sm focus-brand transition" />
+              class="w-full border border-slate-200 rounded-lg px-4 py-3 text-sm transition" />
             <p class="text-xs text-slate-400 mt-1">Use your Zapier account email if you already have one.</p>
           </div>
 
-          <!-- Phone -->
           <div>
             <label class="block text-sm font-semibold text-slate-700 mb-1">Phone Number</label>
             <input type="tel" name="phone" placeholder="+1 (555) 000-0000"
-              class="w-full border border-slate-200 rounded-lg px-4 py-3 text-sm focus-brand transition" />
+              class="w-full border border-slate-200 rounded-lg px-4 py-3 text-sm transition" />
           </div>
 
-          <!-- Company -->
           <div>
             <label class="block text-sm font-semibold text-slate-700 mb-1">Company Name <span class="text-red-500">*</span></label>
             <input type="text" name="company_name" required placeholder="Acme Inc."
-              class="w-full border border-slate-200 rounded-lg px-4 py-3 text-sm focus-brand transition" />
+              class="w-full border border-slate-200 rounded-lg px-4 py-3 text-sm transition" />
           </div>
 
-          <!-- Website -->
           <div>
             <label class="block text-sm font-semibold text-slate-700 mb-1">Company Website</label>
             <input type="url" name="company_website" placeholder="https://yourcompany.com"
-              class="w-full border border-slate-200 rounded-lg px-4 py-3 text-sm focus-brand transition" />
+              class="w-full border border-slate-200 rounded-lg px-4 py-3 text-sm transition" />
           </div>
 
-          <!-- Company Size -->
           <div>
             <label class="block text-sm font-semibold text-slate-700 mb-1">Company Size <span class="text-red-500">*</span></label>
             <select name="company_size" required
-              class="w-full border border-slate-200 rounded-lg px-4 py-3 text-sm focus-brand transition bg-white">
+              class="w-full border border-slate-200 rounded-lg px-4 py-3 text-sm transition bg-white">
               <option value="" disabled selected>Select team size</option>
               <option value="1">Just me</option>
               <option value="2-10">2–10 employees</option>
@@ -196,11 +202,10 @@
             </select>
           </div>
 
-          <!-- Industry -->
           <div>
             <label class="block text-sm font-semibold text-slate-700 mb-1">Industry <span class="text-red-500">*</span></label>
             <select name="company_industry" required
-              class="w-full border border-slate-200 rounded-lg px-4 py-3 text-sm focus-brand transition bg-white">
+              class="w-full border border-slate-200 rounded-lg px-4 py-3 text-sm transition bg-white">
               <option value="" disabled selected>Select your industry</option>
               <option value="Agency / Marketing">Agency / Marketing</option>
               <option value="Consulting / Professional Services">Consulting / Professional Services</option>
@@ -216,11 +221,10 @@
             </select>
           </div>
 
-          <!-- Country -->
           <div>
             <label class="block text-sm font-semibold text-slate-700 mb-1">Country <span class="text-red-500">*</span></label>
             <select name="company_country" required
-              class="w-full border border-slate-200 rounded-lg px-4 py-3 text-sm focus-brand transition bg-white">
+              class="w-full border border-slate-200 rounded-lg px-4 py-3 text-sm transition bg-white">
               <option value="" disabled selected>Select country</option>
               <option value="United States" selected>United States</option>
               <option value="Canada">Canada</option>
@@ -230,24 +234,22 @@
             </select>
           </div>
 
-          <!-- Goals -->
           <div>
             <label class="block text-sm font-semibold text-slate-700 mb-1">What are you hoping to automate? <span class="text-red-500">*</span></label>
             <textarea name="automation_goals" required rows="4"
               placeholder="e.g. We spend hours every week manually moving data between our CRM and our project management tool. We also want to automate our client onboarding emails..."
-              class="w-full border border-slate-200 rounded-lg px-4 py-3 text-sm focus-brand transition resize-none"></textarea>
+              class="w-full border border-slate-200 rounded-lg px-4 py-3 text-sm transition resize-none"></textarea>
             <p class="text-xs text-slate-400 mt-1">The more detail you share, the better we can help. What tools do you use? What's eating your team's time?</p>
           </div>
 
           <button type="submit"
-            class="w-full bg-brand text-white font-bold py-4 rounded-xl hover:opacity-90 active:opacity-80 transition text-base shadow-sm">
+            class="w-full bg-brand text-white font-bold py-4 rounded-xl hover:bg-brand-dark transition text-base shadow-sm">
             Submit — We'll Be in Touch Within 1 Business Day →
           </button>
 
           <p class="text-xs text-slate-400 text-center">No spam. No sales pressure. We'll review your information and reach out with a clear recommendation.</p>
         </form>
 
-        <!-- Thank you state -->
         <div id="thanks-message" class="hidden text-center py-12">
           <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
             <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
@@ -261,10 +263,10 @@
     <!-- FINAL CTA -->
     <section class="bg-brand py-20 px-6">
       <div class="max-w-3xl mx-auto text-center">
-        <h2 class="text-4xl font-bold text-white mb-4">Want the full AI operations stack?</h2>
-        <p class="text-white text-lg mb-10">Zapier is one piece of what we build for our clients. Book a free strategy call to see the complete picture.</p>
+        <h2 class="text-4xl font-extrabold text-white mb-4">Want the full AI operations stack?</h2>
+        <p class="text-white text-lg mb-10 opacity-90">Zapier is one piece of what we build for our clients. Book a free strategy call to see the complete picture.</p>
         <a href="https://calendly.com/hello-apolloagent/30min" target="_blank" rel="noopener"
-          class="bg-white text-brand font-bold px-10 py-4 rounded-xl hover:bg-slate-100 active:bg-slate-200 transition-all duration-150 text-lg inline-block shadow-sm hover:shadow-md">
+          class="bg-white text-brand font-bold px-10 py-4 rounded-xl hover:bg-slate-100 transition-all duration-150 text-lg inline-block shadow-sm">
           Book Your Free Strategy Call
         </a>
       </div>
@@ -275,27 +277,23 @@
   <!-- FOOTER -->
   <footer class="bg-white border-t border-slate-100 py-8 px-6">
     <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-slate-500">
-      <a href="https://apolloagent.ai">
-        <picture>
-          <source srcset="/logo.webp" type="image/webp" />
-          <img src="/logo.png" alt="Apollo Intelligence" class="h-12 w-auto" width="353" height="120" loading="lazy" />
-        </picture>
-      </a>
+      <a href="/"><img src="/logo.png" alt="Apollo Intelligence" class="h-12 w-auto" loading="lazy" /></a>
       <div class="flex gap-6">
-        <a href="https://apolloagent.ai/#services" class="text-slate-600 hover:text-slate-900 transition">Services</a>
-        <a href="https://apolloagent.ai/#pricing" class="text-slate-600 hover:text-slate-900 transition">Pricing</a>
+        <a href="/#services" class="text-slate-600 hover:text-slate-900 transition">Services</a>
+        <a href="/#pricing" class="text-slate-600 hover:text-slate-900 transition">Pricing</a>
         <a href="/blog/" class="text-slate-600 hover:text-slate-900 transition">Blog</a>
         <a href="/privacy-policy" class="text-slate-600 hover:text-slate-900 transition">Privacy Policy</a>
       </div>
-      <div class="text-slate-500">© 2026 Apollo Intelligence LLC. All rights reserved.</div>
+      <div>© 2026 Apollo Intelligence LLC. All rights reserved.</div>
     </div>
   </footer>
 
   <script>
-    // Show thank you message if redirected back with ?thanks=1
     if (window.location.search.includes('thanks=1')) {
-      document.querySelector('form') && (document.querySelector('form').style.display = 'none');
-      document.getElementById('thanks-message') && (document.getElementById('thanks-message').style.display = 'block');
+      var form = document.querySelector('form');
+      var thanks = document.getElementById('thanks-message');
+      if (form) form.style.display = 'none';
+      if (thanks) thanks.classList.remove('hidden');
     }
   </script>
 
