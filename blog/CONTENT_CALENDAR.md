@@ -1,7 +1,7 @@
 # Apollo Intelligence Blog — Content Calendar
 
 ## Publishing Cadence
-**2 articles per week:** Tuesday + Friday
+**3 articles per week:** Tuesday + Thursday + Saturday
 
 ## Categories
 - **AI News & Analysis** (30%) — Breaking down what's happening in AI and what it means for business
