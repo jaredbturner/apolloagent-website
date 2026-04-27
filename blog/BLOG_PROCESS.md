@@ -77,10 +77,14 @@ Each cron run:
 ### Jared Approves
 When Jared replies "publish <filename>":
 1. Move `drafts/<filename>.html` → root `blog/<filename>.html`
-2. Update `PUBLISH_QUEUE.json` status to "published"
-3. Update blog index page and RSS feed
-4. Git commit and push to trigger Cloudflare Pages deploy
-5. Confirm in Discord: "✅ Published: [title] → apolloagent.ai/blog/<slug>"
+2. Update `PUBLISH_QUEUE.json` status to "approved" (NOT "published" yet)
+3. **Do NOT git push immediately.** Instead, schedule the git push for the publish date:
+   - Set a cron job to run at 7:00 AM MT on the publish date that does: `git add . && git commit -m "Publish blog: <title>" && git push`
+   - Update `PUBLISH_QUEUE.json` status to "published" only after the scheduled push
+4. Add the new post URL to `sitemap.xml`
+5. Add the new post card to `blog/index.html`
+6. Submit the new URL to Google Search Console Indexing API: `python3 scripts/gsc_index.py https://apolloagent.ai/blog/<slug>`
+7. Confirm in Discord: "✅ Scheduled for publication on [date]: [title] → apolloagent.ai/blog/<slug> (GSC indexing submitted)"
 
 ### Jared Requests Changes
 When Jared gives feedback:
