@@ -18,5 +18,15 @@
       "publishedUrl": "https://apolloagent.ai/blog/the-real-cost-of-not-using-ai-2026",
       "linkedInPosted": false
     }
+    },
+    {
+      "slug": "gpt-5-5-multimodal-business",
+      "title": "GPT-5.5 Multimodal Capabilities: What Business Owners Need to Know",
+      "status": "approved",
+      "publishDate": "2026-05-06",
+      "draftPath": "drafts/gpt-5-5-multimodal-business.html",
+      "publishedUrl": "",
+      "linkedInPosted": false
+    }
   ]
 }
