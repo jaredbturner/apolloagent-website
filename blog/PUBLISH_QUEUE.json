@@ -35,6 +35,13 @@
       "draftPath": "drafts/how-to-write-ai-prompts-that-actually-work-for-business-tasks.html",
       "publishedUrl": "https://apolloagent.ai/blog/how-to-write-ai-prompts-that-actually-work-for-business-tasks",
       "linkedInPosted": false
+    },
+    {
+      "slug": "ai-for-legal-teams",
+      "title": "AI for Legal Teams: Contract Review, Intake, and Research Automation",
+      "status": "pending_review",
+      "publishDate": "2026-05-10",
+      "draftPath": "drafts/ai-for-legal-teams.html"
     }
   ]
 }
