@@ -46,9 +46,10 @@
     {
       "slug": "ecommerce-scaled-5m-3-person-team-ai",
       "title": "How an E-Commerce Brand Scaled to $5M with a 3-Person Team Using AI",
-      "status": "pending_review",
+      "status": "published",
       "publishDate": "2026-05-12",
-      "draftPath": "drafts/ecommerce-scaled-5m-3-person-team-ai.html"
+      "draftPath": "drafts/ecommerce-scaled-5m-3-person-team-ai.html",
+      "publishedUrl": "https://apolloagent.ai/blog/ecommerce-scaled-5m-3-person-team-ai"
     }
   ]
 }
