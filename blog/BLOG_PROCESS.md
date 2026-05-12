@@ -112,6 +112,8 @@ When adding a new post to any category page or the main index, use this card tem
 
 For category pages that don't use `data-category` filtering, omit the `data-category` attribute from the `<article>` tag.
 
+> **Ordering rule:** All article grids — both `blog/index.html` and every category page — must be ordered **newest → oldest** (top to bottom). Always insert new post cards at the **top** of the `<div id="article-grid">` block, above existing cards.
+
 ## Draft Generation Process
 
 Each cron run:
@@ -139,8 +141,8 @@ When Jared replies "publish <filename>":
    - Set a cron job to run at 7:00 AM MT on the publish date that does: `git add . && git commit -m "Publish blog: <title>" && git push`
    - Update `PUBLISH_QUEUE.json` status to "published" only after the scheduled push
 4. Add the new post URL to `sitemap.xml`
-5. Add the new post card to `blog/index.html` (with correct `data-category` attribute — see Category Mapping table)
-6. Add the new post card to **every relevant category page** (see Category Mapping). If a post spans multiple categories (e.g., role-guides + industry-guides), add it to all applicable pages. Replace any "More articles coming soon" placeholder if present.
+5. Add the new post card to `blog/index.html` (with correct `data-category` attribute — see Category Mapping table). **Insert at the top of the article grid** (newest post first). The grid must always be ordered newest → oldest.
+6. Add the new post card to **every relevant category page** (see Category Mapping). **Insert the card so the page remains in newest → oldest order.** If a post spans multiple categories (e.g., role-guides + industry-guides), add it to all applicable pages. Replace any "More articles coming soon" placeholder if present.
 7. Submit the new URL to Google Search Console Indexing API: `python3 scripts/gsc_index.py https://apolloagent.ai/blog/<slug>` (if the script exists)
 8. Confirm in Discord: "✅ Scheduled for publication on [date]: [title] → apolloagent.ai/blog/<slug> (GSC indexing submitted)"
 
@@ -157,7 +159,7 @@ If a draft is still "pending_review" at 7:00 AM on its publish date:
    - Are statistics sourced and not fabricated?
    - Are tool recommendations accurate (features exist, pricing correct)?
    - No misrepresentations or unsupported claims?
-2. If passes → publish automatically (follow steps 1–8 from "Jared Approves" section, including adding cards to index + category pages)
+2. If passes → publish automatically (follow steps 1–8 from "Jared Approves" section, including adding cards to index + category pages in newest → oldest order)
 3. If fails → alert Discord: "⚠️ Blog draft [title] needs review — factual concerns found"
 
 ## Content Standards
