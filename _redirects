@@ -1,9 +1,8 @@
 /blog/article-template  /blog/  301
 /blog/article-template.html  /blog/  301
 
-# AI Readiness Assessment — static SPA
-/ai-readiness/  /ai-readiness/index.html  200
-/ai-readiness/*  /ai-readiness/index.html  200
+# AI Readiness Assessment — static SPA (serve root-level wrapper)
+/ai-readiness   /ai-readiness.html  200
 
 # Affiliate redirect links — update URLs once affiliate accounts are approved
 # /go/zapier — approved but no affiliate URL; leads submitted manually via Zapier Partner Portal
