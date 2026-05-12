@@ -25,7 +25,7 @@
       "publishDate": "2026-05-06",
       "draftPath": "drafts/gpt-5-5-multimodal-business.html",
       "publishedUrl": "https://apolloagent.ai/blog/gpt-5-5-multimodal-business",
-      "linkedInPosted": false
+      "linkedInPosted": true
     },
     {
       "slug": "how-to-write-ai-prompts-that-actually-work-for-business-tasks",
@@ -34,14 +34,16 @@
       "publishDate": "2026-05-07",
       "draftPath": "drafts/how-to-write-ai-prompts-that-actually-work-for-business-tasks.html",
       "publishedUrl": "https://apolloagent.ai/blog/how-to-write-ai-prompts-that-actually-work-for-business-tasks",
-      "linkedInPosted": false
+      "linkedInPosted": true
     },
     {
       "slug": "ai-for-legal-teams",
       "title": "AI for Legal Teams: Contract Review, Intake, and Research Automation",
-      "status": "pending_review",
+      "status": "published",
       "publishDate": "2026-05-10",
-      "draftPath": "drafts/ai-for-legal-teams.html"
+      "draftPath": "drafts/ai-for-legal-teams.html",
+      "publishedUrl": "https://apolloagent.ai/blog/ai-for-legal-teams",
+      "linkedInPosted": false
     },
     {
       "slug": "ecommerce-scaled-5m-3-person-team-ai",
@@ -49,7 +51,8 @@
       "status": "published",
       "publishDate": "2026-05-12",
       "draftPath": "drafts/ecommerce-scaled-5m-3-person-team-ai.html",
-      "publishedUrl": "https://apolloagent.ai/blog/ecommerce-scaled-5m-3-person-team-ai"
+      "publishedUrl": "https://apolloagent.ai/blog/ecommerce-scaled-5m-3-person-team-ai",
+      "linkedInPosted": true
     }
   ]
 }
