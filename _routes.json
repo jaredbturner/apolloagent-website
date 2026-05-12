@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "include": [
+    "/*"
+  ],
+  "exclude": [
+    "/blog/*",
+    "/ai-readiness/*",
+    "*.css",
+    "*.js",
+    "*.png",
+    "*.jpg",
+    "*.jpeg",
+    "*.webp",
+    "*.gif",
+    "*.svg",
+    "*.woff",
+    "*.woff2",
+    "*.ico",
+    "*.json",
+    "*.xml"
+  ]
+}

@@ -1,3 +1,9 @@
 /sitemap.xml
   Content-Type: text/xml; charset=UTF-8
   X-Content-Type-Options: nosniff
+
+/ai-readiness/
+  Content-Type: text/html; charset=UTF-8
+
+/ai-readiness/*
+  Content-Type: text/html; charset=UTF-8
