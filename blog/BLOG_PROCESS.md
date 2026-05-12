@@ -1,6 +1,6 @@
 # Apollo Intelligence Blog — Publishing Process
 
-_Last updated: April 27, 2026_
+_Last updated: May 12, 2026_
 
 ## Overview
 
@@ -55,6 +55,63 @@ After each blog post goes live (manually approved or auto-published), it's share
 
 The LinkedIn cron checks PUBLISH_QUEUE.json for entries with `status: published` and `linkedInPosted: false`, crafts a post from the article title/summary, and posts via LinkedIn API. If the API fails (e.g., token expired), it alerts Discord and leaves `linkedInPosted: false` for retry.
 
+## Category Mapping
+
+Every blog post belongs to exactly one category. The category determines which filter page(s) the post appears on.
+
+| Category | Filter Page | Slug | Color Scheme | Badge Label |
+|----------|-------------|------|--------------|-------------|
+| AI News & Analysis | `ai-news.html` | `ai-news` | purple-900 → indigo-700 | AI News & Analysis |
+| Business Automation | `business-automation.html` | `business-automation` | amber-800 → orange-600 | Business Automation |
+| Role Guides | `role-guides.html` | `role-guides` | slate-800 → blue-900 (legal) or emerald-900 → green-700 (ops) | Role Guide (Legal) / Role Guide (Ops) |
+| Case Studies | `case-studies.html` | `case-studies` | rose-900 → orange-700 (ecommerce), red-900 → red-700 (cost), slate-900 → slate-700 (agency) | Case Study |
+| Industry Guides | `industry-guides.html` | `industry-guides` | slate-800 → blue-900 | Industry Guide (Legal) |
+
+### Current Post → Category Assignments
+
+| Post Slug | Category |
+|-----------|----------|
+| `ai-news-march-2026` | ai-news |
+| `ai-agents-guide-2026` | ai-news |
+| `gpt-5-5-multimodal-business` | ai-news |
+| `5-ai-automations-small-business` | business-automation |
+| `ai-powered-business-intelligence` | business-automation |
+| `how-to-write-ai-prompts-that-actually-work-for-business-tasks` | business-automation |
+| `ai-for-operations-managers` | role-guides |
+| `ai-for-legal-teams` | role-guides, industry-guides |
+| `agency-60-percent-admin-reduction-case-study` | case-studies |
+| `the-real-cost-of-not-using-ai-2026` | case-studies |
+| `ecommerce-scaled-5m-3-person-team-ai` | case-studies |
+
+> **Note:** Some posts span two categories (e.g., `ai-for-legal-teams` is both a Role Guide and an Industry Guide for legal). Add the card to both category pages in that case.
+
+### Category Card HTML Template
+
+When adding a new post to any category page or the main index, use this card template. Replace the placeholders in curly braces:
+
+```html
+<article class="group" data-category="{category-slug}">
+  <a href="/blog/{post-slug}" class="block">
+    <div class="bg-gradient-to-br {gradient-colors} rounded-2xl h-48 flex items-end p-6 mb-4">
+      <span class="text-xs font-bold uppercase tracking-wider text-white bg-white/20 px-3 py-1 rounded-full">{Badge Label}</span>
+    </div>
+    <h3 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-brand transition">{Post Title}</h3>
+    <p class="text-slate-500 text-sm leading-relaxed line-clamp-2 mb-4">{Meta Description or 2-sentence summary}</p>
+    <div class="flex items-center gap-3 text-xs text-slate-400">
+      <div class="w-7 h-7 bg-slate-200 rounded-full flex items-center justify-center text-slate-500 font-bold text-xs">JT</div>
+      <span>Jared Turner</span>
+      <span>&middot;</span>
+      <span>{Publish Date, e.g. May 12, 2026}</span>
+      <span>&middot;</span>
+      <span>{X} min read</span>
+    </div>
+    <div class="mt-3 text-brand text-sm font-semibold group-hover:underline">Read Article &rarr;</div>
+  </a>
+</article>
+```
+
+For category pages that don't use `data-category` filtering, omit the `data-category` attribute from the `<article>` tag.
+
 ## Draft Generation Process
 
 Each cron run:
@@ -82,9 +139,10 @@ When Jared replies "publish <filename>":
    - Set a cron job to run at 7:00 AM MT on the publish date that does: `git add . && git commit -m "Publish blog: <title>" && git push`
    - Update `PUBLISH_QUEUE.json` status to "published" only after the scheduled push
 4. Add the new post URL to `sitemap.xml`
-5. Add the new post card to `blog/index.html`
-6. Submit the new URL to Google Search Console Indexing API: `python3 scripts/gsc_index.py https://apolloagent.ai/blog/<slug>`
-7. Confirm in Discord: "✅ Scheduled for publication on [date]: [title] → apolloagent.ai/blog/<slug> (GSC indexing submitted)"
+5. Add the new post card to `blog/index.html` (with correct `data-category` attribute — see Category Mapping table)
+6. Add the new post card to **every relevant category page** (see Category Mapping). If a post spans multiple categories (e.g., role-guides + industry-guides), add it to all applicable pages. Replace any "More articles coming soon" placeholder if present.
+7. Submit the new URL to Google Search Console Indexing API: `python3 scripts/gsc_index.py https://apolloagent.ai/blog/<slug>` (if the script exists)
+8. Confirm in Discord: "✅ Scheduled for publication on [date]: [title] → apolloagent.ai/blog/<slug> (GSC indexing submitted)"
 
 ### Jared Requests Changes
 When Jared gives feedback:
@@ -99,7 +157,7 @@ If a draft is still "pending_review" at 7:00 AM on its publish date:
    - Are statistics sourced and not fabricated?
    - Are tool recommendations accurate (features exist, pricing correct)?
    - No misrepresentations or unsupported claims?
-2. If passes → publish automatically, notify Discord
+2. If passes → publish automatically (follow steps 1–8 from "Jared Approves" section, including adding cards to index + category pages)
 3. If fails → alert Discord: "⚠️ Blog draft [title] needs review — factual concerns found"
 
 ## Content Standards
