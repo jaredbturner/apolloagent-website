@@ -1,6 +1,6 @@
 # Apollo Intelligence Blog — Publishing Process
 
-_Last updated: May 12, 2026_
+_Last updated: May 13, 2026_
 
 ## Overview
 
@@ -168,6 +168,7 @@ If a draft is still "pending_review" at 7:00 AM on its publish date:
 - Clear H1 title with target keywords
 - Meta description (under 160 chars)
 - Schema markup (Article type, author: Jared Turner)
+- **One inline article image** (see Image Requirements below)
 - Internal links (2–3 to other blog posts or service pages) — **mandatory, not optional**. Every article body must contain at least 2 contextual internal links to other blog posts. Link naturally within paragraphs, not just in the "Related Articles" section.
 - CTA at the end: book a free strategy call at apolloagent.ai
 - Open Graph tags for social sharing
@@ -186,6 +187,52 @@ If a draft is still "pending_review" at 7:00 AM on its publish date:
 - ❌ Claiming features that don't exist in recommended tools
 - ❌ More than 2 affiliate links per article (stay editorial)
 - ❌ Generic "AI is transforming everything" openings
+
+## Image Requirements
+
+Every blog post must include **one AI-generated hero image** embedded inline within the article body.
+
+### Generation
+- Generate using `image_generate` tool with a prompt matching the article topic and apolloagent.ai brand style (dark navy/slate background, orange accents, editorial illustration or conceptual graphic)
+- Aspect ratio: **16:9**
+- Style: professional editorial — clean, conceptual, slightly witty where appropriate. No stock photo look.
+
+### Format & Optimization
+- Convert the generated PNG to **WebP** using `cwebp -q 85`
+- Target output size: under 200KB
+- Save to: `website/images/blog/<slug>-hero.webp`
+- Never embed a raw PNG in a published post
+
+### Placement
+- Place the image **inline in the article body** — not as a full-width banner above the content
+- Best position: immediately before the first major `<h2>` section (typically the second or third section of the article)
+- Wrap in a `<figure>` tag with a `<figcaption>` describing the image in one sentence
+- Use `loading="lazy"` and `decoding="async"` on the `<img>` tag
+- Include descriptive `alt` text for accessibility and SEO
+
+### OG Image
+- Update the `<meta property="og:image">` tag to point to the published WebP URL: `https://apolloagent.ai/images/blog/<slug>-hero.webp`
+
+### HTML Template
+```html
+<figure class="my-8">
+  <img
+    src="/images/blog/<slug>-hero.webp"
+    alt="Descriptive alt text for the image"
+    width="1536"
+    height="1024"
+    loading="lazy"
+    decoding="async"
+    class="w-full rounded-xl shadow-lg"
+  />
+  <figcaption class="text-center text-sm text-slate-400 mt-3">One-sentence caption that adds context.</figcaption>
+</figure>
+```
+
+### Publish Checklist Addition
+When publishing (manual or auto), the image WebP must be committed alongside the HTML: `git add images/blog/<slug>-hero.webp blog/<slug>.html`
+
+---
 
 ## Research Sources
 Same as newsletter — see NEWSLETTER_PROCESS.md for Tier 1 and Tier 2 sources.
