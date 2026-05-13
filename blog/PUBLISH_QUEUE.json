@@ -53,6 +53,15 @@
       "draftPath": "drafts/ecommerce-scaled-5m-3-person-team-ai.html",
       "publishedUrl": "https://apolloagent.ai/blog/ecommerce-scaled-5m-3-person-team-ai",
       "linkedInPosted": true
+    },
+    {
+      "slug": "ai-hype-detector",
+      "title": "The AI Hype Detector: How to Tell Real AI Value from Marketing Fluff",
+      "status": "published",
+      "publishDate": "2026-05-15",
+      "draftPath": "drafts/ai-hype-detector.html",
+      "publishedUrl": "https://apolloagent.ai/blog/ai-hype-detector",
+      "linkedInPosted": false
     }
   ]
 }
