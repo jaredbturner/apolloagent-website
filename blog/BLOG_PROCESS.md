@@ -1,6 +1,6 @@
 # Apollo Intelligence Blog — Publishing Process
 
-_Last updated: May 13, 2026_
+_Last updated: May 14, 2026_
 
 ## Overview
 
@@ -140,11 +140,12 @@ When Jared replies "publish <filename>":
 3. **Do NOT git push immediately.** Instead, schedule the git push for the publish date:
    - Set a cron job to run at 7:00 AM MT on the publish date that does: `git add . && git commit -m "Publish blog: <title>" && git push`
    - Update `PUBLISH_QUEUE.json` status to "published" only after the scheduled push
-4. Add the new post URL to `sitemap.xml`
-5. Add the new post card to `blog/index.html` (with correct `data-category` attribute — see Category Mapping table). **Insert at the top of the article grid** (newest post first). The grid must always be ordered newest → oldest.
-6. Add the new post card to **every relevant category page** (see Category Mapping). **Insert the card so the page remains in newest → oldest order.** If a post spans multiple categories (e.g., role-guides + industry-guides), add it to all applicable pages. Replace any "More articles coming soon" placeholder if present.
-7. Submit the new URL to Google Search Console Indexing API: `python3 scripts/gsc_index.py https://apolloagent.ai/blog/<slug>` (if the script exists)
-8. Confirm in Discord: "✅ Scheduled for publication on [date]: [title] → apolloagent.ai/blog/<slug> (GSC indexing submitted)"
+4. Add the new post URL to `sitemap.xml` — also update `<lastmod>` on the homepage (`/`) and `/blog/` entries to today's date.
+5. **Rotate the homepage "From the Blog" section** (`index.html`) to show the 3 most recent published posts. Replace the oldest card with the new post's card. The 3 cards must always reflect the most recently published articles. Use the same card HTML structure (gradient, badge, title, description, date, read time).
+6. Add the new post card to `blog/index.html` (with correct `data-category` attribute — see Category Mapping table). **Insert at the top of the article grid** (newest post first). The grid must always be ordered newest → oldest.
+7. Add the new post card to **every relevant category page** (see Category Mapping). **Insert the card so the page remains in newest → oldest order.** If a post spans multiple categories (e.g., role-guides + industry-guides), add it to all applicable pages. Replace any "More articles coming soon" placeholder if present.
+8. Submit the new URL to Google Search Console Indexing API: `python3 scripts/gsc_index.py https://apolloagent.ai/blog/<slug>` (if the script exists)
+9. Confirm in Discord: "✅ Scheduled for publication on [date]: [title] → apolloagent.ai/blog/<slug> (GSC indexing submitted)"
 
 ### Jared Requests Changes
 When Jared gives feedback:
@@ -159,7 +160,7 @@ If a draft is still "pending_review" at 7:00 AM on its publish date:
    - Are statistics sourced and not fabricated?
    - Are tool recommendations accurate (features exist, pricing correct)?
    - No misrepresentations or unsupported claims?
-2. If passes → publish automatically (follow steps 1–8 from "Jared Approves" section, including adding cards to index + category pages in newest → oldest order)
+2. If passes → publish automatically (follow steps 1–9 from "Jared Approves" section, including rotating homepage cards, adding cards to index + category pages in newest → oldest order)
 3. If fails → alert Discord: "⚠️ Blog draft [title] needs review — factual concerns found"
 
 ## Content Standards
