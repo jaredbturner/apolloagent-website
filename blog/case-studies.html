@@ -14,6 +14,8 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
   <link rel="apple-touch-icon" sizes="192x192" href="/favicon-192.png" />
   <meta property="og:image" content="https://apolloagent.ai/favicon-512.png" />
+  <link rel="preconnect" href="https://www.googletagmanager.com" />
+  <link rel="preconnect" href="https://subscribe-forms.beehiiv.com" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com"></script>
@@ -36,21 +38,44 @@
 </head>
 <body class="antialiased">
 
+  <!-- SKIP TO CONTENT -->
+  <a href="#main-content" class="sr-only focus:not-sr-only" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;" onFocus="this.style.cssText='position:static;width:auto;height:auto;overflow:visible;padding:8px 16px;background:#3b52d4;color:#fff;z-index:9999;border-radius:4px;'" onBlur="this.style.cssText='position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;'">Skip to main content</a>
+
   <!-- NAV -->
   <nav class="sticky top-0 z-50 bg-white border-b border-slate-100">
-    <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+    <div class="max-w-6xl mx-auto px-6 h-14 md:h-20 flex items-center justify-between">
       <a href="/" class="flex items-center">
-        <img src="/logo.png" alt="Apollo Intelligence" class="h-16 w-auto" />
+        <img src="/logo.png" alt="Apollo Intelligence" class="h-10 md:h-16 w-auto" />
       </a>
+      <!-- DESKTOP NAV -->
       <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
-        <a href="/#services" class="hover:text-slate-900 transition">Services</a>
-        <a href="/#pricing" class="hover:text-slate-900 transition">Pricing</a>
-        <a href="/blog/" class="text-slate-900 font-semibold transition">Blog</a>
-        <a href="/#faq" class="hover:text-slate-900 transition">FAQ</a>
+        <a href="/#services" class="hover:text-slate-900 transition py-2">Services</a>
+        <a href="/#pricing" class="hover:text-slate-900 transition py-2">Pricing</a>
+        <a href="/blog/" class="text-slate-900 font-semibold transition py-2">Blog</a>
+        <a href="/#faq" class="hover:text-slate-900 transition py-2">FAQ</a>
       </div>
-      <a href="mailto:hello@apolloagent.ai" class="bg-brand text-white text-sm font-semibold px-4 py-2 rounded-lg hover:bg-brand-dark transition">Book a Call</a>
+      <!-- HAMBURGER BUTTON -->
+      <button id="mobile-menu-btn" class="md:hidden flex flex-col gap-1.5 w-10 h-10 items-center justify-center" aria-label="Toggle mobile menu" aria-expanded="false">
+        <span class="w-6 h-0.5 bg-slate-900 transition duration-300" id="menu-line-1"></span>
+        <span class="w-6 h-0.5 bg-slate-900 transition duration-300" id="menu-line-2"></span>
+        <span class="w-6 h-0.5 bg-slate-900 transition duration-300" id="menu-line-3"></span>
+      </button>
+      <a href="https://calendly.com/hello-apolloagent/30min" class="hidden sm:block bg-brand text-white text-sm font-semibold px-4 py-2 rounded-lg hover:bg-brand-dark transition">Book a Call</a>
     </div>
   </nav>
+
+  <!-- MOBILE MENU -->
+  <div id="mobile-menu" style="display:none;position:fixed;inset:0;top:56px;z-index:40;background:#fff;overflow-y:auto;" class="md:hidden">
+    <div class="px-6 py-8 space-y-4">
+      <a href="/#services" class="block text-lg font-medium text-slate-900 hover:text-brand transition py-3 px-2">Services</a>
+      <a href="/#pricing" class="block text-lg font-medium text-slate-900 hover:text-brand transition py-3 px-2">Pricing</a>
+      <a href="/blog/" class="block text-lg font-medium text-slate-900 hover:text-brand transition py-3 px-2">Blog</a>
+      <a href="/#faq" class="block text-lg font-medium text-slate-900 hover:text-brand transition py-3 px-2">FAQ</a>
+      <div class="border-t border-slate-100 pt-4 mt-4">
+        <a href="https://calendly.com/hello-apolloagent/30min" target="_blank" rel="noopener" class="block bg-brand text-white text-center font-semibold py-3 rounded-lg hover:bg-brand-dark transition">Book a Call</a>
+      </div>
+    </div>
+  </div>
 
   <!-- BREADCRUMB -->
   <div class="bg-white border-b border-slate-100 px-6 py-3">
@@ -176,5 +201,41 @@
     </div>
   </footer>
 
+
+  // ── Mobile menu toggle ──────────────────────────────────────────────────────
+  (function() {
+    var btn = document.getElementById('mobile-menu-btn');
+    var menu = document.getElementById('mobile-menu');
+    var l1 = document.getElementById('menu-line-1');
+    var l2 = document.getElementById('menu-line-2');
+    var l3 = document.getElementById('menu-line-3');
+    if (!btn || !menu) return;
+    function openMenu() {
+      menu.style.display = 'block';
+      btn.setAttribute('aria-expanded', 'true');
+      l1.style.transform = 'rotate(45deg) translateY(8px)';
+      l2.style.opacity = '0';
+      l3.style.transform = 'rotate(-45deg) translateY(-8px)';
+      document.body.style.overflow = 'hidden';
+    }
+    function closeMenu() {
+      menu.style.display = 'none';
+      btn.setAttribute('aria-expanded', 'false');
+      l1.style.transform = 'none';
+      l2.style.opacity = '1';
+      l3.style.transform = 'none';
+      document.body.style.overflow = '';
+    }
+    btn.addEventListener('click', function() {
+      menu.style.display === 'block' ? closeMenu() : openMenu();
+    });
+    menu.querySelectorAll('a').forEach(function(a) {
+      a.addEventListener('click', closeMenu);
+    });
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') closeMenu();
+    });
+  })();
+  // ───────────────────────────────────────────────────────────────────────────
 </body>
 </html>
