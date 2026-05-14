@@ -194,10 +194,13 @@ def fix_cta_section_h2(html):
     return html
 
 def inject_mobile_menu_js(html):
-    """Inject mobile menu JS before </body> if not already present."""
+    """Inject mobile menu JS - before </body> if present, else at end of file."""
     if 'Mobile menu toggle' in html:
         return html
-    return html.replace('</body>', MOBILE_MENU_JS + '</body>', 1)
+    if '</body>' in html:
+        return html.replace('</body>', MOBILE_MENU_JS + '</body>', 1)
+    # Files that don't have </body> (e.g. truncated blog articles) - append at end
+    return html.rstrip() + '\n' + MOBILE_MENU_JS
 
 def fix_blog_card_grid(html):
     """Change blog card grid from md:grid-cols-3 to md:grid-cols-2 lg:grid-cols-3."""

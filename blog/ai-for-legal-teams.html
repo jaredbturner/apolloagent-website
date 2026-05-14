@@ -121,6 +121,19 @@
     </div>
   </div>
 
+  <!-- MOBILE MENU -->
+  <div id="mobile-menu" style="display:none;position:fixed;inset:0;top:56px;z-index:40;background:#fff;overflow-y:auto;" class="md:hidden">
+    <div class="px-6 py-8 space-y-4">
+      <a href="/#services" class="block text-lg font-medium text-slate-900 hover:text-brand transition py-3 px-2">Services</a>
+      <a href="/#pricing" class="block text-lg font-medium text-slate-900 hover:text-brand transition py-3 px-2">Pricing</a>
+      <a href="/blog/" class="block text-lg font-medium text-slate-900 hover:text-brand transition py-3 px-2">Blog</a>
+      <a href="/#faq" class="block text-lg font-medium text-slate-900 hover:text-brand transition py-3 px-2">FAQ</a>
+      <div class="border-t border-slate-100 pt-4 mt-4">
+        <a href="https://calendly.com/hello-apolloagent/30min" target="_blank" rel="noopener" class="block bg-brand text-white text-center font-semibold py-3 rounded-lg hover:bg-brand-dark transition">Book a Call</a>
+      </div>
+    </div>
+  </div>
+
   <!-- HERO -->
   <section class="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-700 py-24 px-6 relative">
     <div class="max-w-4xl mx-auto text-center relative z-10">
@@ -402,3 +415,39 @@
   <script>
     (function() {
       const headings = document.querySelectorAll('.article-
+
+  // ── Mobile menu toggle ──────────────────────────────────────────────────────
+  (function() {
+    var btn = document.getElementById('mobile-menu-btn');
+    var menu = document.getElementById('mobile-menu');
+    var l1 = document.getElementById('menu-line-1');
+    var l2 = document.getElementById('menu-line-2');
+    var l3 = document.getElementById('menu-line-3');
+    if (!btn || !menu) return;
+    function openMenu() {
+      menu.style.display = 'block';
+      btn.setAttribute('aria-expanded', 'true');
+      l1.style.transform = 'rotate(45deg) translateY(8px)';
+      l2.style.opacity = '0';
+      l3.style.transform = 'rotate(-45deg) translateY(-8px)';
+      document.body.style.overflow = 'hidden';
+    }
+    function closeMenu() {
+      menu.style.display = 'none';
+      btn.setAttribute('aria-expanded', 'false');
+      l1.style.transform = 'none';
+      l2.style.opacity = '1';
+      l3.style.transform = 'none';
+      document.body.style.overflow = '';
+    }
+    btn.addEventListener('click', function() {
+      menu.style.display === 'block' ? closeMenu() : openMenu();
+    });
+    menu.querySelectorAll('a').forEach(function(a) {
+      a.addEventListener('click', closeMenu);
+    });
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') closeMenu();
+    });
+  })();
+  // ───────────────────────────────────────────────────────────────────────────
