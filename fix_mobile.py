@@ -87,6 +87,7 @@ BLOG_INDEX_NAV_NEW = '''  <!-- NAV -->
   </div>'''
 
 MOBILE_MENU_JS = '''
+  <script>
   // ── Mobile menu toggle ──────────────────────────────────────────────────────
   (function() {
     var btn = document.getElementById('mobile-menu-btn');
@@ -122,6 +123,7 @@ MOBILE_MENU_JS = '''
     });
   })();
   // ───────────────────────────────────────────────────────────────────────────
+  </script>
 '''
 
 # ─── Transformation helpers ───────────────────────────────────────────────────
