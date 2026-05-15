@@ -170,8 +170,17 @@ def fix_homepage_nav(html):
     """Already patched in-place; just ensure mobile menu JS is present."""
     return html
 
+def remove_old_mobile_menus(html):
+    """Remove any existing mobile-menu div blocks (to prevent duplicates from re-runs)."""
+    # Remove all <div id="mobile-menu"...>...</div>  </div> blocks
+    pattern = r'  <div id="mobile-menu"[^>]*>.*?</div>\s*</div>'
+    html = re.sub(pattern, '', html, flags=re.DOTALL)
+    return html
+
 def fix_blog_nav(html, is_article=True):
     """Replace the blog page nav with the mobile-friendly version."""
+    # First, remove any old mobile-menu divs to prevent duplicates
+    html = remove_old_mobile_menus(html)
     # Match the nav block (from <!-- NAV --> to </nav>)
     # We'll match the entire old nav + inject new nav + mobile menu
     pattern = r'  <!-- NAV -->\s*<nav[^>]*>.*?</nav>'
@@ -213,8 +222,10 @@ def fix_cta_section_h2(html):
 
 def inject_mobile_menu_js(html):
     """Inject mobile menu JS - before </body> if present, else at end of file."""
-    if 'Mobile menu toggle' in html:
-        return html
+    # First remove any existing mobile menu toggle JS blocks to prevent duplicates
+    html = re.sub(r'\s*<script>\s*// ── Mobile menu toggle.*?// ───────────────────────────────────────────────────────────────────────────\s*</script>', '', html, flags=re.DOTALL)
+    # Also remove unwrapped (no <script> tag) versions that may exist from old runs
+    html = re.sub(r'\s*// ── Mobile menu toggle.*?// ───────────────────────────────────────────────────────────────────────────', '', html, flags=re.DOTALL)
     if '</body>' in html:
         return html.replace('</body>', MOBILE_MENU_JS + '</body>', 1)
     # Files that don't have </body> (e.g. truncated blog articles) - append at end
