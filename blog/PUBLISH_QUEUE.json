@@ -62,6 +62,15 @@
       "draftPath": "drafts/ai-hype-detector.html",
       "publishedUrl": "https://apolloagent.ai/blog/ai-hype-detector",
       "linkedInPosted": false
+    },
+    {
+      "slug": "building-first-ai-automation",
+      "title": "Building Your First AI Automation: A Weekend Project for Business Owners",
+      "status": "published",
+      "publishDate": "2026-05-16",
+      "draftPath": "drafts/building-first-ai-automation.html",
+      "publishedUrl": "https://apolloagent.ai/blog/building-first-ai-automation",
+      "linkedInPosted": false
     }
   ]
 }

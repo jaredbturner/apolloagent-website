@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="canonical" href="https://apolloagent.ai/blog/building-first-ai-automation" />
+  <title>Building Your First AI Automation: A Weekend Project for Business Owners — Apollo Intelligence</title>
+  <meta name="description" content="A practical, no-code guide to building your first real AI automation in a single weekend — choose a process, map it, pick the tools, and ship it. No technical background required." />
+  <meta property="og:title" content="Building Your First AI Automation: A Weekend Project for Business Owners — Apollo Intelligence" />
+  <meta property="og:description" content="A practical, no-code guide to building your first real AI automation in a single weekend — choose a process, map it, pick the tools, and ship it. No technical background required." />
+  <meta property="og:url" content="https://apolloagent.ai/blog/building-first-ai-automation" />
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="https://apolloagent.ai/images/blog/building-first-ai-automation-hero.webp" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Building Your First AI Automation: A Weekend Project for Business Owners",
+    "description": "A practical, no-code guide to building your first real AI automation in a single weekend — choose a process, map it, pick the tools, and ship it. No technical background required.",
+    "author": {
+      "@type": "Person",
+      "name": "Jared Turner",
+      "jobTitle": "Founder & CEO",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Apollo Intelligence LLC"
+      }
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Apollo Intelligence LLC",
+      "url": "https://apolloagent.ai",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://apolloagent.ai/logo.png"
+      }
+    },
+    "datePublished": "2026-05-16",
+    "dateModified": "2026-05-16",
+    "mainEntityOfPage": "https://apolloagent.ai/blog/building-first-ai-automation"
+  }
+  </script>
+
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
+  <link rel="apple-touch-icon" sizes="192x192" href="/favicon-192.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'sans-serif'] },
+          colors: {
+            brand: { DEFAULT: '#4F6EF7', dark: '#3B57E8', light: '#EEF1FE' }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; background: #ffffff; color: #0f172a; }
+    .article-body h2 { font-size: 1.5rem; font-weight: 700; color: #0f172a; margin-top: 2.5rem; margin-bottom: 1rem; }
+    .article-body h3 { font-size: 1.25rem; font-weight: 600; color: #0f172a; margin-top: 2rem; margin-bottom: 0.75rem; }
+    .article-body p { color: #475569; line-height: 1.8; margin-bottom: 1.25rem; }
+    .article-body ul, .article-body ol { color: #475569; line-height: 1.8; margin-bottom: 1.25rem; padding-left: 1.5rem; }
+    .article-body ul { list-style-type: disc; }
+    .article-body ol { list-style-type: decimal; }
+    .article-body li { margin-bottom: 0.5rem; }
+    .article-body blockquote { border-left: 4px solid #4F6EF7; padding-left: 1.25rem; margin: 1.5rem 0; color: #334155; font-style: italic; }
+    .article-body strong { color: #0f172a; }
+    .toc-link { transition: color 0.15s; }
+    .toc-link:hover { color: #4F6EF7; }
+    .toc-link.active { color: #4F6EF7; font-weight: 600; }
+  </style>
+</head>
+<body class="antialiased">
+
+  <!-- NAV -->
+  <nav class="sticky top-0 z-50 bg-white border-b border-slate-100">
+    <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+      <a href="/" class="flex items-center">
+        <img src="/logo.png" alt="Apollo Intelligence" class="h-16 w-auto" />
+      </a>
+      <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
+        <a href="/#services" class="hover:text-slate-900 transition">Services</a>
+        <a href="/#pricing" class="hover:text-slate-900 transition">Pricing</a>
+        <a href="/blog/" class="text-slate-900 font-semibold transition">Blog</a>
+        <a href="/#faq" class="hover:text-slate-900 transition">FAQ</a>
+      </div>
+      <a href="https://calendly.com/hello-apolloagent/30min" class="bg-brand text-white text-sm font-semibold px-4 py-2 rounded-lg hover:bg-brand-dark transition">Book a Call</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="bg-gradient-to-br from-indigo-900 via-slate-800 to-slate-900 py-24 px-6 relative">
+    <div class="max-w-4xl mx-auto text-center relative z-10">
+      <span class="text-xs font-bold uppercase tracking-wider text-indigo-200 bg-indigo-500/20 px-3 py-1 rounded-full">Business Automation</span>
+      <h1 class="text-4xl md:text-5xl font-extrabold text-white leading-tight mt-6 mb-6">Building Your First AI Automation: A Weekend Project for Business Owners</h1>
+      <div class="flex flex-wrap items-center justify-center gap-4 text-sm text-slate-300">
+        <div class="flex items-center gap-2">
+          <div class="w-8 h-8 bg-slate-600 rounded-full flex items-center justify-center text-white font-bold text-xs">JT</div>
+          <span>Jared Turner</span>
+        </div>
+        <span>&middot;</span>
+        <span>May 16, 2026</span>
+        <span>&middot;</span>
+        <span>7 min read</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ARTICLE CONTENT -->
+  <section class="py-16 px-6">
+    <div class="max-w-6xl mx-auto flex gap-12">
+
+      <!-- TABLE OF CONTENTS -->
+      <aside class="hidden lg:block w-56 shrink-0">
+        <div class="sticky top-28">
+          <p class="text-xs font-semibold text-slate-400 uppercase tracking-widest mb-4">Table of Contents</p>
+          <nav class="space-y-3 text-sm">
+            <a href="#why-this-weekend" class="block toc-link text-slate-500">Why This Weekend</a>
+            <a href="#choose-your-process" class="block toc-link text-slate-500">Step 1: Choose Your Process</a>
+            <a href="#map-the-workflow" class="block toc-link text-slate-500">Step 2: Map the Workflow</a>
+            <a href="#pick-your-tools" class="block toc-link text-slate-500">Step 3: Pick Your Tools</a>
+            <a href="#build-and-test" class="block toc-link text-slate-500">Step 4: Build and Test</a>
+            <a href="#measure-results" class="block toc-link text-slate-500">Step 5: Measure Results</a>
+            <a href="#what-comes-next" class="block toc-link text-slate-500">What Comes Next</a>
+          </nav>
+        </div>
+      </aside>
+
+      <!-- MOBILE TOC -->
+      <div class="lg:hidden w-full">
+        <details class="mb-8 bg-slate-50 rounded-xl p-4 border border-slate-100">
+          <summary class="font-semibold text-slate-900 cursor-pointer text-sm">Table of Contents</summary>
+          <nav class="mt-3 space-y-2 text-sm">
+            <a href="#why-this-weekend" class="block text-slate-500 hover:text-brand">Why This Weekend</a>
+            <a href="#choose-your-process" class="block text-slate-500 hover:text-brand">Step 1: Choose Your Process</a>
+            <a href="#map-the-workflow" class="block text-slate-500 hover:text-brand">Step 2: Map the Workflow</a>
+            <a href="#pick-your-tools" class="block text-slate-500 hover:text-brand">Step 3: Pick Your Tools</a>
+            <a href="#build-and-test" class="block text-slate-500 hover:text-brand">Step 4: Build and Test</a>
+            <a href="#measure-results" class="block text-slate-500 hover:text-brand">Step 5: Measure Results</a>
+            <a href="#what-comes-next" class="block text-slate-500 hover:text-brand">What Comes Next</a>
+          </nav>
+        </details>
+      </div>
+
+      <!-- ARTICLE BODY -->
+      <div class="max-w-[720px] mx-auto w-full">
+
+        <!-- Author + Share Row -->
+        <div class="flex flex-wrap items-center justify-between gap-4 mb-10 pb-8 border-b border-slate-100">
+          <div class="flex items-center gap-3">
+            <div class="w-12 h-12 bg-slate-200 rounded-full flex items-center justify-center text-slate-500 font-bold">JT</div>
+            <div>
+              <div class="font-semibold text-slate-900 text-sm">Jared Turner</div>
+              <div class="text-xs text-slate-400">Founder &amp; CEO, Apollo Intelligence</div>
+            </div>
+          </div>
+          <div class="flex items-center gap-3">
+            <a href="https://twitter.com/intent/tweet?text=Building+Your+First+AI+Automation%3A+A+Weekend+Project+for+Business+Owners&url=https://apolloagent.ai/blog/building-first-ai-automation" target="_blank" rel="noopener" class="text-slate-400 hover:text-slate-600 transition" title="Share on Twitter">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://apolloagent.ai/blog/building-first-ai-automation" target="_blank" rel="noopener" class="text-slate-400 hover:text-slate-600 transition" title="Share on LinkedIn">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Article Content -->
+        <div class="article-body">
+
+          <p>Every business owner I've spoken with this year has said some version of the same thing: "I know I should be doing more with AI, but I don't know where to start." The irony is that the answer to that question is sitting right in their own operations — hiding in plain sight as the tasks they've done the same way, manually, every single week for years.</p>
+
+          <p>This guide isn't about evaluating tools or building an AI strategy. It's about shipping one real, working automation by Sunday night. The kind that actually runs, actually saves you time, and — crucially — actually proves to you that this is possible without a developer on staff. One weekend, one process, one automation. That's the whole scope.</p>
+
+          <h2 id="why-this-weekend">Why This Weekend Specifically</h2>
+
+          <p>The biggest enemy of automation isn't complexity. It's the endless loop of "I'll get to it when things slow down." Things don't slow down. The time to build is when you've carved out intentional space for it — which is exactly what a weekend allows.</p>
+
+          <p>The weekend framing also sets useful constraints. You're not architecting an enterprise automation platform. You're solving one specific problem for yourself. That constraint forces clarity: you pick the most painful process, not the most ambitious one. You use available tools instead of researching every option. You accept "working and useful" as the success criteria, not "perfect."</p>
+
+          <p>The businesses that are pulling ahead with AI right now aren't the ones with the most sophisticated strategies — they're the ones that shipped something. The gap between knowing about automation and having one running is smaller than you think. Let's close it.</p>
+
+          <figure class="my-8">
+            <img
+              src="/images/blog/building-first-ai-automation-hero.webp"
+              alt="A laptop displaying a visual AI workflow automation diagram with connected nodes on a dark navy background with orange accents"
+              width="1536"
+              height="1024"
+              loading="lazy"
+              decoding="async"
+              class="w-full rounded-xl shadow-lg"
+            />
+            <figcaption class="text-center text-sm text-slate-400 mt-3">A no-code AI automation workflow lives entirely in the browser — no servers, no code, no IT department required.</figcaption>
+          </figure>
+
+          <h2 id="choose-your-process">Step 1: Choose Your Process (Saturday Morning — 1 hour)</h2>
+
+          <p>Not every process is worth automating first. You want one that hits all three of these criteria: it happens at least weekly, it follows a predictable sequence of steps, and it doesn't require your judgment at every turn. The absence of any one of these makes the automation harder to build and less valuable when it runs.</p>
+
+          <p>Here are the five most consistently automatable first projects I see across businesses of every type:</p>
+
+          <ul>
+            <li><strong>New lead intake:</strong> Someone fills out a contact form → their info gets logged to a CRM, tagged, and an acknowledgment email goes out automatically</li>
+            <li><strong>Invoice receipt processing:</strong> An email arrives with a PDF invoice → the key fields (vendor, amount, due date) get extracted and logged to a spreadsheet or accounting tool</li>
+            <li><strong>Weekly performance report:</strong> Every Monday morning, key metrics from Google Analytics, your CRM, and a spreadsheet get pulled together into a summary delivered to your inbox</li>
+            <li><strong>Social media republishing:</strong> A new blog post goes live → social captions are generated and queued for LinkedIn and X automatically</li>
+            <li><strong>Customer support ticket tagging:</strong> Incoming support emails get classified by type (billing, technical, general) and routed to the right person or folder</li>
+          </ul>
+
+          <p>Pick the one that causes you the most friction. Not the most impressive one on paper — the most annoying one in your actual week. That's your target.</p>
+
+          <blockquote>
+            "The best first automation is the one you do manually on autopilot. If you're doing it without thinking, the machine can do it without thinking too."
+          </blockquote>
+
+          <h2 id="map-the-workflow">Step 2: Map the Workflow (Saturday Morning — 1 hour)</h2>
+
+          <p>Before you touch any tool, write out exactly what happens in your chosen process today. Step by step, trigger to outcome. This doesn't need to be formal — a notes app or a piece of paper works fine. What you're looking for is the answer to four questions:</p>
+
+          <ol>
+            <li><strong>What starts this process?</strong> (A new email arrives, a form is submitted, a calendar event ends, it's Monday at 9 AM)</li>
+            <li><strong>What information does it need to work?</strong> (Customer name and email, invoice PDF, this week's sales number from Shopify)</li>
+            <li><strong>What are the steps in between?</strong> (Copy the data, write the email, check a condition, send the message)</li>
+            <li><strong>What does "done" look like?</strong> (A row in a spreadsheet, an email in an inbox, a Slack message posted, a tag applied)</li>
+          </ol>
+
+          <p>This exercise almost always surfaces something valuable: the process is either simpler than you thought, or there's one step in the middle that requires a judgment call. If there's a judgment call, decide now whether you'll remove it (simplify the process), handle it with an AI model, or keep it manual as a human review step. All three are valid. The key is to be deliberate about it before you build.</p>
+
+          <h2 id="pick-your-tools">Step 3: Pick Your Tools (Saturday Afternoon — 1 hour)</h2>
+
+          <p>For a first automation, you want the fewest tools possible. Complexity compounds — every additional tool is another account, another authentication step, another thing to break. Start with one automation platform and one AI model. That's it.</p>
+
+          <p>For the automation platform, <a href="https://www.make.com/en/register?pc=apolloagent" class="text-brand font-semibold hover:underline" target="_blank" rel="noopener">Make.com</a> is my current top recommendation for business owners building their first automation. The visual canvas — where you literally drag and connect modules — makes it far easier to see the logic of what you're building than a text-based tool does. Make's free tier supports 1,000 operations per month, which is more than enough for a first project. The paid plans start at $9/month if you need more. Critically, Make has native connections to over 2,000 apps including Gmail, Google Sheets, Slack, HubSpot, Shopify, Airtable, and OpenAI — which means you almost certainly won't need custom code to connect the tools you're already using.</p>
+
+          <p>For the AI model (if your automation needs one — not all do), Claude via Anthropic's API or GPT-4o via OpenAI's API are both solid choices. Make has a built-in module for both. If your automation is purely moving data from point A to point B without any analysis or text generation, you may not need an AI model at all — Make alone handles the logic.</p>
+
+          <p>One note on tool selection: resist the urge to research every option. The cost of picking a slightly suboptimal tool is small. The cost of spending four hours comparing tools instead of building is that you end the weekend with nothing running. Pick Make, start building.</p>
+
+          <h2 id="build-and-test">Step 4: Build and Test (Saturday Afternoon + Sunday Morning — 4–6 hours)</h2>
+
+          <p>This is where most people expect things to go wrong — and it's worth reframing. Things will break. That's not a sign that you've failed; it's the normal state of building anything. The goal isn't a perfect first run; it's understanding why it broke and fixing it. Each error teaches you something about how the tools actually work, and that knowledge compounds quickly.</p>
+
+          <h3>The Build Sequence That Works</h3>
+
+          <p>Start with the trigger. In Make, create a new scenario and add your trigger module — the thing that starts the automation. If it's "new email in Gmail," configure that. If it's "new row in Google Sheets," set that up. Run a test to confirm the trigger is receiving data correctly before you build anything downstream. Don't proceed until the trigger is working.</p>
+
+          <p>Add one module at a time. Connect your trigger to the first action step. Test the full scenario with that single step. Confirm the data is flowing correctly. Then add the next module. This incremental approach means that when something breaks, you know exactly which module is responsible — because you only added one thing since the last successful test.</p>
+
+          <p>Use Make's built-in history and error logs liberally. When a run fails, Make shows you exactly which module failed and what data it received. This is enormously valuable for debugging. Don't try to guess — look at the logs.</p>
+
+          <p>For the AI step (if you have one), your prompt is the thing most worth iterating on. Start with a simple, direct instruction: "Extract the vendor name, invoice amount, and due date from the following text. Return as JSON." Test it with five real examples. Adjust the prompt based on where it gets things wrong. You'll typically converge on a reliable prompt within 3–4 iterations.</p>
+
+          <h3>Common First-Build Issues and Their Fixes</h3>
+
+          <ul>
+            <li><strong>Authentication errors:</strong> You connected a Google account but Make is asking for permission again. Solution: reconnect the account within the module settings and re-authorize. Common after initial setup.</li>
+            <li><strong>Missing fields:</strong> Your automation expects a field (like "customer email") but it's not in the data. Solution: trace back to the trigger and find where the data is actually structured. The field name in Make must match exactly.</li>
+            <li><strong>AI output not parsing correctly:</strong> Your prompt asks for JSON but the model returns it wrapped in markdown code fences. Solution: update your prompt to say "Return only the raw JSON, no markdown formatting." Alternatively, add a text-processing module after the AI step to strip the formatting.</li>
+            <li><strong>Scenario not triggering:</strong> You've set up the trigger but nothing runs when you test. Solution: use Make's "Run once" button to force a manual trigger while debugging. Once you confirm it works manually, re-enable the schedule.</li>
+          </ul>
+
+          <!-- MID-ARTICLE CTA -->
+          <div class="bg-brand-light border border-brand/20 rounded-2xl p-8 my-10">
+            <h3 class="text-lg font-bold text-slate-900 mb-2">Rather have someone build it for you?</h3>
+            <p class="text-slate-600 mb-4">We design and build custom AI automation systems for small and mid-size businesses. If you'd rather skip the learning curve and have a working system this week, book a free 30-minute strategy call.</p>
+            <a href="https://calendly.com/hello-apolloagent/30min" class="inline-block bg-brand text-white font-semibold px-6 py-3 rounded-xl hover:bg-brand-dark transition">Book a Free Strategy Call &rarr;</a>
+          </div>
+
+          <h2 id="measure-results">Step 5: Measure Results (Sunday Afternoon — 30 minutes)</h2>
+
+          <p>Once your automation is running, take 30 minutes to establish a baseline measurement before you declare victory and move on. This matters because (a) it tells you whether the automation is actually working reliably, and (b) it gives you the ROI numbers you'll want when you're making the case for the next one.</p>
+
+          <p>The three things worth tracking for any first automation:</p>
+
+          <ul>
+            <li><strong>Time saved per week:</strong> How many minutes did this process take manually? Multiply by how many times it runs per week. That's your weekly time saving. For context: a basic lead intake automation that fires 20 times per week and saves 5 minutes per instance saves you over an hour and a half weekly — roughly 80 hours per year.</li>
+            <li><strong>Error rate:</strong> In Make, you can see how many runs succeeded vs. failed. Aim for &gt;95% success in the first two weeks. If you're below that, investigate the failures rather than accepting them.</li>
+            <li><strong>Output quality (if AI is involved):</strong> Spot-check 10 AI outputs per week for the first month. Are they accurate? Appropriately formatted? Consistent? Catch quality drift early, before it causes a downstream problem.</li>
+          </ul>
+
+          <p>Put these three numbers in a note somewhere you'll actually see them. Even a simple note that says "Lead intake automation: saves 90 min/week, 98% success rate, AI accuracy consistently good" is enough. If the numbers are strong, this becomes your template for the next automation. If something's off, you know exactly what to fix.</p>
+
+          <h2 id="what-comes-next">What Comes Next</h2>
+
+          <p>By Sunday evening, you'll have done something that most business owners are still talking about doing: you built something real. One automation that runs without you. That's a meaningful shift — not just in operational efficiency, but in how you think about your business's relationship to repetitive work.</p>
+
+          <p>The compounding effect of this is where the real value lives. The second automation is easier to build than the first because you understand the tools. The third is easier than the second. Within a quarter of iterating this way, it's possible to have five or six automations running simultaneously — the kind of stack we walked through in <a href="/blog/5-ai-automations-small-business" class="text-brand font-semibold hover:underline">5 AI Automations Every Small Business Should Set Up This Quarter</a> — without having hired anyone or written a line of code.</p>
+
+          <p>The most important thing about automation isn't the time you save on individual tasks. It's the operational leverage: your output grows while your input stays roughly the same. A two-person team with well-designed automations can operate like a team of four. A five-person team can operate like a team of eight. That's not a metaphor — it's what we consistently see with clients at Apollo Intelligence.</p>
+
+          <p>If you've already read our guide on <a href="/blog/ai-powered-business-intelligence" class="text-brand font-semibold hover:underline">AI-Powered Business Intelligence: From Raw Data to Weekly Insights</a>, you'll recognize the weekly report automation from Step 1 of this guide as the exact kind of system we described there. Building your first automation often leads directly into building that intelligence layer — because once you start, the next bottleneck becomes obvious.</p>
+
+          <p>Pick your process. Map it. Build it this weekend. The gap between "thinking about automation" and "having automation" is two days and a free Make account. That's it.</p>
+
+        </div>
+
+        <!-- AUTHOR BIO CARD -->
+        <div class="mt-16 pt-8 border-t border-slate-100">
+          <div class="flex items-start gap-5">
+            <div class="w-16 h-16 bg-slate-200 rounded-full flex items-center justify-center text-slate-500 font-bold text-lg shrink-0">JT</div>
+            <div>
+              <h4 class="font-bold text-slate-900">Jared Turner</h4>
+              <p class="text-sm text-slate-400 mb-2">Founder &amp; CEO, Apollo Intelligence</p>
+              <p class="text-sm text-slate-500 leading-relaxed">Jared helps small and mid-size businesses implement AI systems that actually work. Before founding Apollo Intelligence, he spent over a decade in operations and technology consulting, with a focus on making complex tools accessible to non-technical teams.</p>
+              <a href="https://www.linkedin.com/in/jaredturner" target="_blank" rel="noopener" class="text-brand text-sm font-semibold hover:underline mt-2 inline-block">Connect on LinkedIn &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- RELATED ARTICLES -->
+  <section class="bg-slate-50 py-16 px-6">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-2xl font-bold text-slate-900 mb-8">Related Articles</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+
+        <article class="group">
+          <a href="/blog/5-ai-automations-small-business" class="block">
+            <div class="bg-gradient-to-br from-emerald-900 to-emerald-600 rounded-2xl h-40 flex items-end p-5 mb-4">
+              <span class="text-xs font-bold uppercase tracking-wider text-white bg-white/20 px-3 py-1 rounded-full">Business Automation</span>
+            </div>
+            <h3 class="text-base font-bold text-slate-900 mb-1 group-hover:text-brand transition">5 AI Automations Every Small Business Should Set Up This Quarter</h3>
+            <div class="text-xs text-slate-400">Apr 1, 2026 &middot; 6 min read</div>
+          </a>
+        </article>
+
+        <article class="group">
+          <a href="/blog/ai-powered-business-intelligence" class="block">
+            <div class="bg-gradient-to-br from-violet-900 to-violet-600 rounded-2xl h-40 flex items-end p-5 mb-4">
+              <span class="text-xs font-bold uppercase tracking-wider text-white bg-white/20 px-3 py-1 rounded-full">Business Automation</span>
+            </div>
+            <h3 class="text-base font-bold text-slate-900 mb-1 group-hover:text-brand transition">AI-Powered Business Intelligence: From Raw Data to Weekly Insights</h3>
+            <div class="text-xs text-slate-400">Apr 1, 2026 &middot; 7 min read</div>
+          </a>
+        </article>
+
+        <article class="group">
+          <a href="/blog/how-to-write-ai-prompts-that-actually-work-for-business-tasks" class="block">
+            <div class="bg-gradient-to-br from-slate-800 to-slate-600 rounded-2xl h-40 flex items-end p-5 mb-4">
+              <span class="text-xs font-bold uppercase tracking-wider text-white bg-white/20 px-3 py-1 rounded-full">Business Automation</span>
+            </div>
+            <h3 class="text-base font-bold text-slate-900 mb-1 group-hover:text-brand transition">How to Write AI Prompts That Actually Work for Business Tasks</h3>
+            <div class="text-xs text-slate-400">May 7, 2026 &middot; 6 min read</div>
+          </a>
+        </article>
+
+      </div>
+      <div class="text-center mt-10">
+        <a href="/blog/" class="text-brand font-semibold hover:underline">View All Articles &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="bg-brand py-20 px-6">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-4xl font-bold text-white mb-4">Ready to build your first automation?</h2>
+      <p class="text-white text-lg mb-10 opacity-90">Book a free strategy call and we'll map out the exact process to automate first in your business — and build it for you in days, not months.</p>
+      <a href="https://calendly.com/hello-apolloagent/30min" class="bg-white text-brand font-bold px-10 py-4 rounded-xl hover:bg-slate-100 active:bg-slate-200 transition-all duration-150 text-lg inline-block shadow-sm hover:shadow-md">Book Your Free Strategy Call</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-white border-t border-slate-100 py-8 px-6">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-slate-400">
+      <a href="/"><img src="/logo.png" alt="Apollo Intelligence" class="h-12 w-auto" /></a>
+      <div class="flex gap-6">
+        <a href="/#services" class="text-slate-600 hover:text-slate-900 transition">Services</a>
+        <a href="/#pricing" class="text-slate-600 hover:text-slate-900 transition">Pricing</a>
+        <a href="/blog/" class="text-slate-600 hover:text-slate-900 transition">Blog</a>
+        <a href="mailto:hello@apolloagent.ai" class="text-slate-600 hover:text-slate-900 transition">Contact</a>
+      </div>
+      <div class="text-slate-500">&copy; 2026 Apollo Intelligence LLC. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <!-- TOC highlight script -->
+  <script>
+    (function() {
+      const headings = document.querySelectorAll('.article-body h2[id]');
+      const tocLinks = document.querySelectorAll('.toc-link');
+      if (!headings.length || !tocLinks.length) return;
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            tocLinks.forEach(l => l.classList.remove('active'));
+            document.querySelectorAll('.toc-link[href="#' + entry.target.id + '"]').forEach(a => a.classList.add('active'));
+          }
+        });
+      }, { rootMargin: '-80px 0px -70% 0px' });
+      headings.forEach(h => observer.observe(h));
+    })();
+  </script>
+
+</body>
+</html>
