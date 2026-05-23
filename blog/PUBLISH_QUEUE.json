@@ -70,6 +70,24 @@
       "publishDate": "2026-05-16",
       "draftPath": "drafts/building-first-ai-automation.html",
       "publishedUrl": "https://apolloagent.ai/blog/building-first-ai-automation",
+      "linkedInPosted": true
+    },
+    {
+      "slug": "ai-roi-measurement-guide",
+      "title": "How to Measure ROI on Your AI Investments (With Real Formulas)",
+      "status": "pending_review",
+      "publishDate": "2026-05-22",
+      "draftPath": "drafts/ai-roi-measurement-guide.html",
+      "publishedUrl": null,
+      "linkedInPosted": false
+    },
+    {
+      "slug": "ai-for-hr-teams",
+      "title": "AI for HR Teams: Recruiting, Onboarding, and Employee Experience",
+      "status": "published",
+      "publishDate": "2026-05-23",
+      "draftPath": "drafts/ai-for-hr-teams.html",
+      "publishedUrl": "https://apolloagent.ai/blog/ai-for-hr-teams",
       "linkedInPosted": false
     }
   ]
