@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="canonical" href="https://apolloagent.ai/blog/ai-law-firm-intake-case-study" />
+  <title>How a Law Firm Automated 80% of Client Intake with AI Agents — Apollo Intelligence</title>
+  <meta name="description" content="A mid-size law firm was losing $250K/year to missed calls and slow intake. Here's the AI agent stack they built to automate 80% of the process — and what happened to their revenue." />
+  <meta property="og:title" content="How a Law Firm Automated 80% of Client Intake with AI Agents — Apollo Intelligence" />
+  <meta property="og:description" content="A mid-size law firm was losing $250K/year to missed calls and slow intake. Here's the AI agent stack they built to automate 80% of the process — and what happened to their revenue." />
+  <meta property="og:url" content="https://apolloagent.ai/blog/ai-law-firm-intake-case-study" />
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="https://apolloagent.ai/images/blog/ai-law-firm-intake-case-study-hero.webp" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "How a Law Firm Automated 80% of Client Intake with AI Agents",
+    "description": "A mid-size law firm was losing $250K/year to missed calls and slow intake. Here's the AI agent stack they built to automate 80% of the process — and what happened to their revenue.",
+    "author": {
+      "@type": "Person",
+      "name": "Jared Turner",
+      "jobTitle": "Founder & CEO",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Apollo Intelligence LLC"
+      }
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Apollo Intelligence LLC",
+      "url": "https://apolloagent.ai",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://apolloagent.ai/logo.png"
+      }
+    },
+    "datePublished": "2026-06-12",
+    "dateModified": "2026-06-12",
+    "mainEntityOfPage": "https://apolloagent.ai/blog/ai-law-firm-intake-case-study",
+    "image": "https://apolloagent.ai/images/blog/ai-law-firm-intake-case-study-hero.webp"
+  }
+  </script>
+
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
+  <link rel="apple-touch-icon" sizes="192x192" href="/favicon-192.png" />
+  <link rel="preconnect" href="https://www.googletagmanager.com" />
+  <link rel="preconnect" href="https://subscribe-forms.beehiiv.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'sans-serif'] },
+          colors: {
+            brand: { DEFAULT: '#4F6EF7', dark: '#3B57E8', light: '#EEF1FE' }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; background: #ffffff; color: #0f172a; }
+    .article-body h2 { font-size: 1.5rem; font-weight: 700; color: #0f172a; margin-top: 2.5rem; margin-bottom: 1rem; }
+    .article-body h3 { font-size: 1.25rem; font-weight: 600; color: #0f172a; margin-top: 2rem; margin-bottom: 0.75rem; }
+    .article-body p { color: #475569; line-height: 1.8; margin-bottom: 1.25rem; }
+    .article-body ul, .article-body ol { color: #475569; line-height: 1.8; margin-bottom: 1.25rem; padding-left: 1.5rem; }
+    .article-body ul { list-style-type: disc; }
+    .article-body ol { list-style-type: decimal; }
+    .article-body li { margin-bottom: 0.5rem; }
+    .article-body blockquote { border-left: 4px solid #4F6EF7; padding-left: 1.25rem; margin: 1.5rem 0; color: #334155; font-style: italic; }
+    .article-body strong { color: #0f172a; }
+    .toc-link { transition: color 0.15s; }
+    .toc-link:hover { color: #4F6EF7; }
+    .toc-link.active { color: #4F6EF7; font-weight: 600; }
+  </style>
+</head>
+<body class="antialiased">
+
+  <!-- SKIP TO CONTENT -->
+  <a href="#main-content" class="sr-only focus:not-sr-only" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;" onFocus="this.style.cssText='position:static;width:auto;height:auto;overflow:visible;padding:8px 16px;background:#3b52d4;color:#fff;z-index:9999;border-radius:4px;'" onBlur="this.style.cssText='position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;'">Skip to main content</a>
+
+  <!-- NAV -->
+  <nav class="sticky top-0 z-50 bg-white border-b border-slate-100">
+    <div class="max-w-6xl mx-auto px-6 h-14 md:h-20 flex items-center justify-between">
+      <a href="/" class="flex items-center">
+        <picture>
+          <source
+            type="image/webp"
+            srcset="/logo-mobile.webp 656w, /logo-tablet.webp 940w, /logo.webp 1181w"
+            sizes="(max-width: 640px) 328px, 470px" />
+          <img src="/logo.png" alt="Apollo Intelligence" class="h-12 md:h-16 w-auto" width="470" height="160" />
+        </picture>
+      </a>
+      <!-- DESKTOP NAV -->
+      <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
+        <a href="/#services" class="hover:text-slate-900 transition py-2">Services</a>
+        <a href="/#how-it-works" class="hover:text-slate-900 transition py-2">How It Works</a>
+        <a href="/#pricing" class="hover:text-slate-900 transition py-2">Pricing</a>
+        <a href="/blog/" class="text-slate-900 font-semibold transition py-2">Blog</a>
+        <a href="/#faq" class="hover:text-slate-900 transition py-2">FAQ</a>
+      </div>
+      <!-- HAMBURGER MENU BUTTON -->
+      <button id="mobile-menu-btn" class="md:hidden flex flex-col gap-1.5 w-10 h-10 items-center justify-center" aria-label="Toggle mobile menu" aria-expanded="false">
+        <span class="w-6 h-0.5 bg-slate-900 transition duration-300" id="menu-line-1"></span>
+        <span class="w-6 h-0.5 bg-slate-900 transition duration-300" id="menu-line-2"></span>
+        <span class="w-6 h-0.5 bg-slate-900 transition duration-300" id="menu-line-3"></span>
+      </button>
+      <a href="https://calendly.com/hello-apolloagent/30min" target="_blank" rel="noopener" class="hidden sm:block bg-brand text-white text-sm font-semibold px-4 py-2 rounded-lg hover:bg-brand-dark transition">Book a Call</a>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div id="mobile-menu" style="display:none;position:fixed;inset:0;top:56px;z-index:40;background:#fff;overflow-y:auto;" class="md:hidden">
+    <div class="px-6 py-8 space-y-4">
+      <a href="/#services" class="block text-lg font-medium text-slate-900 hover:text-brand transition py-3 px-2">Services</a>
+      <a href="/#how-it-works" class="block text-lg font-medium text-slate-900 hover:text-brand transition py-3 px-2">How It Works</a>
+      <a href="/#pricing" class="block text-lg font-medium text-slate-900 hover:text-brand transition py-3 px-2">Pricing</a>
+      <a href="/blog/" class="block text-lg font-medium text-slate-900 hover:text-brand transition py-3 px-2">Blog</a>
+      <a href="/#faq" class="block text-lg font-medium text-slate-900 hover:text-brand transition py-3 px-2">FAQ</a>
+      <div class="border-t border-slate-100 pt-4 mt-4">
+        <a href="https://calendly.com/hello-apolloagent/30min" target="_blank" rel="noopener" class="block bg-brand text-white text-center font-semibold py-3 rounded-lg hover:bg-brand-dark transition">Book a Call</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <section class="bg-gradient-to-br from-rose-900 via-orange-800 to-slate-900 py-24 px-6 relative">
+    <div class="max-w-4xl mx-auto text-center relative z-10">
+      <span class="text-xs font-bold uppercase tracking-wider text-orange-200 bg-white/10 px-3 py-1 rounded-full">Case Study</span>
+      <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-white leading-tight mt-6 mb-6">How a Law Firm Automated 80% of Client Intake with AI Agents</h1>
+      <div class="flex flex-wrap items-center justify-center gap-4 text-sm text-slate-300">
+        <div class="flex items-center gap-2">
+          <div class="w-8 h-8 bg-slate-600 rounded-full flex items-center justify-center text-white font-bold text-xs">JT</div>
+          <span>Jared Turner</span>
+        </div>
+        <span>&middot;</span>
+        <span>June 12, 2026</span>
+        <span>&middot;</span>
+        <span>7 min read</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ARTICLE CONTENT -->
+  <section class="py-16 px-6" id="main-content">
+    <div class="max-w-6xl mx-auto flex gap-12">
+
+      <!-- TABLE OF CONTENTS -->
+      <aside class="hidden lg:block w-56 shrink-0">
+        <div class="sticky top-28">
+          <p class="text-xs font-semibold text-slate-400 uppercase tracking-widest mb-4">Table of Contents</p>
+          <nav class="space-y-3 text-sm">
+            <a href="#the-problem" class="block toc-link text-slate-500">The $250K Problem</a>
+            <a href="#firm-profile" class="block toc-link text-slate-500">The Firm</a>
+            <a href="#pain-points" class="block toc-link text-slate-500">Pain Points</a>
+            <a href="#the-solution" class="block toc-link text-slate-500">The AI Agent Stack</a>
+            <a href="#how-it-works" class="block toc-link text-slate-500">How It Works</a>
+            <a href="#results" class="block toc-link text-slate-500">Results</a>
+            <a href="#lessons" class="block toc-link text-slate-500">Lessons Learned</a>
+            <a href="#getting-started" class="block toc-link text-slate-500">Where to Start</a>
+          </nav>
+        </div>
+      </aside>
+
+      <!-- MOBILE TOC -->
+      <div class="lg:hidden w-full">
+        <details class="mb-8 bg-slate-50 rounded-xl p-4 border border-slate-100">
+          <summary class="font-semibold text-slate-900 cursor-pointer text-sm">Table of Contents</summary>
+          <nav class="mt-3 space-y-2 text-sm">
+            <a href="#the-problem" class="block text-slate-500 hover:text-brand">The $250K Problem</a>
+            <a href="#firm-profile" class="block text-slate-500 hover:text-brand">The Firm</a>
+            <a href="#pain-points" class="block text-slate-500 hover:text-brand">Pain Points</a>
+            <a href="#the-solution" class="block text-slate-500 hover:text-brand">The AI Agent Stack</a>
+            <a href="#how-it-works" class="block text-slate-500 hover:text-brand">How It Works</a>
+            <a href="#results" class="block text-slate-500 hover:text-brand">Results</a>
+            <a href="#lessons" class="block text-slate-500 hover:text-brand">Lessons Learned</a>
+            <a href="#getting-started" class="block text-slate-500 hover:text-brand">Where to Start</a>
+          </nav>
+        </details>
+      </div>
+
+      <!-- ARTICLE BODY -->
+      <div class="max-w-[720px] mx-auto w-full">
+
+        <!-- Author + Share Row -->
+        <div class="flex flex-wrap items-center justify-between gap-4 mb-10 pb-8 border-b border-slate-100">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 md:w-12 md:h-12 bg-slate-200 rounded-full flex items-center justify-center text-slate-500 font-bold shrink-0">JT</div>
+            <div>
+              <div class="font-semibold text-slate-900 text-sm">Jared Turner</div>
+              <div class="text-xs text-slate-400">Founder &amp; CEO, Apollo Intelligence</div>
+            </div>
+          </div>
+          <div class="flex items-center gap-3">
+            <a href="https://twitter.com/intent/tweet?text=How+a+Law+Firm+Automated+80%25+of+Client+Intake+with+AI+Agents&url=https://apolloagent.ai/blog/ai-law-firm-intake-case-study" target="_blank" rel="noopener" class="text-slate-400 hover:text-slate-600 transition" title="Share on Twitter">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://apolloagent.ai/blog/ai-law-firm-intake-case-study" target="_blank" rel="noopener" class="text-slate-400 hover:text-slate-600 transition" title="Share on LinkedIn">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Article Content -->
+        <div class="article-body">
+
+          <p>Most law firms have an intake problem they don't fully see. New client calls come in throughout the day — and often the evening and weekend. A receptionist answers some of them. Others go to voicemail. A paralegal follows up when they have time. By the time someone actually talks to the prospect, it's often been 24 hours or more.</p>
+
+          <p>According to ClaireAI's 2026 Legal Intake Benchmark — the largest-ever study of law firm intake performance, covering 1,000 U.S. firms across 50 states — the average law firm misses 35% of inbound calls, and the average annual revenue loss from missed and mishandled intake is <strong>$250,000 per firm</strong>. For personal injury firms, where case values are highest, that number climbs to $410,000 per year. The cause isn't negligence. It's a structural problem: intake is a high-volume, time-sensitive workflow being handled by people who have other jobs to do.</p>
+
+          <p>This is what AI agents are genuinely good at fixing. Here's how one mid-size firm did it — and what happened to their numbers when they did.</p>
+
+          <h2 id="the-problem">The $250K Problem: Why Legal Intake Is Broken</h2>
+
+          <p>Before getting into the case study, it's worth understanding the economics. The same ClaireAI benchmark found that 61% of inbound calls to law firms happen outside business hours — evenings, weekends, holidays, and before 9 AM. And when a prospect calls, time is everything: response within five minutes drives a 400% conversion lift versus calling back the next business day (independently corroborated by Forrester and InsideSales research).</p>
+
+          <p>The math is brutal. If your firm gets 100 inbound inquiries per month and misses 35% of them, that's 35 potential clients going to voicemail — or, more likely, calling the next firm on Google. At an average case value of $4,200 and a 14% first-contact conversion rate, that's roughly $20,000 in lost revenue per month you never see because no one answered the phone fast enough.</p>
+
+          <p>The solution isn't to hire more receptionists. It's to stop treating intake like a human-only problem.</p>
+
+          <h2 id="firm-profile">The Firm: A 14-Attorney Practice Hitting a Growth Ceiling</h2>
+
+          <p>The firm in this case study — a 14-attorney practice with offices in two states, handling family law, criminal defense, and general civil matters — had been growing steadily for three years. But in early 2025, they hit a ceiling. New client numbers had plateaued despite an increase in marketing spend. Their intake coordinator was handling calls, web forms, referrals, and consultation scheduling simultaneously — and doing all of it manually.</p>
+
+          <p>When they ran the numbers, the picture came into focus: their front-desk team was answering roughly 68% of inbound calls during business hours. After hours and on weekends, that number dropped to near zero. They were spending approximately 12 hours per week per staff member on intake-related tasks — call qualification, scheduling, data entry into their case management system, sending retainer agreements, and following up on unsigned documents.</p>
+
+          <p>None of those 12 hours per week were billable. None were strategic. All of them were things a well-designed AI system could handle.</p>
+
+          <h2 id="pain-points">The Specific Pain Points</h2>
+
+          <p>The firm mapped their intake process in detail before building anything. This step — which they spent two weeks on — turned out to be the most valuable part of the entire project. Here's what they found:</p>
+
+          <ul>
+            <li><strong>After-hours call handling:</strong> Zero coverage between 5 PM and 9 AM, and on weekends. Prospects who called during these windows left voicemail or hung up.</li>
+            <li><strong>Lead qualification lag:</strong> After a call was answered, it took an average of 2.3 days to get a qualified prospect booked for a consultation. Most of that delay was back-and-forth scheduling and the time required to pull conflict checks.</li>
+            <li><strong>Manual CRM entry:</strong> Every intake interaction required manual data entry into Clio — name, contact info, matter type, referral source, notes. The intake coordinator was spending 90 minutes per day on this alone.</li>
+            <li><strong>Retainer follow-up:</strong> Unsigned retainer agreements sat unaddressed for days. The firm had no automated follow-up sequence — someone had to remember to call or email, and they often didn't until a week had passed.</li>
+            <li><strong>Inconsistent qualification:</strong> Different staff members asked different questions during intake. There was no consistent rubric for identifying high-value vs. low-value cases, so time was wasted on inquiries that were never going to become clients.</li>
+          </ul>
+
+          <figure class="my-8">
+            <img
+              src="/images/blog/ai-law-firm-intake-case-study-hero.webp"
+              alt="AI agents automating law firm client intake workflows with digital pipelines and legal icons"
+              width="1536"
+              height="1024"
+              loading="lazy"
+              decoding="async"
+              class="w-full rounded-xl shadow-lg"
+            />
+            <figcaption class="text-center text-sm text-slate-400 mt-3">AI agents now handle the intake pipeline that once required 12 hours of manual staff work per week.</figcaption>
+          </figure>
+
+          <h2 id="the-solution">The AI Agent Stack They Built</h2>
+
+          <p>The firm implemented a four-component AI intake system over about six weeks, using a combination of purpose-built legal AI tools and a workflow automation layer built in <a href="https://www.make.com/en/register?pc=apolloagent" target="_blank" rel="noopener sponsored" class="text-brand font-semibold hover:underline">Make.com</a> to connect everything together.</p>
+
+          <h3>Component 1: AI Voice Receptionist</h3>
+
+          <p>An AI voice agent handles all inbound calls 24/7. When a prospect calls, the agent answers within one to two seconds, introduces itself, and conducts a structured intake interview: name, contact information, matter type, opposing parties (for conflict screening), how they heard about the firm, and a brief description of their legal issue. The agent is calibrated to the firm's specific practice areas — so it asks the right qualification questions for a family law matter versus a criminal defense inquiry.</p>
+
+          <p>The agent can handle multiple calls simultaneously — something no receptionist can do — and doesn't have good days and bad days. It asks the same questions in the same order every time, using the same empathetic tone the firm designed. Calls that require urgent legal attention (custody emergencies, arraignment deadlines) are escalated immediately via text to the on-call attorney.</p>
+
+          <h3>Component 2: Automated Conflict Check and Case Scoring</h3>
+
+          <p>The moment a call ends, the intake data flows automatically into Clio — the firm's case management platform — and a conflict check runs against existing client and matter records. In most cases, this takes under 30 seconds. If a conflict is found, the intake coordinator is notified automatically; if no conflict exists, the lead is scored based on the firm's qualification rubric (matter type, jurisdiction, complexity, case value estimate) and assigned a priority tier.</p>
+
+          <p>Clio Work's agentic capabilities — launched earlier this year — handle much of this orchestration. Attorneys can now issue goal-based prompts like "review this intake and identify any red flags before the consultation" and Clio's AI executes the full multi-step review autonomously, surfacing relevant precedent and flagging potential issues before the attorney has read a single word.</p>
+
+          <h3>Component 3: Automated Consultation Scheduling</h3>
+
+          <p>High-priority leads receive an automated text message within minutes of their call: a personalized message from the firm (sent via the intake system, not an obviously robotic number) with a direct booking link for a 30-minute consultation. The link connects to a real-time calendar showing attorney availability. No phone tag. No back-and-forth emails. Most consultations are booked within 20 minutes of the initial call.</p>
+
+          <h3>Component 4: Retainer Automation and Follow-Up</h3>
+
+          <p>After a consultation converts, the retainer agreement is generated automatically from a pre-approved template, populated with the client's details, and sent via DocuSign within minutes of the attorney marking the matter as retained. A four-step automated follow-up sequence begins immediately: a reminder at 24 hours, another at 48 hours with a direct signing link, a phone call trigger at 72 hours (routed to the intake coordinator), and a final check at day 7. The firm's retainer turnaround time dropped from an average of 9 days to under 48 hours.</p>
+
+          <!-- MID-ARTICLE CTA -->
+          <div class="bg-brand-light border border-brand/20 rounded-2xl p-8 my-10">
+            <h3 class="text-lg font-bold text-slate-900 mb-2">Want to automate intake at your firm?</h3>
+            <p class="text-slate-600 mb-4">We design and implement AI intake systems for law firms and professional service businesses. Book a free strategy call to map out what's possible for your practice.</p>
+            <a href="https://calendly.com/hello-apolloagent/30min" class="inline-block bg-brand text-white font-semibold px-6 py-3 rounded-xl hover:bg-brand-dark transition">Book a Free Strategy Call &rarr;</a>
+          </div>
+
+          <h2 id="how-it-works">How the System Handles a Real Intake Interaction</h2>
+
+          <p>It's worth walking through a concrete example to make this tangible. A prospect calls at 9:40 PM on a Thursday — well outside business hours, historically a dead zone for this firm.</p>
+
+          <ol>
+            <li>The AI voice agent answers in under two seconds. It introduces itself by name, mentions it's with the firm, and begins the intake interview.</li>
+            <li>The prospect describes a pending custody matter. The agent asks the relevant qualification questions: children's ages, current custody arrangement, jurisdiction, whether litigation has already begun.</li>
+            <li>The call ends. Data is pushed to Clio automatically. Conflict check runs: no conflict found. The matter is scored as a high-priority family law lead.</li>
+            <li>The prospect receives a text within four minutes: "Hi [Name], thanks for calling [Firm]. We'd love to schedule a 30-minute consultation with one of our family law attorneys. Here's a link to book a time that works for you: [link]."</li>
+            <li>The prospect books a consultation for the following Tuesday morning at 10 AM. A calendar invite is created for both the prospect and the assigned attorney. The case file in Clio is automatically populated with the intake notes and a summary of the matter.</li>
+            <li>The consultation happens. The attorney marks the matter as retained. Retainer agreement is generated and sent via DocuSign within minutes. Signed within 18 hours.</li>
+          </ol>
+
+          <p>The intake coordinator's involvement in this entire flow: zero, until the consultation prep brief lands in their inbox the morning before the meeting. What previously required multiple phone calls, manual scheduling, CRM entry, and chasing a retainer signature happened automatically, overnight, without anyone touching it.</p>
+
+          <h2 id="results">Results: Six Months In</h2>
+
+          <p>The firm measured outcomes across six months post-implementation. The numbers were significant enough that they shared them publicly (with identifying details anonymized) as a benchmark for other firms evaluating similar investments.</p>
+
+          <ul>
+            <li><strong>After-hours call coverage: 0% → 100%.</strong> Every call is now answered, at any hour, on any day. This alone recovered an estimated $180,000 in previously lost annual revenue.</li>
+            <li><strong>Intake staff time on manual tasks: down 78%.</strong> The intake coordinator now handles escalations, complex situations, and relationship-building — not data entry and scheduling logistics.</li>
+            <li><strong>Lead-to-consultation booking time: 2.3 days → 22 minutes.</strong> The fastest part of the funnel is now the part that used to be the slowest.</li>
+            <li><strong>Retainer turnaround: 9 days → 47 hours.</strong> Fewer lost clients at the post-consultation stage due to retainer follow-up delays.</li>
+            <li><strong>New client volume: up 34% year-over-year</strong> — without a corresponding increase in marketing spend. The same number of inbound inquiries, captured and converted at a higher rate.</li>
+            <li><strong>Client satisfaction scores: unchanged.</strong> The firm's Google Reviews held steady at 4.8 stars, with no complaints about AI-handled intake. Several positive reviews specifically mentioned how quickly the firm responded to their initial call.</li>
+          </ul>
+
+          <p>The total implementation cost, including tooling, setup, and the initial six weeks of configuration and testing, was approximately $18,000. The revenue increase in the first six months alone exceeded $200,000. That's not a technology investment — that's a business decision.</p>
+
+          <h2 id="lessons">What They'd Do Differently</h2>
+
+          <p>The firm's managing partner was candid about what they'd change if starting over:</p>
+
+          <blockquote>"We spent too much time trying to perfect the AI voice agent before we launched it. We should have launched with a functional version and refined it based on real calls. The first two weeks of live calls taught us more than the four weeks of internal testing."</blockquote>
+
+          <p>A few other hard-won lessons worth passing on:</p>
+
+          <ul>
+            <li><strong>Map the process before touching the technology.</strong> The two weeks they spent documenting every step of their existing intake process — in detail, including the edge cases and exceptions — was the highest-leverage work they did. You can't automate a process you haven't defined.</li>
+            <li><strong>Don't hide that it's AI.</strong> The firm was transparent that their initial contact system was AI-assisted. Prospects didn't care. What they cared about was being heard quickly and being able to book a consultation easily.</li>
+            <li><strong>Integrate with your case management system first.</strong> The highest-friction part of their old process was manual CRM entry. Solving that one bottleneck — automatically pushing intake data into Clio — delivered immediate, measurable time savings before any of the fancier automation was in place.</li>
+            <li><strong>Build an escalation path before you go live.</strong> The AI agent handles 80–85% of intake interactions fully autonomously. The remaining 15–20% — complex situations, distressed callers, unusual matter types — need a clear path to a human. Define that path before you launch, not after.</li>
+          </ul>
+
+          <h2 id="getting-started">How to Start Building This at Your Firm</h2>
+
+          <p>You don't need to replicate this firm's full stack on day one. Here's a practical sequence for firms that want to move in this direction without overbuilding:</p>
+
+          <ol>
+            <li><strong>Start with after-hours coverage.</strong> Deploy an AI voice agent for after-hours calls first. This is the highest-ROI move with the least disruption — it doesn't change anything about how your team handles calls during business hours, but it captures everything you're currently missing at night and on weekends.</li>
+            <li><strong>Automate CRM entry.</strong> Get your intake data flowing directly into your case management system — whether that's Clio, Filevine, MyCase, or another platform. The time your team spends on manual data entry is not small. Eliminating it is fast, impactful, and often the first thing that makes your staff appreciate the system.</li>
+            <li><strong>Add retainer follow-up automation.</strong> Build a simple automated sequence for retainer signing. This is often easier to implement than it sounds — most document signing platforms have native automation features — and the impact on conversion is immediate.</li>
+            <li><strong>Measure before and after.</strong> Track your call answer rate, lead-to-consultation booking time, retainer turnaround, and new client conversion rate before you start. Check them again at 90 days. The numbers will tell you exactly where to invest next.</li>
+          </ol>
+
+          <p>If you want a deeper look at the tools and frameworks behind this kind of system, our guide to <a href="/blog/ai-for-legal-teams" class="text-brand font-semibold hover:underline">AI for Legal Teams</a> walks through contract review, research automation, and document workflows in detail. And if you're thinking about how to build these kinds of systems across multiple areas of your practice — not just intake — our post on <a href="/blog/ai-agents-guide-2026" class="text-brand font-semibold hover:underline">what AI agents actually are and how they work</a> is a good starting point before you talk to vendors.</p>
+
+          <p>The law firm in this case study didn't hire more staff to grow 34% in new client volume. They built a system that stopped letting leads fall through the cracks they'd been living with for years. Every firm has those cracks. The firms that find them — and close them — are the ones that win.</p>
+
+        </div>
+
+        <!-- AUTHOR BIO CARD -->
+        <div class="mt-16 pt-8 border-t border-slate-100">
+          <div class="flex items-start gap-5">
+            <div class="w-12 h-12 md:w-16 md:h-16 bg-slate-200 rounded-full flex items-center justify-center text-slate-500 font-bold text-lg shrink-0">JT</div>
+            <div>
+              <h4 class="font-bold text-slate-900">Jared Turner</h4>
+              <p class="text-sm text-slate-400 mb-2">Founder &amp; CEO, Apollo Intelligence</p>
+              <p class="text-sm text-slate-500 leading-relaxed">Jared helps small and mid-size businesses implement AI systems that actually work. Before founding Apollo Intelligence, he spent over a decade in operations and technology consulting, with a focus on making complex tools accessible to non-technical teams.</p>
+              <a href="https://www.linkedin.com/in/jaredturner" target="_blank" rel="noopener" class="text-brand text-sm font-semibold hover:underline mt-2 inline-block">Connect on LinkedIn &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- RELATED ARTICLES -->
+  <section class="bg-slate-50 py-16 px-6">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-2xl font-bold text-slate-900 mb-8">Related Articles</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <article class="group">
+          <a href="/blog/ai-for-legal-teams" class="block">
+            <div class="bg-gradient-to-br from-slate-800 to-blue-900 rounded-2xl h-40 flex items-end p-5 mb-4">
+              <span class="text-xs font-bold uppercase tracking-wider text-white bg-white/20 px-3 py-1 rounded-full">Role Guide (Legal)</span>
+            </div>
+            <h3 class="text-base font-bold text-slate-900 mb-1 group-hover:text-brand transition">AI for Legal Teams: Contract Review, Intake, and Research Automation</h3>
+            <div class="text-xs text-slate-400">May 10, 2026 &middot; 8 min read</div>
+          </a>
+        </article>
+
+        <article class="group">
+          <a href="/blog/agency-60-percent-admin-reduction-case-study" class="block">
+            <div class="bg-gradient-to-br from-slate-900 to-slate-700 rounded-2xl h-40 flex items-end p-5 mb-4">
+              <span class="text-xs font-bold uppercase tracking-wider text-white bg-white/20 px-3 py-1 rounded-full">Case Study</span>
+            </div>
+            <h3 class="text-base font-bold text-slate-900 mb-1 group-hover:text-brand transition">How a 12-Person Agency Cut Admin Work by 60% with AI</h3>
+            <div class="text-xs text-slate-400">Apr 14, 2026 &middot; 7 min read</div>
+          </a>
+        </article>
+
+        <article class="group">
+          <a href="/blog/ai-agents-guide-2026" class="block">
+            <div class="bg-gradient-to-br from-brand-dark to-brand rounded-2xl h-40 flex items-end p-5 mb-4">
+              <span class="text-xs font-bold uppercase tracking-wider text-white bg-white/20 px-3 py-1 rounded-full">AI News &amp; Analysis</span>
+            </div>
+            <h3 class="text-base font-bold text-slate-900 mb-1 group-hover:text-brand transition">The Business Leader's Guide to AI Agents: What They Are and Why They Matter</h3>
+            <div class="text-xs text-slate-400">Mar 25, 2026 &middot; 6 min read</div>
+          </a>
+        </article>
+
+      </div>
+      <div class="text-center mt-10">
+        <a href="/blog/" class="text-brand font-semibold hover:underline">View All Articles &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="bg-brand py-20 px-6">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4">Ready to stop losing clients to slow intake?</h2>
+      <p class="text-white text-lg mb-10 opacity-90">Book a free strategy call and we'll map out exactly where your intake process is leaking — and what an AI agent system would look like for your firm.</p>
+      <a href="https://calendly.com/hello-apolloagent/30min" class="bg-white text-brand font-bold px-10 py-4 rounded-xl hover:bg-slate-100 active:bg-slate-200 transition-all duration-150 text-lg inline-block shadow-sm hover:shadow-md">Book Your Free Strategy Call</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-white border-t border-slate-100 py-8 px-6">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-slate-400">
+      <a href="/"><img src="/logo.png" alt="Apollo Intelligence" class="h-12 w-auto" /></a>
+      <div class="flex gap-6">
+        <a href="/#services" class="text-slate-600 hover:text-slate-900 transition">Services</a>
+        <a href="/#pricing" class="text-slate-600 hover:text-slate-900 transition">Pricing</a>
+        <a href="/blog/" class="text-slate-600 hover:text-slate-900 transition">Blog</a>
+        <a href="mailto:hello@apolloagent.ai" class="text-slate-600 hover:text-slate-900 transition">Contact</a>
+      </div>
+      <div class="text-slate-500">&copy; 2026 Apollo Intelligence LLC. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <!-- TOC highlight script -->
+  <script>
+    (function() {
+      const headings = document.querySelectorAll('.article-body h2[id]');
+      const tocLinks = document.querySelectorAll('.toc-link');
+      if (!headings.length || !tocLinks.length) return;
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            tocLinks.forEach(l => l.classList.remove('active'));
+            document.querySelectorAll('.toc-link[href="#' + entry.target.id + '"]').forEach(a => a.classList.add('active'));
+          }
+        });
+      }, { rootMargin: '-80px 0px -70% 0px' });
+      headings.forEach(h => observer.observe(h));
+    })();
+  </script>
+
+  <script>
+  // ── Mobile menu toggle ──────────────────────────────────────────────────────
+    (function() {
+      var btn = document.getElementById('mobile-menu-btn');
+      var menu = document.getElementById('mobile-menu');
+      var l1 = document.getElementById('menu-line-1');
+      var l2 = document.getElementById('menu-line-2');
+      var l3 = document.getElementById('menu-line-3');
+      if (!btn || !menu) return;
+      function openMenu() {
+        menu.style.display = 'block';
+        btn.setAttribute('aria-expanded', 'true');
+        l1.style.transform = 'rotate(45deg) translateY(8px)';
+        l2.style.opacity = '0';
+        l3.style.transform = 'rotate(-45deg) translateY(-8px)';
+        document.body.style.overflow = 'hidden';
+      }
+      function closeMenu() {
+        menu.style.display = 'none';
+        btn.setAttribute('aria-expanded', 'false');
+        l1.style.transform = 'none';
+        l2.style.opacity = '1';
+        l3.style.transform = 'none';
+        document.body.style.overflow = '';
+      }
+      btn.addEventListener('click', function() {
+        menu.style.display === 'block' ? closeMenu() : openMenu();
+      });
+      menu.querySelectorAll('a').forEach(function(a) {
+        a.addEventListener('click', closeMenu);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') closeMenu();
+      });
+    })();
+    // ───────────────────────────────────────────────────────────────────────────
+  </script>
+</body>
+</html>

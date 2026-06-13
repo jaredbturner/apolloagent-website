@@ -88,6 +88,42 @@
       "publishDate": "2026-05-23",
       "draftPath": "drafts/ai-for-hr-teams.html",
       "publishedUrl": "https://apolloagent.ai/blog/ai-for-hr-teams",
+      "linkedInPosted": true
+    },
+    {
+      "slug": "mid-2026-ai-landscape",
+      "title": "Mid-2026 AI Landscape: Winners, Losers, and What's Coming Next",
+      "status": "pending_review",
+      "publishDate": "2026-05-31",
+      "draftPath": "drafts/mid-2026-ai-landscape.html",
+      "publishedUrl": null,
+      "linkedInPosted": false
+    },
+    {
+      "slug": "ai-content-creation-guide",
+      "title": "The Complete Guide to AI-Powered Content Creation for Small Businesses",
+      "status": "pending_review",
+      "publishDate": "2026-06-05",
+      "draftPath": "drafts/ai-content-creation-guide.html",
+      "publishedUrl": null,
+      "linkedInPosted": false
+    },
+    {
+      "slug": "ai-finance-teams-guide",
+      "title": "AI for Finance Teams: Invoice Processing, Forecasting, and Reporting",
+      "status": "pending_review",
+      "publishDate": "2026-06-07",
+      "draftPath": "drafts/ai-finance-teams-guide.html",
+      "publishedUrl": null,
+      "linkedInPosted": false
+    },
+    {
+      "slug": "law-firm-ai-intake-automation-case-study",
+      "title": "How a Law Firm Automated 80% of Client Intake with AI Agents",
+      "status": "published",
+      "publishDate": "2026-06-13",
+      "draftPath": "drafts/law-firm-ai-intake-automation-case-study.html",
+      "publishedUrl": "https://apolloagent.ai/blog/law-firm-ai-intake-automation-case-study",
       "linkedInPosted": false
     }
   ]
