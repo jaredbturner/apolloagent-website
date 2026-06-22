@@ -7,8 +7,16 @@
     <language>en-us</language>
     <managingEditor>hello@apolloagent.ai (Apollo Intelligence)</managingEditor>
     <webMaster>hello@apolloagent.ai (Apollo Intelligence)</webMaster>
-    <lastBuildDate>Tue, 16 Jun 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 18 Jun 2026 12:00:00 GMT</lastBuildDate>
     <atom:link href="https://apolloagent.ai/blog/feed.xml" rel="self" type="application/rss+xml" />
+
+    <item>
+      <title>Claude Opus 4.8, GPT-5.5, and Gemini 2.5 Ultra: The Mid-2026 AI Model Showdown for Business Owners</title>
+      <link>https://apolloagent.ai/blog/ai-model-showdown-mid-2026</link>
+      <description>GPT-5.5, Claude Opus 4.8, and Gemini 2.5 Ultra are all live. Here's what actually matters for business owners choosing between them — without the benchmarks nobody cares about.</description>
+      <pubDate>Thu, 18 Jun 2026 12:00:00 GMT</pubDate>
+      <guid>https://apolloagent.ai/blog/ai-model-showdown-mid-2026</guid>
+    </item>
 
     <item>
       <title>AI for Marketing Teams: Content, Analytics, and Campaign Automation</title>
