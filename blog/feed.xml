@@ -7,8 +7,16 @@
     <language>en-us</language>
     <managingEditor>hello@apolloagent.ai (Apollo Intelligence)</managingEditor>
     <webMaster>hello@apolloagent.ai (Apollo Intelligence)</webMaster>
-    <lastBuildDate>Tue, 09 Jun 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 11 Jun 2026 12:00:00 GMT</lastBuildDate>
     <atom:link href="https://apolloagent.ai/blog/feed.xml" rel="self" type="application/rss+xml" />
+
+    <item>
+      <title>How to Use AI for Customer Success: Retention, Onboarding, and Expansion on Autopilot</title>
+      <link>https://apolloagent.ai/blog/ai-customer-success-automation</link>
+      <description>Churn is expensive. AI-powered customer success systems catch at-risk accounts, automate onboarding, and drive expansion revenue — without hiring a CS army.</description>
+      <pubDate>Thu, 11 Jun 2026 12:00:00 GMT</pubDate>
+      <guid>https://apolloagent.ai/blog/ai-customer-success-automation</guid>
+    </item>
 
     <item>
       <title>How AI Is Changing Paid Advertising: What Every Business Owner Needs to Know in 2026</title>
