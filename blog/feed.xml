@@ -7,8 +7,16 @@
     <language>en-us</language>
     <managingEditor>hello@apolloagent.ai (Apollo Intelligence)</managingEditor>
     <webMaster>hello@apolloagent.ai (Apollo Intelligence)</webMaster>
-    <lastBuildDate>Thu, 28 May 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 30 May 2026 12:00:00 GMT</lastBuildDate>
     <atom:link href="https://apolloagent.ai/blog/feed.xml" rel="self" type="application/rss+xml" />
+
+    <item>
+      <title>The Complete Guide to AI-Powered Content Creation for Small Businesses</title>
+      <link>https://apolloagent.ai/blog/ai-content-creation-guide</link>
+      <description>AI can handle the production work of a full content team — if you set it up right. Here's a practical framework for strategy, brand voice, tools, and workflow.</description>
+      <pubDate>Sat, 30 May 2026 12:00:00 GMT</pubDate>
+      <guid>https://apolloagent.ai/blog/ai-content-creation-guide</guid>
+    </item>
 
     <item>
       <title>Mid-2026 AI Landscape: Winners, Losers, and What's Coming Next</title>
