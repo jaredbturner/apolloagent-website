@@ -111,10 +111,10 @@
     {
       "slug": "ai-finance-teams-guide",
       "title": "AI for Finance Teams: Invoice Processing, Forecasting, and Reporting",
-      "status": "pending_review",
+      "status": "published",
       "publishDate": "2026-06-02",
       "draftPath": "drafts/ai-finance-teams-guide.html",
-      "publishedUrl": null,
+      "publishedUrl": "https://apolloagent.ai/blog/ai-finance-teams-guide",
       "linkedInPosted": false
     },
     {

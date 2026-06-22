@@ -7,8 +7,16 @@
     <language>en-us</language>
     <managingEditor>hello@apolloagent.ai (Apollo Intelligence)</managingEditor>
     <webMaster>hello@apolloagent.ai (Apollo Intelligence)</webMaster>
-    <lastBuildDate>Sat, 30 May 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 02 Jun 2026 12:00:00 GMT</lastBuildDate>
     <atom:link href="https://apolloagent.ai/blog/feed.xml" rel="self" type="application/rss+xml" />
+
+    <item>
+      <title>AI for Finance Teams: Invoice Processing, Forecasting, and Reporting</title>
+      <link>https://apolloagent.ai/blog/ai-finance-teams-guide</link>
+      <description>Manual invoice processing costs $12–19 per invoice. AI finance tools can cut that 80%+ while giving you cash flow forecasts and automated reports. Here's exactly how.</description>
+      <pubDate>Tue, 02 Jun 2026 12:00:00 GMT</pubDate>
+      <guid>https://apolloagent.ai/blog/ai-finance-teams-guide</guid>
+    </item>
 
     <item>
       <title>The Complete Guide to AI-Powered Content Creation for Small Businesses</title>
