@@ -7,8 +7,16 @@
     <language>en-us</language>
     <managingEditor>hello@apolloagent.ai (Apollo Intelligence)</managingEditor>
     <webMaster>hello@apolloagent.ai (Apollo Intelligence)</webMaster>
-    <lastBuildDate>Thu, 04 Jun 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 06 Jun 2026 12:00:00 GMT</lastBuildDate>
     <atom:link href="https://apolloagent.ai/blog/feed.xml" rel="self" type="application/rss+xml" />
+
+    <item>
+      <title>AI Voice Agents: The Small Business Advantage You're Not Using Yet</title>
+      <link>https://apolloagent.ai/blog/ai-voice-agents-small-business</link>
+      <description>AI voice agents are handling inbound calls, qualifying leads, and booking appointments for small businesses 24/7. Here's how they work, what they cost, and how to get started.</description>
+      <pubDate>Sat, 06 Jun 2026 12:00:00 GMT</pubDate>
+      <guid>https://apolloagent.ai/blog/ai-voice-agents-small-business</guid>
+    </item>
 
     <item>
       <title>AI for Sales Teams: A Practical Playbook for 2026</title>
