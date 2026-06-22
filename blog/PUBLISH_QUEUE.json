@@ -75,10 +75,10 @@
     {
       "slug": "ai-roi-measurement-guide",
       "title": "How to Measure ROI on Your AI Investments (With Real Formulas)",
-      "status": "pending_review",
-      "publishDate": "2026-05-22",
+      "status": "published",
+      "publishDate": "2026-05-26",
       "draftPath": "drafts/ai-roi-measurement-guide.html",
-      "publishedUrl": null,
+      "publishedUrl": "https://apolloagent.ai/blog/ai-roi-measurement-guide",
       "linkedInPosted": false
     },
     {
@@ -94,7 +94,7 @@
       "slug": "mid-2026-ai-landscape",
       "title": "Mid-2026 AI Landscape: Winners, Losers, and What's Coming Next",
       "status": "pending_review",
-      "publishDate": "2026-05-31",
+      "publishDate": "2026-05-28",
       "draftPath": "drafts/mid-2026-ai-landscape.html",
       "publishedUrl": null,
       "linkedInPosted": false
@@ -103,7 +103,7 @@
       "slug": "ai-content-creation-guide",
       "title": "The Complete Guide to AI-Powered Content Creation for Small Businesses",
       "status": "pending_review",
-      "publishDate": "2026-06-05",
+      "publishDate": "2026-05-30",
       "draftPath": "drafts/ai-content-creation-guide.html",
       "publishedUrl": null,
       "linkedInPosted": false
@@ -112,7 +112,7 @@
       "slug": "ai-finance-teams-guide",
       "title": "AI for Finance Teams: Invoice Processing, Forecasting, and Reporting",
       "status": "pending_review",
-      "publishDate": "2026-06-07",
+      "publishDate": "2026-06-02",
       "draftPath": "drafts/ai-finance-teams-guide.html",
       "publishedUrl": null,
       "linkedInPosted": false
@@ -124,6 +124,60 @@
       "publishDate": "2026-06-13",
       "draftPath": "drafts/law-firm-ai-intake-automation-case-study.html",
       "publishedUrl": "https://apolloagent.ai/blog/law-firm-ai-intake-automation-case-study",
+      "linkedInPosted": false
+    },
+    {
+      "slug": "ai-marketing-teams-guide",
+      "title": "AI for Marketing Teams: Content, Analytics, and Campaign Automation",
+      "status": "pending_review",
+      "publishDate": "2026-06-16",
+      "draftPath": "drafts/ai-marketing-teams-guide.html",
+      "publishedUrl": null,
+      "linkedInPosted": false
+    },
+    {
+      "slug": "ai-voice-agents-small-business",
+      "title": "AI Voice Agents: The Small Business Advantage You're Not Using Yet",
+      "status": "pending_review",
+      "publishDate": "2026-06-06",
+      "draftPath": "drafts/ai-voice-agents-small-business.html",
+      "publishedUrl": null,
+      "linkedInPosted": false
+    },
+    {
+      "slug": "ai-paid-advertising-guide-2026",
+      "title": "How AI Is Changing Paid Advertising: What Every Business Owner Needs to Know in 2026",
+      "status": "pending_review",
+      "publishDate": "2026-06-09",
+      "draftPath": "drafts/ai-paid-advertising-guide-2026.html",
+      "publishedUrl": null,
+      "linkedInPosted": false
+    },
+    {
+      "slug": "ai-for-sales-teams-playbook-2026",
+      "title": "AI for Sales Teams: A Practical Playbook for 2026",
+      "status": "pending_review",
+      "publishDate": "2026-06-04",
+      "draftPath": "drafts/ai-for-sales-teams-playbook-2026.html",
+      "publishedUrl": null,
+      "linkedInPosted": false
+    },
+    {
+      "slug": "ai-model-showdown-mid-2026",
+      "title": "Claude 4.5, GPT-5.5, and Gemini 2.5 Ultra: The Mid-2026 AI Model Showdown for Business Owners",
+      "status": "pending_review",
+      "publishDate": "2026-06-18",
+      "draftPath": "drafts/ai-model-showdown-mid-2026.html",
+      "publishedUrl": null,
+      "linkedInPosted": false
+    },
+    {
+      "slug": "ai-customer-success-automation",
+      "title": "How to Use AI for Customer Success: Retention, Onboarding, and Expansion on Autopilot",
+      "status": "pending_review",
+      "publishDate": "2026-06-11",
+      "draftPath": "drafts/ai-customer-success-automation.html",
+      "publishedUrl": null,
       "linkedInPosted": false
     }
   ]

@@ -7,8 +7,16 @@
     <language>en-us</language>
     <managingEditor>hello@apolloagent.ai (Apollo Intelligence)</managingEditor>
     <webMaster>hello@apolloagent.ai (Apollo Intelligence)</webMaster>
-    <lastBuildDate>Tue, 14 Apr 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 26 May 2026 12:00:00 GMT</lastBuildDate>
     <atom:link href="https://apolloagent.ai/blog/feed.xml" rel="self" type="application/rss+xml" />
+
+    <item>
+      <title>How to Measure ROI on Your AI Investments (With Real Formulas)</title>
+      <link>https://apolloagent.ai/blog/ai-roi-measurement-guide</link>
+      <description>Stop guessing whether AI is worth it. Here are the exact formulas, frameworks, and dashboards small business owners use to measure real ROI on their AI investments in 2026.</description>
+      <pubDate>Tue, 26 May 2026 12:00:00 GMT</pubDate>
+      <guid>https://apolloagent.ai/blog/ai-roi-measurement-guide</guid>
+    </item>
 
     <item>
       <title>How a 12-Person Agency Cut Admin Work by 60% with AI</title>
