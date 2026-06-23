@@ -7,8 +7,16 @@
     <language>en-us</language>
     <managingEditor>hello@apolloagent.ai (Apollo Intelligence)</managingEditor>
     <webMaster>hello@apolloagent.ai (Apollo Intelligence)</webMaster>
-    <lastBuildDate>Thu, 18 Jun 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 23 Jun 2026 12:00:00 GMT</lastBuildDate>
     <atom:link href="https://apolloagent.ai/blog/feed.xml" rel="self" type="application/rss+xml" />
+
+    <item>
+      <title>How to Automate Customer Support Without Losing the Human Touch</title>
+      <link>https://apolloagent.ai/blog/ai-customer-support-automation-guide</link>
+      <description>AI customer support is everywhere — but most businesses are automating the wrong way. Here's how to set up AI-powered support that actually resolves issues and keeps your CSAT high.</description>
+      <pubDate>Tue, 23 Jun 2026 12:00:00 GMT</pubDate>
+      <guid>https://apolloagent.ai/blog/ai-customer-support-automation-guide</guid>
+    </item>
 
     <item>
       <title>Claude Opus 4.8, GPT-5.5, and Gemini 2.5 Ultra: The Mid-2026 AI Model Showdown for Business Owners</title>
