@@ -43,7 +43,7 @@
       "publishDate": "2026-05-10",
       "draftPath": "drafts/ai-for-legal-teams.html",
       "publishedUrl": "https://apolloagent.ai/blog/ai-for-legal-teams",
-      "linkedInPosted": false
+      "linkedInPosted": true
     },
     {
       "slug": "ecommerce-scaled-5m-3-person-team-ai",
@@ -187,6 +187,15 @@
       "publishDate": "2026-06-23",
       "draftPath": "drafts/ai-customer-support-automation-guide.html",
       "publishedUrl": "https://apolloagent.ai/blog/ai-customer-support-automation-guide",
+      "linkedInPosted": false
+    },
+    {
+      "slug": "ai-lead-generation-system-guide",
+      "title": "How to Build an AI-Powered Lead Generation System (Step-by-Step)",
+      "status": "published",
+      "publishDate": "2026-06-25",
+      "draftPath": "drafts/ai-lead-generation-system-guide.html",
+      "publishedUrl": "https://apolloagent.ai/blog/ai-lead-generation-system-guide",
       "linkedInPosted": false
     }
   ]
