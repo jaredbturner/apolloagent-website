@@ -61,7 +61,7 @@
       "publishDate": "2026-05-15",
       "draftPath": "drafts/ai-hype-detector.html",
       "publishedUrl": "https://apolloagent.ai/blog/ai-hype-detector",
-      "linkedInPosted": false
+      "linkedInPosted": true
     },
     {
       "slug": "building-first-ai-automation",
@@ -79,7 +79,7 @@
       "publishDate": "2026-05-26",
       "draftPath": "drafts/ai-roi-measurement-guide.html",
       "publishedUrl": "https://apolloagent.ai/blog/ai-roi-measurement-guide",
-      "linkedInPosted": false
+      "linkedInPosted": true
     },
     {
       "slug": "ai-for-hr-teams",
@@ -196,6 +196,24 @@
       "publishDate": "2026-06-25",
       "draftPath": "drafts/ai-lead-generation-system-guide.html",
       "publishedUrl": "https://apolloagent.ai/blog/ai-lead-generation-system-guide",
+      "linkedInPosted": false
+    },
+    {
+      "slug": "ai-meeting-automation-guide",
+      "title": "AI Meeting Automation: Stop Taking Notes, Start Taking Action",
+      "status": "published",
+      "publishDate": "2026-06-28",
+      "draftPath": "drafts/ai-meeting-automation-guide.html",
+      "publishedUrl": "https://apolloagent.ai/blog/ai-meeting-automation-guide",
+      "linkedInPosted": false
+    },
+    {
+      "slug": "ai-productivity-gap-how-to-fix-it",
+      "title": "Why AI Still Isn't Paying Off for Most Businesses \u2014 And What the Winners Do Differently",
+      "status": "pending_review",
+      "publishDate": "2026-07-01",
+      "draftPath": "drafts/ai-productivity-gap-how-to-fix-it.html",
+      "publishedUrl": null,
       "linkedInPosted": false
     }
   ]
