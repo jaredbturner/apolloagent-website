@@ -233,6 +233,38 @@ Every blog post must include **one AI-generated hero image** embedded inline wit
 ### Publish Checklist Addition
 When publishing (manual or auto), the image WebP must be committed alongside the HTML: `git add images/blog/<slug>-hero.webp blog/<slug>.html`
 
+### Post-Publish QA Check (mandatory after every publish)
+
+After git push and Cloudflare Pages deploys (~60s), run the QA checker:
+
+```bash
+# Single post (most common — run after every publish):
+python3 scripts/post_publish_qa.py https://apolloagent.ai/blog/<slug>
+
+# All live posts (run after bulk changes or periodically):
+python3 scripts/post_publish_qa.py --all
+
+# From sitemap (most thorough):
+python3 scripts/post_publish_qa.py --sitemap sitemap.xml
+
+# With JSON report:
+python3 scripts/post_publish_qa.py --all --json
+```
+
+**Checks performed:**
+1. HTTP 200 response (confirms page is live)
+2. Canonical URL correct (no redirect to wrong slug)
+3. `<title>` and `<h1>` present and non-empty
+4. Meta description present and ≤160 chars
+5. Open Graph tags: `og:title`, `og:description`, `og:image`
+6. `og:image` URL returns a real image (not a soft-404 HTML page)
+7. All `<img>` src attributes return real images (Content-Type: image/*)
+8. No broken internal links (4xx/5xx)
+9. Schema markup (`application/ld+json`) present
+10. Inline hero `<figure><img>` present (required for posts published after May 14, 2026)
+
+**If any check fails:** fix before promoting the post on LinkedIn or newsletter. Do not mark `linkedInPosted: true` until QA passes.
+
 ---
 
 ## Research Sources
