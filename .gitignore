@@ -5,3 +5,4 @@ tailwind.config.js
 styles.css
 .netlify/
 *.log
+scripts/__pycache__/

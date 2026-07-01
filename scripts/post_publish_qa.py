@@ -44,6 +44,12 @@ BASE_URL = "https://apolloagent.ai"
 TIMEOUT = 15
 MAX_LINK_WORKERS = 8
 
+# Category/listing pages — exempt from article-level checks (schema, figure)
+CATEGORY_PAGES = {
+    "ai-news", "business-automation", "case-studies",
+    "role-guides", "industry-guides",
+}
+
 # Posts published before hero image requirement — exempt from inline image check
 # (image requirement added ~May 14, 2026; earlier posts have no figure block)
 EXEMPT_FROM_IMAGE_CHECK = {
@@ -68,6 +74,7 @@ SKIP_LINK_DOMAINS = {
 # URL path prefixes to skip (Cloudflare internals, etc.)
 SKIP_LINK_PATHS = (
     "/cdn-cgi/",  # Cloudflare internals (email-protection, scripts, etc.)
+    "/go/",       # Affiliate redirect slugs
 )
 
 
@@ -227,16 +234,17 @@ def qa_page(url: str) -> PageResult:
               "; ".join(broken_imgs) if broken_imgs else "all OK"))
 
     # ── 9. Schema markup ──────────────────────────────────────────────────────
-    has_schema = 'application/ld+json' in html
-    add(Check("Schema (ld+json) present", has_schema))
+    slug = url.rstrip("/").split("/")[-1]
+    if slug not in CATEGORY_PAGES:
+        has_schema = 'application/ld+json' in html
+        add(Check("Schema (ld+json) present", has_schema))
 
     # ── 10. Inline hero <figure><img> ────────────────────────────────────────
-    slug = url.rstrip("/").split("/")[-1]
     has_figure = bool(re.search(r'<figure[^>]*>[\s\S]*?<img[^>]+src=["\'][^"\']+["\']', html))
-    if slug not in EXEMPT_FROM_IMAGE_CHECK:
+    if slug not in EXEMPT_FROM_IMAGE_CHECK and slug not in CATEGORY_PAGES:
         add(Check("Inline hero <figure><img>", has_figure,
                   "missing inline figure block" if not has_figure else "present"))
-    # else: older post, silently exempt
+    # else: older post or category page, silently exempt
 
     # ── 11. Internal links not broken ────────────────────────────────────────
     all_hrefs = re.findall(r'<a[^>]+href=["\']([^"\']+)["\']', html)
