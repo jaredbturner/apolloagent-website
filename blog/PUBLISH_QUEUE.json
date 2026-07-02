@@ -97,7 +97,7 @@
       "publishDate": "2026-05-28",
       "draftPath": "drafts/mid-2026-ai-landscape.html",
       "publishedUrl": "https://apolloagent.ai/blog/mid-2026-ai-landscape",
-      "linkedInPosted": false
+      "linkedInPosted": true
     },
     {
       "slug": "ai-content-creation-guide",
@@ -210,9 +210,18 @@
     {
       "slug": "ai-productivity-gap-how-to-fix-it",
       "title": "Why AI Still Isn't Paying Off for Most Businesses \u2014 And What the Winners Do Differently",
-      "status": "pending_review",
+      "status": "published",
       "publishDate": "2026-07-01",
       "draftPath": "drafts/ai-productivity-gap-how-to-fix-it.html",
+      "publishedUrl": "https://apolloagent.ai/blog/ai-productivity-gap-how-to-fix-it",
+      "linkedInPosted": false
+    },
+    {
+      "slug": "ai-project-management-guide-2026",
+      "title": "AI for Project Management: How Smarter Teams Ship Faster Without Drowning in Status Updates",
+      "status": "pending_review",
+      "publishDate": "2026-07-02",
+      "draftPath": "drafts/ai-project-management-guide-2026.html",
       "publishedUrl": null,
       "linkedInPosted": false
     }

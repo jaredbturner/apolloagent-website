@@ -7,8 +7,16 @@
     <language>en-us</language>
     <managingEditor>hello@apolloagent.ai (Apollo Intelligence)</managingEditor>
     <webMaster>hello@apolloagent.ai (Apollo Intelligence)</webMaster>
-    <lastBuildDate>Sun, 28 Jun 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 01 Jul 2026 12:00:00 GMT</lastBuildDate>
     <atom:link href="https://apolloagent.ai/blog/feed.xml" rel="self" type="application/rss+xml" />
+
+    <item>
+      <title>Why AI Still Isn't Paying Off for Most Businesses — And What the Winners Do Differently</title>
+      <link>https://apolloagent.ai/blog/ai-productivity-gap-how-to-fix-it</link>
+      <description>91% of businesses use AI. 80% report no bottom-line impact. Here's why AI stalls for most companies — and the exact moves that separate the winners.</description>
+      <pubDate>Wed, 01 Jul 2026 12:00:00 GMT</pubDate>
+      <guid>https://apolloagent.ai/blog/ai-productivity-gap-how-to-fix-it</guid>
+    </item>
 
     <item>
       <title>AI Meeting Automation: Stop Taking Notes, Start Taking Action</title>
