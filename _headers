@@ -1,3 +1,9 @@
+# Blog hero images — immutable long-term cache (URL is versioned by slug;
+# rename to -v2/-v3 if an image ever needs replacing)
+/images/blog/*
+  Cache-Control: public, max-age=31536000, immutable
+  X-Content-Type-Options: nosniff
+
 /sitemap.xml
   Content-Type: text/xml; charset=UTF-8
   X-Content-Type-Options: nosniff
