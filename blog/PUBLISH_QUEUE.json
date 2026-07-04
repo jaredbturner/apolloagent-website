@@ -106,7 +106,7 @@
       "publishDate": "2026-05-30",
       "draftPath": "drafts/ai-content-creation-guide.html",
       "publishedUrl": "https://apolloagent.ai/blog/ai-content-creation-guide",
-      "linkedInPosted": false
+      "linkedInPosted": true
     },
     {
       "slug": "ai-finance-teams-guide",
@@ -219,9 +219,18 @@
     {
       "slug": "ai-project-management-guide-2026",
       "title": "AI for Project Management: How Smarter Teams Ship Faster Without Drowning in Status Updates",
-      "status": "pending_review",
+      "status": "published",
       "publishDate": "2026-07-02",
       "draftPath": "drafts/ai-project-management-guide-2026.html",
+      "publishedUrl": "https://apolloagent.ai/blog/ai-project-management-guide-2026",
+      "linkedInPosted": false
+    },
+    {
+      "slug": "google-workspace-gemini-business-guide-2026",
+      "title": "Google Workspace + Gemini: The AI Toolkit You're Already Paying For (But Probably Not Using)",
+      "status": "pending_review",
+      "publishDate": "2026-07-05",
+      "draftPath": "drafts/google-workspace-gemini-business-guide-2026.html",
       "publishedUrl": null,
       "linkedInPosted": false
     }
