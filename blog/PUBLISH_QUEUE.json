@@ -115,7 +115,7 @@
       "publishDate": "2026-06-02",
       "draftPath": "drafts/ai-finance-teams-guide.html",
       "publishedUrl": "https://apolloagent.ai/blog/ai-finance-teams-guide",
-      "linkedInPosted": false
+      "linkedInPosted": true
     },
     {
       "slug": "law-firm-ai-intake-automation-case-study",
@@ -228,9 +228,27 @@
     {
       "slug": "google-workspace-gemini-business-guide-2026",
       "title": "Google Workspace + Gemini: The AI Toolkit You're Already Paying For (But Probably Not Using)",
-      "status": "pending_review",
+      "status": "published",
       "publishDate": "2026-07-05",
       "draftPath": "drafts/google-workspace-gemini-business-guide-2026.html",
+      "publishedUrl": "https://apolloagent.ai/blog/google-workspace-gemini-business-guide-2026",
+      "linkedInPosted": false
+    },
+    {
+      "slug": "vibe-coding-for-business-owners-2026",
+      "title": "You Don't Need a Developer: How Business Owners Are Building Custom AI Tools in 2026",
+      "status": "pending_review",
+      "publishDate": "2026-07-07",
+      "draftPath": "drafts/vibe-coding-for-business-owners-2026.html",
+      "publishedUrl": null,
+      "linkedInPosted": false
+    },
+    {
+      "slug": "hvac-plumbing-ai-voice-agent-case-study",
+      "title": "How a 3-Location HVAC & Plumbing Company Recovered $30K/Month in Missed-Call Revenue with AI",
+      "status": "pending_review",
+      "publishDate": "2026-07-09",
+      "draftPath": "drafts/hvac-plumbing-ai-voice-agent-case-study.html",
       "publishedUrl": null,
       "linkedInPosted": false
     }

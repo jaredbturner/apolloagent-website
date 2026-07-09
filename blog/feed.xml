@@ -7,8 +7,16 @@
     <language>en-us</language>
     <managingEditor>hello@apolloagent.ai (Apollo Intelligence)</managingEditor>
     <webMaster>hello@apolloagent.ai (Apollo Intelligence)</webMaster>
-    <lastBuildDate>Thu, 02 Jul 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 05 Jul 2026 12:00:00 GMT</lastBuildDate>
     <atom:link href="https://apolloagent.ai/blog/feed.xml" rel="self" type="application/rss+xml" />
+
+    <item>
+      <title>Google Workspace + Gemini: The AI Toolkit You're Already Paying For</title>
+      <link>https://apolloagent.ai/blog/google-workspace-gemini-business-guide-2026</link>
+      <description>Gemini is now built into every Google Workspace Business plan. Here's how to actually use it — from Gmail drafts to NotebookLM knowledge bases — and what most teams are still missing.</description>
+      <pubDate>Sun, 05 Jul 2026 12:00:00 GMT</pubDate>
+      <guid>https://apolloagent.ai/blog/google-workspace-gemini-business-guide-2026</guid>
+    </item>
 
     <item>
       <title>AI for Project Management: How Smarter Teams Ship Faster Without Drowning in Status Updates</title>
