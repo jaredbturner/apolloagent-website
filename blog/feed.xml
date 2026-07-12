@@ -7,8 +7,16 @@
     <language>en-us</language>
     <managingEditor>hello@apolloagent.ai (Apollo Intelligence)</managingEditor>
     <webMaster>hello@apolloagent.ai (Apollo Intelligence)</webMaster>
-    <lastBuildDate>Thu, 09 Jul 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 11 Jul 2026 12:00:00 GMT</lastBuildDate>
     <atom:link href="https://apolloagent.ai/blog/feed.xml" rel="self" type="application/rss+xml" />
+
+    <item>
+      <title>1 Million Tokens: What Long-Context AI Actually Means for Your Business in 2026</title>
+      <link>https://apolloagent.ai/blog/long-context-ai-business-guide-2026</link>
+      <description>Claude Sonnet 5, GPT-5.5, and Gemini now ship 1M+ token windows. Here's what that unlocks for your business — and where it still falls short.</description>
+      <pubDate>Sat, 11 Jul 2026 12:00:00 GMT</pubDate>
+      <guid>https://apolloagent.ai/blog/long-context-ai-business-guide-2026</guid>
+    </item>
 
     <item>
       <title>How a 3-Location HVAC & Plumbing Company Recovered $30K/Month in Missed-Call Revenue with AI</title>
