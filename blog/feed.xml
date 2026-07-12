@@ -7,8 +7,16 @@
     <language>en-us</language>
     <managingEditor>hello@apolloagent.ai (Apollo Intelligence)</managingEditor>
     <webMaster>hello@apolloagent.ai (Apollo Intelligence)</webMaster>
-    <lastBuildDate>Sun, 05 Jul 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 07 Jul 2026 12:00:00 GMT</lastBuildDate>
     <atom:link href="https://apolloagent.ai/blog/feed.xml" rel="self" type="application/rss+xml" />
+
+    <item>
+      <title>You Don't Need a Developer: How Business Owners Are Building Custom AI Tools in 2026</title>
+      <link>https://apolloagent.ai/blog/vibe-coding-for-business-owners-2026</link>
+      <description>Non-technical business owners are building real custom software with AI tools like Lovable, Bolt.new, and Cursor — without writing a line of code. Here's how to get started.</description>
+      <pubDate>Tue, 07 Jul 2026 12:00:00 GMT</pubDate>
+      <guid>https://apolloagent.ai/blog/vibe-coding-for-business-owners-2026</guid>
+    </item>
 
     <item>
       <title>Google Workspace + Gemini: The AI Toolkit You're Already Paying For</title>

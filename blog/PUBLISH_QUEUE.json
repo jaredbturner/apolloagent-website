@@ -142,7 +142,7 @@
       "publishDate": "2026-06-06",
       "draftPath": "drafts/ai-voice-agents-small-business.html",
       "publishedUrl": "https://apolloagent.ai/blog/ai-voice-agents-small-business",
-      "linkedInPosted": false
+      "linkedInPosted": true
     },
     {
       "slug": "ai-paid-advertising-guide-2026",
@@ -160,7 +160,7 @@
       "publishDate": "2026-06-04",
       "draftPath": "drafts/ai-for-sales-teams-playbook-2026.html",
       "publishedUrl": "https://apolloagent.ai/blog/ai-for-sales-teams-playbook-2026",
-      "linkedInPosted": false
+      "linkedInPosted": true
     },
     {
       "slug": "ai-model-showdown-mid-2026",
@@ -237,11 +237,12 @@
     {
       "slug": "vibe-coding-for-business-owners-2026",
       "title": "You Don't Need a Developer: How Business Owners Are Building Custom AI Tools in 2026",
-      "status": "pending_review",
+      "status": "published",
       "publishDate": "2026-07-07",
       "draftPath": "drafts/vibe-coding-for-business-owners-2026.html",
-      "publishedUrl": null,
-      "linkedInPosted": false
+      "publishedUrl": "https://apolloagent.ai/blog/vibe-coding-for-business-owners-2026",
+      "linkedInPosted": false,
+      "reviewNotes": "Fact-check concerns: specific 2026 AI coding adoption statistics need verification/source link (Keyhole Software 340% growth, GitHub Copilot 26M cumulative users, Cursor 70% Fortune 1000 penetration)."
     },
     {
       "slug": "hvac-plumbing-ai-voice-agent-case-study",
@@ -249,6 +250,15 @@
       "status": "pending_review",
       "publishDate": "2026-07-09",
       "draftPath": "drafts/hvac-plumbing-ai-voice-agent-case-study.html",
+      "publishedUrl": null,
+      "linkedInPosted": false
+    },
+    {
+      "slug": "long-context-ai-business-guide-2026",
+      "title": "1 Million Tokens: What Long-Context AI Actually Means for Your Business in 2026",
+      "status": "pending_review",
+      "publishDate": "2026-07-11",
+      "draftPath": "drafts/long-context-ai-business-guide-2026.html",
       "publishedUrl": null,
       "linkedInPosted": false
     }
