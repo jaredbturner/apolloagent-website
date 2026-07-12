@@ -7,8 +7,16 @@
     <language>en-us</language>
     <managingEditor>hello@apolloagent.ai (Apollo Intelligence)</managingEditor>
     <webMaster>hello@apolloagent.ai (Apollo Intelligence)</webMaster>
-    <lastBuildDate>Tue, 07 Jul 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 09 Jul 2026 12:00:00 GMT</lastBuildDate>
     <atom:link href="https://apolloagent.ai/blog/feed.xml" rel="self" type="application/rss+xml" />
+
+    <item>
+      <title>How a 3-Location HVAC & Plumbing Company Recovered $30K/Month in Missed-Call Revenue with AI</title>
+      <link>https://apolloagent.ai/blog/hvac-plumbing-ai-voice-agent-case-study</link>
+      <description>A regional HVAC and plumbing company was losing jobs to hold music every single day. Here's how they deployed an AI voice agent to fix it — with real 90-day numbers.</description>
+      <pubDate>Thu, 09 Jul 2026 12:00:00 GMT</pubDate>
+      <guid>https://apolloagent.ai/blog/hvac-plumbing-ai-voice-agent-case-study</guid>
+    </item>
 
     <item>
       <title>You Don't Need a Developer: How Business Owners Are Building Custom AI Tools in 2026</title>
