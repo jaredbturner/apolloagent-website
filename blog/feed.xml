@@ -7,8 +7,16 @@
     <language>en-us</language>
     <managingEditor>hello@apolloagent.ai (Apollo Intelligence)</managingEditor>
     <webMaster>hello@apolloagent.ai (Apollo Intelligence)</webMaster>
-    <lastBuildDate>Sat, 11 Jul 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 14 Jul 2026 12:00:00 GMT</lastBuildDate>
     <atom:link href="https://apolloagent.ai/blog/feed.xml" rel="self" type="application/rss+xml" />
+
+    <item>
+      <title>What Claude 4&#x27;s 1M Token Context Window Means for Your Business</title>
+      <link>https://apolloagent.ai/blog/claude-4-1m-context-window-business</link>
+      <description>Claude&#x27;s 1M token context window changes what businesses can hand to AI. Here&#x27;s where it helps, where it doesn&#x27;t, and how to use it safely.</description>
+      <pubDate>Tue, 14 Jul 2026 12:00:00 GMT</pubDate>
+      <guid>https://apolloagent.ai/blog/claude-4-1m-context-window-business</guid>
+    </item>
 
     <item>
       <title>1 Million Tokens: What Long-Context AI Actually Means for Your Business in 2026</title>

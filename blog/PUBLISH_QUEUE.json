@@ -209,7 +209,7 @@
     },
     {
       "slug": "ai-productivity-gap-how-to-fix-it",
-      "title": "Why AI Still Isn't Paying Off for Most Businesses — And What the Winners Do Differently",
+      "title": "Why AI Still Isn't Paying Off for Most Businesses \u2014 And What the Winners Do Differently",
       "status": "published",
       "publishDate": "2026-07-01",
       "draftPath": "drafts/ai-productivity-gap-how-to-fix-it.html",
@@ -264,11 +264,12 @@
     {
       "slug": "claude-4-1m-context-window-business",
       "title": "What Claude 4's 1M Token Context Window Means for Your Business",
-      "status": "pending_review",
+      "status": "published",
       "publishDate": "2026-07-14",
       "draftPath": "drafts/claude-4-1m-context-window-business.html",
-      "publishedUrl": null,
-      "linkedInPosted": false
+      "publishedUrl": "https://apolloagent.ai/blog/claude-4-1m-context-window-business",
+      "linkedInPosted": false,
+      "category": "ai-news"
     }
   ]
 }
