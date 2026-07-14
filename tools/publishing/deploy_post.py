@@ -115,9 +115,12 @@ def wait_for_live(url: str, timeout_seconds: int, project: Path) -> None:
     fail(f"Timed out waiting for live URL: {url}", project)
 
 
-def run_qa(root: Path, project: Path, url: str) -> None:
+def run_qa(root: Path, project: Path, url: str, base_url: str) -> None:
     script = root / "tools/publishing/post_publish_qa.py"
-    proc = run(["python3", str(script), url], cwd=root, check=False)
+    cmd = ["python3", str(script), url]
+    if base_url.rstrip("/") != BASE_URL:
+        cmd.extend(["--fetch-base-url", base_url.rstrip("/"), "--canonical-base-url", BASE_URL])
+    proc = run(cmd, cwd=root, check=False)
     print(proc.stdout)
     if proc.returncode != 0:
         fail(f"Post-publish QA failed for {url}.\n{proc.stderr}", project)
@@ -189,6 +192,7 @@ def submit_to_gsc(project: Path, urls: list[str]) -> bool:
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Push and verify a prepared Apollo blog post deployment.")
     parser.add_argument("slug", help="Post slug to verify after push.")
+    parser.add_argument("--base-url", default=BASE_URL, help="Base URL to verify. Defaults to production.")
     parser.add_argument("--remote", default="origin", help="Git remote to push to.")
     parser.add_argument("--branch", help="Branch to push. Defaults to current branch.")
     parser.add_argument("--skip-push", action="store_true", help="Do not push; only wait/verify the live URL.")
@@ -203,7 +207,8 @@ def main() -> int:
     root = repo_root()
     project = project_root(root)
     branch = args.branch or current_branch(root, project)
-    url = f"{BASE_URL}/blog/{args.slug}"
+    base_url = args.base_url.rstrip("/")
+    url = f"{base_url}/blog/{args.slug}"
     try:
         ensure_clean(root, project)
         if not args.skip_push:
@@ -211,7 +216,7 @@ def main() -> int:
             run(["git", "push", args.remote, branch], cwd=root)
         print(f"Waiting for live URL: {url}")
         wait_for_live(url, args.timeout, project)
-        run_qa(root, project, url)
+        run_qa(root, project, url, base_url)
         urls = updated_urls(root, args.slug)
         if args.skip_cache_purge:
             print("Cloudflare cache purge skipped by --skip-cache-purge.")

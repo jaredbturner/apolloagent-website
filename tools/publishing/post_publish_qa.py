@@ -41,6 +41,8 @@ from dataclasses import dataclass, field
 from typing import Optional
 
 BASE_URL = "https://apolloagent.ai"
+FETCH_BASE_URL = BASE_URL
+CANONICAL_BASE_URL = ""
 TIMEOUT = 15
 MAX_LINK_WORKERS = 8
 
@@ -103,10 +105,17 @@ class PageResult:
         return [c for c in self.checks if not c.passed and c.name.startswith("WARN")]
 
 
+def fetch_url(url: str) -> str:
+    if FETCH_BASE_URL != BASE_URL and url.startswith(BASE_URL):
+        parsed = urllib.parse.urlparse(url)
+        return FETCH_BASE_URL.rstrip("/") + parsed.path + (f"?{parsed.query}" if parsed.query else "")
+    return url
+
+
 def fetch(url: str, method: str = "GET", timeout: int = TIMEOUT):
     """Fetch a URL; returns (status_code, content_type, body_bytes)."""
     req = urllib.request.Request(
-        url,
+        fetch_url(url),
         headers={"User-Agent": "ApolloQA/1.0 (+https://apolloagent.ai)"},
         method=method,
     )
@@ -175,7 +184,11 @@ def qa_page(url: str) -> PageResult:
     # ── 2. Canonical / no redirect to wrong slug ──────────────────────────────
     canon_match = re.search(r'<link[^>]+rel=["\']canonical["\'][^>]+href=["\']([^"\']+)["\']', html)
     canon_url = canon_match.group(1) if canon_match else ""
-    expected_canon = url.rstrip("/")
+    if CANONICAL_BASE_URL:
+        parsed_url = urllib.parse.urlparse(url)
+        expected_canon = CANONICAL_BASE_URL.rstrip("/") + parsed_url.path.rstrip("/")
+    else:
+        expected_canon = url.rstrip("/")
     add(Check("Canonical URL", canon_url.rstrip("/") == expected_canon,
               f"canonical={canon_url!r}"))
 
@@ -310,7 +323,12 @@ def main():
     group.add_argument("--sitemap", metavar="FILE", help="Check all URLs from sitemap.xml")
     parser.add_argument("urls", nargs="*", help="Specific URLs to check")
     parser.add_argument("--json", action="store_true", help="Output JSON report")
+    parser.add_argument("--fetch-base-url", default=BASE_URL, help="Base URL to fetch for apolloagent.ai URLs during local simulation.")
+    parser.add_argument("--canonical-base-url", default="", help="Expected canonical base URL; defaults to each checked URL.")
     args = parser.parse_args()
+    global FETCH_BASE_URL, CANONICAL_BASE_URL
+    FETCH_BASE_URL = args.fetch_base_url.rstrip("/")
+    CANONICAL_BASE_URL = args.canonical_base_url.rstrip("/")
 
     if args.all or args.sitemap:
         sitemap = args.sitemap if args.sitemap else None
