@@ -4,13 +4,13 @@ Apollo Intelligence — Post-Publish QA Checker
 ============================================================
 Usage:
   # Check a specific post after publishing:
-  python3 scripts/post_publish_qa.py https://apolloagent.ai/blog/ai-meeting-automation-guide
+  python3 tools/publishing/post_publish_qa.py https://apolloagent.ai/blog/ai-meeting-automation-guide
 
   # Check ALL live blog posts:
-  python3 scripts/post_publish_qa.py --all
+  python3 tools/publishing/post_publish_qa.py --all
 
   # Check from local sitemap:
-  python3 scripts/post_publish_qa.py --sitemap sitemap.xml
+  python3 tools/publishing/post_publish_qa.py --sitemap sitemap.xml
 
 Checks performed per URL:
   1. HTTP 200 response

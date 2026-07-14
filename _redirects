@@ -3,6 +3,10 @@
 /blog/article-template  /blog/  301
 /blog/article-template.html  /blog/  301
 
+# Internal tooling should be committed but never publicly served by Pages.
+/scripts/*  /404.html  404
+/tools/*    /404.html  404
+
 # Affiliate redirect links — update URLs once affiliate accounts are approved
 # /go/zapier — approved but no affiliate URL; leads submitted manually via Zapier Partner Portal
 /go/zapier        /zapier-automation                           302

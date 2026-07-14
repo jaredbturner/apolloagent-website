@@ -135,17 +135,19 @@ Each cron run:
 
 ### Jared Approves
 When Jared replies "publish <filename>":
-1. Move `drafts/<filename>.html` → root `blog/<filename>.html`
-2. Update `PUBLISH_QUEUE.json` status to "approved" (NOT "published" yet)
-3. **Do NOT git push immediately.** Instead, schedule the git push for the publish date:
-   - Set a cron job to run at 7:00 AM MT on the publish date that does: `git add . && git commit -m "Publish blog: <title>" && git push`
-   - Update `PUBLISH_QUEUE.json` status to "published" only after the scheduled push
-4. Add the new post URL to `sitemap.xml` — also update `<lastmod>` on the homepage (`/`) and `/blog/` entries to today's date.
-5. **Rotate the homepage "From the Blog" section** (`index.html`) to show the 3 most recent published posts. Replace the oldest card with the new post's card. The 3 cards must always reflect the most recently published articles. Use the same card HTML structure (gradient, badge, title, description, date, read time).
-6. Add the new post card to `blog/index.html` (with correct `data-category` attribute — see Category Mapping table). **Insert at the top of the article grid** (newest post first). The grid must always be ordered newest → oldest.
-7. Add the new post card to **every relevant category page** (see Category Mapping). **Insert the card so the page remains in newest → oldest order.** If a post spans multiple categories (e.g., role-guides + industry-guides), add it to all applicable pages. Replace any "More articles coming soon" placeholder if present.
-8. Submit the new URL to Google Search Console Indexing API: `python3 scripts/gsc_index.py https://apolloagent.ai/blog/<slug>` (if the script exists)
-9. Confirm in Discord: "✅ Scheduled for publication on [date]: [title] → apolloagent.ai/blog/<slug> (GSC indexing submitted)"
+1. Create the local publish commit:
+   - `python3 tools/publishing/commit_post.py <slug> --commit`
+   - Use `--category <category-slug>` if category inference is wrong or the post belongs to multiple categories.
+2. Review the generated git commit locally.
+3. Deploy only after approval / scheduled publish time:
+   - `python3 tools/publishing/deploy_post.py <slug>`
+4. Confirm in Discord: "✅ Published: [title] → apolloagent.ai/blog/<slug>"
+
+`commit_post.py` performs the local publish preparation: moves `drafts/<slug>.html` to root `blog/<slug>.html`, updates `PUBLISH_QUEUE.json`, inserts cards in `blog/index.html` and relevant category pages, rotates homepage cards, updates RSS and sitemap, and creates a local git commit when `--commit` is passed.
+
+`deploy_post.py` performs the live production step: pushes the prepared commit, waits for Cloudflare Pages to serve the URL, and runs post-publish QA.
+
+Internal tooling lives under `tools/publishing/` and is blocked from public serving via `_redirects`.
 
 ### Jared Requests Changes
 When Jared gives feedback:
@@ -160,7 +162,7 @@ If a draft is still "pending_review" at 7:00 AM on its publish date:
    - Are statistics sourced and not fabricated?
    - Are tool recommendations accurate (features exist, pricing correct)?
    - No misrepresentations or unsupported claims?
-2. If passes → publish automatically (follow steps 1–9 from "Jared Approves" section, including rotating homepage cards, adding cards to index + category pages in newest → oldest order)
+2. If passes → publish automatically (follow the "Jared Approves" script workflow, including the local commit and explicit deploy step)
 3. If fails → alert Discord: "⚠️ Blog draft [title] needs review — factual concerns found"
 
 ## Content Standards
@@ -239,16 +241,16 @@ After git push and Cloudflare Pages deploys (~60s), run the QA checker:
 
 ```bash
 # Single post (most common — run after every publish):
-python3 scripts/post_publish_qa.py https://apolloagent.ai/blog/<slug>
+python3 tools/publishing/post_publish_qa.py https://apolloagent.ai/blog/<slug>
 
 # All live posts (run after bulk changes or periodically):
-python3 scripts/post_publish_qa.py --all
+python3 tools/publishing/post_publish_qa.py --all
 
 # From sitemap (most thorough):
-python3 scripts/post_publish_qa.py --sitemap sitemap.xml
+python3 tools/publishing/post_publish_qa.py --sitemap sitemap.xml
 
 # With JSON report:
-python3 scripts/post_publish_qa.py --all --json
+python3 tools/publishing/post_publish_qa.py --all --json
 ```
 
 **Checks performed:**
