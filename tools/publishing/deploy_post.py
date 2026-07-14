@@ -106,13 +106,26 @@ def url_ok(url: str) -> bool:
         return False
 
 
+def canonical_ok(url: str) -> bool:
+    try:
+        req = urllib.request.Request(url, method="GET", headers={"User-Agent": "ApolloDeploy/1.0"})
+        with urllib.request.urlopen(req, timeout=15) as resp:
+            if not (200 <= resp.status < 300):
+                return False
+            body = resp.read().decode("utf-8", errors="replace")
+    except Exception:
+        return False
+    canonical = f'<link rel="canonical" href="{url.rstrip("/")}"'
+    return canonical in body
+
+
 def wait_for_live(url: str, timeout_seconds: int, project: Path) -> None:
     deadline = time.time() + timeout_seconds
     while time.time() < deadline:
-        if url_ok(url):
+        if canonical_ok(url):
             return
         time.sleep(10)
-    fail(f"Timed out waiting for live URL: {url}", project)
+    fail(f"Timed out waiting for live canonical URL: {url}", project)
 
 
 def run_qa(root: Path, project: Path, url: str, base_url: str) -> None:
