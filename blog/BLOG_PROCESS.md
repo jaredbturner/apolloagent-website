@@ -145,7 +145,7 @@ When Jared replies "publish <filename>":
 
 `commit_post.py` performs the local publish preparation: moves `drafts/<slug>.html` to root `blog/<slug>.html`, updates `PUBLISH_QUEUE.json`, inserts cards in `blog/index.html` and relevant category pages, rotates homepage cards, updates RSS and sitemap, and creates a local git commit when `--commit` is passed.
 
-`deploy_post.py` performs the live production step: pushes the prepared commit, waits for Cloudflare Pages to serve the URL, and runs post-publish QA.
+`deploy_post.py` performs the live production step: pushes the prepared commit, waits for Cloudflare Pages to serve the URL, runs post-publish QA, purges Cloudflare cache when `CF_ZONE_ID`/`CF_API_TOKEN` are configured, submits updated page URLs to GSC through `../scripts/gsc_index.py`, and sends success/failure notification when `BLOG_NOTIFY_WEBHOOK_URL` or `DISCORD_WEBHOOK_URL` is configured.
 
 Internal tooling lives under `tools/publishing/` and is blocked from public serving via `_redirects`.
 

@@ -397,6 +397,16 @@ def move_draft(root: Path, post: Post, overwrite: bool) -> None:
     shutil.move(str(src), str(dst))
 
 
+def ensure_hero_image(root: Path, post: Post) -> Path:
+    image = root / "images/blog" / f"{post.slug}-hero.webp"
+    if not image.exists():
+        fail(
+            "Hero image missing: "
+            f"{image.relative_to(root)}. Generate and commit the WebP hero before publishing."
+        )
+    return image
+
+
 def git_changed_files(root: Path) -> list[str]:
     result = run(["git", "status", "--porcelain"], cwd=root)
     return [line[3:] for line in result.stdout.splitlines() if line]
@@ -436,6 +446,8 @@ def main() -> int:
     post = build_post(root, slug, args.category)
     print(f"Publishing draft locally: {post.slug}")
     print(f"Category/categories: {', '.join(post.categories)}")
+    hero_image = ensure_hero_image(root, post)
+    print(f"Hero image: {hero_image.relative_to(root)}")
     move_draft(root, post, args.overwrite)
     update_queue(root, post)
     update_grid_file(root / "blog/index.html", post, post.categories[0])
