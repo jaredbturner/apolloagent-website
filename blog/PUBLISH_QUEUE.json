@@ -260,6 +260,15 @@
       "draftPath": "drafts/long-context-ai-business-guide-2026.html",
       "publishedUrl": "https://apolloagent.ai/blog/long-context-ai-business-guide-2026",
       "linkedInPosted": false
+    },
+    {
+      "slug": "claude-4-1m-context-window-business",
+      "title": "What Claude 4's 1M Token Context Window Means for Your Business",
+      "status": "pending_review",
+      "publishDate": "2026-07-14",
+      "draftPath": "drafts/claude-4-1m-context-window-business.html",
+      "publishedUrl": null,
+      "linkedInPosted": false
     }
   ]
 }
