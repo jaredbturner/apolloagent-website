@@ -7,8 +7,16 @@
     <language>en-us</language>
     <managingEditor>hello@apolloagent.ai (Apollo Intelligence)</managingEditor>
     <webMaster>hello@apolloagent.ai (Apollo Intelligence)</webMaster>
-    <lastBuildDate>Tue, 14 Jul 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 16 Jul 2026 12:00:00 GMT</lastBuildDate>
     <atom:link href="https://apolloagent.ai/blog/feed.xml" rel="self" type="application/rss+xml" />
+
+    <item>
+      <title>AI Vendor Evaluation Checklist: How to Choose Business AI Tools Without Getting Burned</title>
+      <link>https://apolloagent.ai/blog/ai-vendor-evaluation-checklist-2026</link>
+      <description>Use this practical AI vendor evaluation checklist to compare security, integrations, ROI, support, and implementation risk before you buy.</description>
+      <pubDate>Thu, 16 Jul 2026 12:00:00 GMT</pubDate>
+      <guid>https://apolloagent.ai/blog/ai-vendor-evaluation-checklist-2026</guid>
+    </item>
 
     <item>
       <title>What Claude 4&#x27;s 1M Token Context Window Means for Your Business</title>

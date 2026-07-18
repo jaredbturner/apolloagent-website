@@ -270,6 +270,25 @@
       "publishedUrl": "https://apolloagent.ai/blog/claude-4-1m-context-window-business",
       "linkedInPosted": true,
       "category": "ai-news"
+    },
+    {
+      "slug": "ai-vendor-evaluation-checklist-2026",
+      "title": "AI Vendor Evaluation Checklist: How to Choose Business AI Tools Without Getting Burned",
+      "status": "published",
+      "publishDate": "2026-07-16",
+      "draftPath": "drafts/ai-vendor-evaluation-checklist-2026.html",
+      "publishedUrl": "https://apolloagent.ai/blog/ai-vendor-evaluation-checklist-2026",
+      "linkedInPosted": false,
+      "category": "business-automation"
+    },
+    {
+      "slug": "ai-search-visibility-small-business-2026",
+      "title": "AI Search Visibility in 2026: How Small Businesses Get Found When Customers Ask AI",
+      "status": "pending_review",
+      "publishDate": "2026-07-18",
+      "draftPath": "drafts/ai-search-visibility-small-business-2026.html",
+      "publishedUrl": null,
+      "linkedInPosted": false
     }
   ]
 }
