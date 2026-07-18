@@ -420,8 +420,15 @@ def commit_changes(root: Path, post: Post) -> None:
         "blog/feed.xml",
         "sitemap.xml",
         str(post.live_rel),
-        str(post.draft_rel),
     ]
+    if (root / post.draft_rel).exists() or subprocess.run(
+        ["git", "ls-files", "--error-unmatch", str(post.draft_rel)],
+        cwd=root,
+        text=True,
+        capture_output=True,
+        check=False,
+    ).returncode == 0:
+        files.append(str(post.draft_rel))
     files.extend(category_info(category)["page"] for category in post.categories)
     image = root / "images/blog" / f"{post.slug}-hero.webp"
     if image.exists():
