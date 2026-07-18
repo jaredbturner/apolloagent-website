@@ -284,11 +284,12 @@
     {
       "slug": "ai-search-visibility-small-business-2026",
       "title": "AI Search Visibility in 2026: How Small Businesses Get Found When Customers Ask AI",
-      "status": "pending_review",
+      "status": "published",
       "publishDate": "2026-07-18",
       "draftPath": "drafts/ai-search-visibility-small-business-2026.html",
-      "publishedUrl": null,
-      "linkedInPosted": false
+      "publishedUrl": "https://apolloagent.ai/blog/ai-search-visibility-small-business-2026",
+      "linkedInPosted": false,
+      "category": "business-automation"
     }
   ]
 }
