@@ -290,6 +290,16 @@
       "publishedUrl": "https://apolloagent.ai/blog/ai-search-visibility-small-business-2026",
       "linkedInPosted": true,
       "category": "business-automation"
+    },
+    {
+      "slug": "chatgpt-work-workplace-agents-business-automation",
+      "title": "ChatGPT Work and Workplace AI Agents: What Business Owners Should Automate First",
+      "status": "published",
+      "publishDate": "2026-07-21",
+      "draftPath": "drafts/chatgpt-work-workplace-agents-business-automation.html",
+      "publishedUrl": "https://apolloagent.ai/blog/chatgpt-work-workplace-agents-business-automation",
+      "linkedInPosted": false,
+      "category": "ai-news"
     }
   ]
 }
