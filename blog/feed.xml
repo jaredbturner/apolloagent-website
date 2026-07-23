@@ -7,9 +7,17 @@
     <language>en-us</language>
     <managingEditor>hello@apolloagent.ai (Apollo Intelligence)</managingEditor>
     <webMaster>hello@apolloagent.ai (Apollo Intelligence)</webMaster>
-    <lastBuildDate>Tue, 21 Jul 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 23 Jul 2026 12:00:00 GMT</lastBuildDate>
     <atom:link href="https://apolloagent.ai/blog/feed.xml" rel="self" type="application/rss+xml" />
 
+
+    <item>
+      <title>AI Agent Governance for Small Business: Permissions, Pricing, and Approval Gates</title>
+      <link>https://apolloagent.ai/blog/ai-agent-governance-small-business-2026</link>
+      <description>AI agents can now work across your apps. Here is how small businesses should manage permissions, costs, approvals, and audit trails.</description>
+      <pubDate>Thu, 23 Jul 2026 12:00:00 GMT</pubDate>
+      <guid>https://apolloagent.ai/blog/ai-agent-governance-small-business-2026</guid>
+    </item>
 
     <item>
       <title>ChatGPT Work and Workplace AI Agents: What Business Owners Should Automate First</title>

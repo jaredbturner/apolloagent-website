@@ -300,6 +300,16 @@
       "publishedUrl": "https://apolloagent.ai/blog/chatgpt-work-workplace-agents-business-automation",
       "linkedInPosted": true,
       "category": "ai-news"
+    },
+    {
+      "slug": "ai-agent-governance-small-business-2026",
+      "title": "AI Agent Governance for Small Business: Permissions, Pricing, and Approval Gates",
+      "status": "published",
+      "publishDate": "2026-07-23",
+      "draftPath": "approved/ai-agent-governance-small-business-2026.html",
+      "publishedUrl": "https://apolloagent.ai/blog/ai-agent-governance-small-business-2026",
+      "linkedInPosted": false,
+      "category": "ai-news"
     }
   ]
 }
