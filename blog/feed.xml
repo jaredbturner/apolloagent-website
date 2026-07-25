@@ -7,9 +7,17 @@
     <language>en-us</language>
     <managingEditor>hello@apolloagent.ai (Apollo Intelligence)</managingEditor>
     <webMaster>hello@apolloagent.ai (Apollo Intelligence)</webMaster>
-    <lastBuildDate>Thu, 23 Jul 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 25 Jul 2026 12:00:00 GMT</lastBuildDate>
     <atom:link href="https://apolloagent.ai/blog/feed.xml" rel="self" type="application/rss+xml" />
 
+
+    <item>
+      <title>The Workplace AI Agent Stack Small Businesses Should Build First</title>
+      <link>https://apolloagent.ai/blog/workplace-ai-agent-stack-small-business-2026</link>
+      <description>ChatGPT Work, Claude Cowork, and Gemini Enterprise show where workplace AI agents are headed. Here&#x27;s what small businesses should adopt first.</description>
+      <pubDate>Sat, 25 Jul 2026 12:00:00 GMT</pubDate>
+      <guid>https://apolloagent.ai/blog/workplace-ai-agent-stack-small-business-2026</guid>
+    </item>
 
     <item>
       <title>AI Agent Governance for Small Business: Permissions, Pricing, and Approval Gates</title>
