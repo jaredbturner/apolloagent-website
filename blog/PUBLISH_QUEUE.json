@@ -320,6 +320,16 @@
       "publishedUrl": "https://apolloagent.ai/blog/workplace-ai-agent-stack-small-business-2026",
       "linkedInPosted": true,
       "category": "ai-news"
+    },
+    {
+      "slug": "ai-workplace-agents-small-business-automation-2026",
+      "title": "AI Workplace Agents for Small Business: What to Automate First in 2026",
+      "status": "published",
+      "publishDate": "2026-07-28",
+      "draftPath": "approved/ai-workplace-agents-small-business-automation-2026.html",
+      "publishedUrl": "https://apolloagent.ai/blog/ai-workplace-agents-small-business-automation-2026",
+      "linkedInPosted": false,
+      "category": "ai-news"
     }
   ]
 }

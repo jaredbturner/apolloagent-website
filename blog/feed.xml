@@ -7,9 +7,17 @@
     <language>en-us</language>
     <managingEditor>hello@apolloagent.ai (Apollo Intelligence)</managingEditor>
     <webMaster>hello@apolloagent.ai (Apollo Intelligence)</webMaster>
-    <lastBuildDate>Sat, 25 Jul 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 28 Jul 2026 12:00:00 GMT</lastBuildDate>
     <atom:link href="https://apolloagent.ai/blog/feed.xml" rel="self" type="application/rss+xml" />
 
+
+    <item>
+      <title>AI Workplace Agents for Small Business: What to Automate First in 2026</title>
+      <link>https://apolloagent.ai/blog/ai-workplace-agents-small-business-automation-2026</link>
+      <description>AI workplace agents are moving into everyday business tools. Here is what small businesses should automate first, and what still needs human approval.</description>
+      <pubDate>Tue, 28 Jul 2026 12:00:00 GMT</pubDate>
+      <guid>https://apolloagent.ai/blog/ai-workplace-agents-small-business-automation-2026</guid>
+    </item>
 
     <item>
       <title>The Workplace AI Agent Stack Small Businesses Should Build First</title>
