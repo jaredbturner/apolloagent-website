@@ -7,9 +7,17 @@
     <language>en-us</language>
     <managingEditor>hello@apolloagent.ai (Apollo Intelligence)</managingEditor>
     <webMaster>hello@apolloagent.ai (Apollo Intelligence)</webMaster>
-    <lastBuildDate>Tue, 28 Jul 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 30 Jul 2026 12:00:00 GMT</lastBuildDate>
     <atom:link href="https://apolloagent.ai/blog/feed.xml" rel="self" type="application/rss+xml" />
 
+
+    <item>
+      <title>Workplace AI Agent Pilot Playbook: How Small Businesses Should Start in 2026</title>
+      <link>https://apolloagent.ai/blog/workplace-ai-agent-pilot-playbook-2026</link>
+      <description>A practical 2026 playbook for piloting workplace AI agents with approval gates, usage controls, and measurable business workflows.</description>
+      <pubDate>Thu, 30 Jul 2026 12:00:00 GMT</pubDate>
+      <guid>https://apolloagent.ai/blog/workplace-ai-agent-pilot-playbook-2026</guid>
+    </item>
 
     <item>
       <title>AI Workplace Agents for Small Business: What to Automate First in 2026</title>

@@ -330,6 +330,16 @@
       "publishedUrl": "https://apolloagent.ai/blog/ai-workplace-agents-small-business-automation-2026",
       "linkedInPosted": false,
       "category": "ai-news"
+    },
+    {
+      "slug": "workplace-ai-agent-pilot-playbook-2026",
+      "title": "Workplace AI Agent Pilot Playbook: How Small Businesses Should Start in 2026",
+      "status": "published",
+      "publishDate": "2026-07-30",
+      "draftPath": "drafts/workplace-ai-agent-pilot-playbook-2026.html",
+      "publishedUrl": "https://apolloagent.ai/blog/workplace-ai-agent-pilot-playbook-2026",
+      "linkedInPosted": false,
+      "category": "business-automation"
     }
   ]
 }
