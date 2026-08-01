@@ -340,6 +340,16 @@
       "publishedUrl": "https://apolloagent.ai/blog/workplace-ai-agent-pilot-playbook-2026",
       "linkedInPosted": true,
       "category": "business-automation"
+    },
+    {
+      "slug": "ai-job-redesign-small-business-2026",
+      "title": "AI Job Redesign for Small Business: What to Delegate, What to Keep Human in 2026",
+      "status": "published",
+      "publishDate": "2026-08-01",
+      "draftPath": "approved/ai-job-redesign-small-business-2026.html",
+      "publishedUrl": "https://apolloagent.ai/blog/ai-job-redesign-small-business-2026",
+      "linkedInPosted": false,
+      "category": "ai-news"
     }
   ]
 }
