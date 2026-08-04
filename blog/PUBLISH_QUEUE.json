@@ -350,6 +350,16 @@
       "publishedUrl": "https://apolloagent.ai/blog/ai-job-redesign-small-business-2026",
       "linkedInPosted": true,
       "category": "ai-news"
+    },
+    {
+      "slug": "ai-browser-agents-business-workflows-2026",
+      "title": "AI Browser Agents: What Business Owners Should Automate First",
+      "status": "published",
+      "publishDate": "2026-08-04",
+      "draftPath": "drafts/ai-browser-agents-business-workflows-2026.html",
+      "publishedUrl": "https://apolloagent.ai/blog/ai-browser-agents-business-workflows-2026",
+      "linkedInPosted": false,
+      "category": "ai-news"
     }
   ]
 }
