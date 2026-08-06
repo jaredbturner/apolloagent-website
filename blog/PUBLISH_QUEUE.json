@@ -360,6 +360,16 @@
       "publishedUrl": "https://apolloagent.ai/blog/ai-browser-agents-business-workflows-2026",
       "linkedInPosted": true,
       "category": "ai-news"
+    },
+    {
+      "slug": "workspace-ai-agents-business-apps-2026",
+      "title": "Workspace AI Agents Are Moving Into Business Apps: What Owners Should Automate Next",
+      "status": "published",
+      "publishDate": "2026-08-06",
+      "draftPath": "approved/workspace-ai-agents-business-apps-2026.html",
+      "publishedUrl": "https://apolloagent.ai/blog/workspace-ai-agents-business-apps-2026",
+      "linkedInPosted": false,
+      "category": "business-automation"
     }
   ]
 }
