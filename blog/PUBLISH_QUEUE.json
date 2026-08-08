@@ -370,6 +370,16 @@
       "publishedUrl": "https://apolloagent.ai/blog/workspace-ai-agents-business-apps-2026",
       "linkedInPosted": true,
       "category": "business-automation"
+    },
+    {
+      "slug": "ai-agent-cost-controls-small-business-2026",
+      "title": "AI Agent Cost Controls: What Small Businesses Need Before They Automate More Work",
+      "status": "published",
+      "publishDate": "2026-08-08",
+      "draftPath": "approved/ai-agent-cost-controls-small-business-2026.html",
+      "publishedUrl": "https://apolloagent.ai/blog/ai-agent-cost-controls-small-business-2026",
+      "linkedInPosted": false,
+      "category": "ai-news"
     }
   ]
 }

@@ -7,9 +7,17 @@
     <language>en-us</language>
     <managingEditor>hello@apolloagent.ai (Apollo Intelligence)</managingEditor>
     <webMaster>hello@apolloagent.ai (Apollo Intelligence)</webMaster>
-    <lastBuildDate>Thu, 06 Aug 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 08 Aug 2026 12:00:00 GMT</lastBuildDate>
     <atom:link href="https://apolloagent.ai/blog/feed.xml" rel="self" type="application/rss+xml" />
 
+
+    <item>
+      <title>AI Agent Cost Controls: What Small Businesses Need Before They Automate More Work</title>
+      <link>https://apolloagent.ai/blog/ai-agent-cost-controls-small-business-2026</link>
+      <description>AI agents are moving into daily business work. Here is how small businesses should control usage, permissions, approvals, and ROI before costs sprawl.</description>
+      <pubDate>Sat, 08 Aug 2026 12:00:00 GMT</pubDate>
+      <guid>https://apolloagent.ai/blog/ai-agent-cost-controls-small-business-2026</guid>
+    </item>
 
     <item>
       <title>Workspace AI Agents Are Moving Into Business Apps: What Owners Should Automate Next</title>
