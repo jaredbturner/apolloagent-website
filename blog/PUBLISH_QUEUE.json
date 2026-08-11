@@ -378,8 +378,18 @@
       "publishDate": "2026-08-08",
       "draftPath": "approved/ai-agent-cost-controls-small-business-2026.html",
       "publishedUrl": "https://apolloagent.ai/blog/ai-agent-cost-controls-small-business-2026",
-      "linkedInPosted": false,
+      "linkedInPosted": true,
       "category": "ai-news"
+    },
+    {
+      "slug": "ai-post-meeting-work-automation-2026",
+      "title": "AI That Does Post-Meeting Work: How to Turn Transcripts Into Tasks, CRM Updates, and Follow-Up",
+      "status": "published",
+      "publishDate": "2026-08-11",
+      "draftPath": "drafts/ai-post-meeting-work-automation-2026.html",
+      "publishedUrl": "https://apolloagent.ai/blog/ai-post-meeting-work-automation-2026",
+      "linkedInPosted": false,
+      "category": "business-automation"
     }
   ]
 }

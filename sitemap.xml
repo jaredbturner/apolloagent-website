@@ -2,13 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://apolloagent.ai/</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-08-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://apolloagent.ai/blog/</loc>
-    <lastmod>2026-08-08</lastmod>
+    <lastmod>2026-08-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -110,7 +110,7 @@
   </url>
   <url>
     <loc>https://apolloagent.ai/blog/business-automation</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-08-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -137,12 +137,6 @@
     <lastmod>2026-04-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://apolloagent.ai/privacy-policy</loc>
-    <lastmod>2026-04-20</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
   </url>
   <url>
     <loc>https://apolloagent.ai/blog/ai-roi-measurement-guide</loc>
@@ -258,4 +252,23 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-<url><loc>https://apolloagent.ai/blog/claude-4-1m-context-window-business</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-07-14</lastmod></url><url><loc>https://apolloagent.ai/blog/ai-vendor-evaluation-checklist-2026</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-07-16</lastmod></url><url><loc>https://apolloagent.ai/blog/ai-search-visibility-small-business-2026</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-07-18</lastmod></url><url><loc>https://apolloagent.ai/blog/chatgpt-work-workplace-agents-business-automation</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-07-21</lastmod></url><url><loc>https://apolloagent.ai/blog/ai-agent-governance-small-business-2026</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-07-23</lastmod></url><url><loc>https://apolloagent.ai/blog/workplace-ai-agent-stack-small-business-2026</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-07-25</lastmod></url><url><loc>https://apolloagent.ai/blog/ai-workplace-agents-small-business-automation-2026</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-07-28</lastmod></url><url><loc>https://apolloagent.ai/blog/workplace-ai-agent-pilot-playbook-2026</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-07-30</lastmod></url><url><loc>https://apolloagent.ai/blog/ai-job-redesign-small-business-2026</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-08-01</lastmod></url><url><loc>https://apolloagent.ai/blog/ai-browser-agents-business-workflows-2026</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-08-04</lastmod></url><url><loc>https://apolloagent.ai/blog/workspace-ai-agents-business-apps-2026</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-08-06</lastmod></url><url><loc>https://apolloagent.ai/blog/ai-agent-cost-controls-small-business-2026</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-08-08</lastmod></url></urlset>
+<url><loc>https://apolloagent.ai/blog/claude-4-1m-context-window-business</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-07-14</lastmod></url><url><loc>https://apolloagent.ai/blog/ai-vendor-evaluation-checklist-2026</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-07-16</lastmod></url><url><loc>https://apolloagent.ai/blog/ai-search-visibility-small-business-2026</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-07-18</lastmod></url><url><loc>https://apolloagent.ai/blog/chatgpt-work-workplace-agents-business-automation</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-07-21</lastmod></url><url><loc>https://apolloagent.ai/blog/ai-agent-governance-small-business-2026</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-07-23</lastmod></url><url><loc>https://apolloagent.ai/blog/workplace-ai-agent-stack-small-business-2026</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-07-25</lastmod></url><url><loc>https://apolloagent.ai/blog/ai-workplace-agents-small-business-automation-2026</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-07-28</lastmod></url><url><loc>https://apolloagent.ai/blog/workplace-ai-agent-pilot-playbook-2026</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-07-30</lastmod></url><url><loc>https://apolloagent.ai/blog/ai-job-redesign-small-business-2026</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-08-01</lastmod></url><url><loc>https://apolloagent.ai/blog/ai-browser-agents-business-workflows-2026</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-08-04</lastmod></url><url><loc>https://apolloagent.ai/blog/workspace-ai-agents-business-apps-2026</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-08-06</lastmod></url><url><loc>https://apolloagent.ai/blog/ai-agent-cost-controls-small-business-2026</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-08-08</lastmod></url>
+  <url>
+    <loc>https://apolloagent.ai/ai-readiness/</loc>
+    <lastmod>2026-08-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://apolloagent.ai/go/beautiful-ai/</loc>
+    <lastmod>2026-08-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://apolloagent.ai/privacy-policy/</loc>
+    <lastmod>2026-08-08</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+<url><loc>https://apolloagent.ai/blog/ai-post-meeting-work-automation-2026</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-08-11</lastmod></url></urlset>

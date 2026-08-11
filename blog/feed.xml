@@ -7,9 +7,17 @@
     <language>en-us</language>
     <managingEditor>hello@apolloagent.ai (Apollo Intelligence)</managingEditor>
     <webMaster>hello@apolloagent.ai (Apollo Intelligence)</webMaster>
-    <lastBuildDate>Sat, 08 Aug 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 11 Aug 2026 12:00:00 GMT</lastBuildDate>
     <atom:link href="https://apolloagent.ai/blog/feed.xml" rel="self" type="application/rss+xml" />
 
+
+    <item>
+      <title>AI That Does Post-Meeting Work: How to Turn Transcripts Into Tasks, CRM Updates, and Follow-Up</title>
+      <link>https://apolloagent.ai/blog/ai-post-meeting-work-automation-2026</link>
+      <description>Meeting notes are table stakes. Here is how small businesses can use AI to turn transcripts into tasks, CRM updates, follow-up drafts, and approvals.</description>
+      <pubDate>Tue, 11 Aug 2026 12:00:00 GMT</pubDate>
+      <guid>https://apolloagent.ai/blog/ai-post-meeting-work-automation-2026</guid>
+    </item>
 
     <item>
       <title>AI Agent Cost Controls: What Small Businesses Need Before They Automate More Work</title>
@@ -116,7 +124,7 @@
     </item>
 
     <item>
-      <title>How a 3-Location HVAC & Plumbing Company Recovered $30K/Month in Missed-Call Revenue with AI</title>
+      <title>How a 3-Location HVAC &amp; Plumbing Company Recovered $30K/Month in Missed-Call Revenue with AI</title>
       <link>https://apolloagent.ai/blog/hvac-plumbing-ai-voice-agent-case-study</link>
       <description>A regional HVAC and plumbing company was losing jobs to hold music every single day. Here's how they deployed an AI voice agent to fix it — with real 90-day numbers.</description>
       <pubDate>Thu, 09 Jul 2026 12:00:00 GMT</pubDate>
