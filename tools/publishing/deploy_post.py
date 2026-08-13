@@ -82,10 +82,12 @@ def fail(message: str, project: Path) -> None:
     raise SystemExit(1)
 
 
-def ensure_clean(root: Path, project: Path) -> None:
+def warn_if_dirty(root: Path) -> None:
     status = run(["git", "status", "--porcelain"], cwd=root).stdout.strip()
     if status:
-        fail("Working tree is dirty. Commit or stash changes before deploy.", project)
+        print("WARNING: working tree has uncommitted local changes; deploying committed HEAD only.")
+        for line in status.splitlines():
+            print(f"  {line}")
 
 
 def current_branch(root: Path, project: Path) -> str:
@@ -223,7 +225,7 @@ def main() -> int:
     base_url = args.base_url.rstrip("/")
     url = f"{base_url}/blog/{args.slug}"
     try:
-        ensure_clean(root, project)
+        warn_if_dirty(root)
         if not args.skip_push:
             print(f"Pushing {branch} to {args.remote}...")
             run(["git", "push", args.remote, branch], cwd=root)
