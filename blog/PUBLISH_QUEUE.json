@@ -390,6 +390,16 @@
       "publishedUrl": "https://apolloagent.ai/blog/ai-post-meeting-work-automation-2026",
       "linkedInPosted": true,
       "category": "business-automation"
+    },
+    {
+      "slug": "meta-muse-glimmer-open-weight-ai-business-2026",
+      "title": "Meta Just Open-Sourced a Frontier AI Model: What Muse Glimmer Means for Your Business",
+      "status": "published",
+      "publishDate": "2026-08-13",
+      "draftPath": "approved/meta-muse-glimmer-open-weight-ai-business-2026.html",
+      "linkedInPosted": false,
+      "category": "ai-news",
+      "publishedUrl": "https://apolloagent.ai/blog/meta-muse-glimmer-open-weight-ai-business-2026"
     }
   ]
 }

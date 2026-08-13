@@ -7,9 +7,17 @@
     <language>en-us</language>
     <managingEditor>hello@apolloagent.ai (Apollo Intelligence)</managingEditor>
     <webMaster>hello@apolloagent.ai (Apollo Intelligence)</webMaster>
-    <lastBuildDate>Tue, 11 Aug 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 13 Aug 2026 12:00:00 GMT</lastBuildDate>
     <atom:link href="https://apolloagent.ai/blog/feed.xml" rel="self" type="application/rss+xml" />
 
+
+    <item>
+      <title>Meta Just Open-Sourced a Frontier AI Model: What Muse Glimmer Means for Your Business</title>
+      <link>https://apolloagent.ai/blog/meta-muse-glimmer-open-weight-ai-business-2026</link>
+      <description>Meta released Muse Glimmer, a free, Apache 2.0-licensed AI model built for agents. Here&#x27;s what &#x27;open weight&#x27; actually means for small business owners — and when it matters.</description>
+      <pubDate>Thu, 13 Aug 2026 12:00:00 GMT</pubDate>
+      <guid>https://apolloagent.ai/blog/meta-muse-glimmer-open-weight-ai-business-2026</guid>
+    </item>
 
     <item>
       <title>AI That Does Post-Meeting Work: How to Turn Transcripts Into Tasks, CRM Updates, and Follow-Up</title>
