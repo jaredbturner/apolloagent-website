@@ -7,9 +7,17 @@
     <language>en-us</language>
     <managingEditor>hello@apolloagent.ai (Apollo Intelligence)</managingEditor>
     <webMaster>hello@apolloagent.ai (Apollo Intelligence)</webMaster>
-    <lastBuildDate>Thu, 13 Aug 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 15 Aug 2026 12:00:00 GMT</lastBuildDate>
     <atom:link href="https://apolloagent.ai/blog/feed.xml" rel="self" type="application/rss+xml" />
 
+
+    <item>
+      <title>AI Agents Now Get Their Own Login: Identity and Audit Trails for Small Business</title>
+      <link>https://apolloagent.ai/blog/ai-agent-identity-audit-trails-small-business-2026</link>
+      <description>Gemini&#x27;s Enterprise Agent Platform just made agent identity a standard feature. Here&#x27;s why every AI agent in your business needs its own login and an audit trail.</description>
+      <pubDate>Sat, 15 Aug 2026 12:00:00 GMT</pubDate>
+      <guid>https://apolloagent.ai/blog/ai-agent-identity-audit-trails-small-business-2026</guid>
+    </item>
 
     <item>
       <title>Meta Just Open-Sourced a Frontier AI Model: What Muse Glimmer Means for Your Business</title>

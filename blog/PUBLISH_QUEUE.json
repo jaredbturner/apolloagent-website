@@ -400,6 +400,16 @@
       "linkedInPosted": true,
       "category": "ai-news",
       "publishedUrl": "https://apolloagent.ai/blog/meta-muse-glimmer-open-weight-ai-business-2026"
+    },
+    {
+      "slug": "ai-agent-identity-audit-trails-small-business-2026",
+      "title": "AI Agents Now Get Their Own Login: Identity and Audit Trails for Small Business",
+      "status": "published",
+      "publishDate": "2026-08-15",
+      "draftPath": "approved/ai-agent-identity-audit-trails-small-business-2026.html",
+      "publishedUrl": "https://apolloagent.ai/blog/ai-agent-identity-audit-trails-small-business-2026",
+      "linkedInPosted": false,
+      "category": "ai-news"
     }
   ]
 }
