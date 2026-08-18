@@ -410,6 +410,16 @@
       "publishedUrl": "https://apolloagent.ai/blog/ai-agent-identity-audit-trails-small-business-2026",
       "linkedInPosted": false,
       "category": "ai-news"
+    },
+    {
+      "slug": "ai-agent-permission-audit-small-business-2026",
+      "title": "AI Agent Permission Audit: The Small Business Checklist for 2026",
+      "status": "published",
+      "publishDate": "2026-08-18",
+      "draftPath": "approved/ai-agent-permission-audit-small-business-2026.html",
+      "publishedUrl": "https://apolloagent.ai/blog/ai-agent-permission-audit-small-business-2026",
+      "linkedInPosted": false,
+      "category": "business-automation"
     }
   ]
 }

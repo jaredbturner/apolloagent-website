@@ -7,9 +7,17 @@
     <language>en-us</language>
     <managingEditor>hello@apolloagent.ai (Apollo Intelligence)</managingEditor>
     <webMaster>hello@apolloagent.ai (Apollo Intelligence)</webMaster>
-    <lastBuildDate>Sat, 15 Aug 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 18 Aug 2026 12:00:00 GMT</lastBuildDate>
     <atom:link href="https://apolloagent.ai/blog/feed.xml" rel="self" type="application/rss+xml" />
 
+
+    <item>
+      <title>AI Agent Permission Audit: The Small Business Checklist for 2026</title>
+      <link>https://apolloagent.ai/blog/ai-agent-permission-audit-small-business-2026</link>
+      <description>Before you connect AI agents to email, files, calendars, and CRM, run this practical permission audit for small businesses.</description>
+      <pubDate>Tue, 18 Aug 2026 12:00:00 GMT</pubDate>
+      <guid>https://apolloagent.ai/blog/ai-agent-permission-audit-small-business-2026</guid>
+    </item>
 
     <item>
       <title>AI Agents Now Get Their Own Login: Identity and Audit Trails for Small Business</title>
