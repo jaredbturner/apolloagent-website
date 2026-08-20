@@ -7,9 +7,17 @@
     <language>en-us</language>
     <managingEditor>hello@apolloagent.ai (Apollo Intelligence)</managingEditor>
     <webMaster>hello@apolloagent.ai (Apollo Intelligence)</webMaster>
-    <lastBuildDate>Tue, 18 Aug 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 20 Aug 2026 12:00:00 GMT</lastBuildDate>
     <atom:link href="https://apolloagent.ai/blog/feed.xml" rel="self" type="application/rss+xml" />
 
+
+    <item>
+      <title>ChatGPT Computer History: What Business Owners Should Do Before AI Watches the Workflow</title>
+      <link>https://apolloagent.ai/blog/chatgpt-computer-history-business-privacy</link>
+      <description>OpenAI&#x27;s Computer History feature shows where workplace AI is heading. Here&#x27;s how business owners should use it without losing control of privacy, access, or approvals.</description>
+      <pubDate>Thu, 20 Aug 2026 12:00:00 GMT</pubDate>
+      <guid>https://apolloagent.ai/blog/chatgpt-computer-history-business-privacy</guid>
+    </item>
 
     <item>
       <title>AI Agent Permission Audit: The Small Business Checklist for 2026</title>

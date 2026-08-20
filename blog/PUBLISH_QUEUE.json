@@ -420,6 +420,16 @@
       "publishedUrl": "https://apolloagent.ai/blog/ai-agent-permission-audit-small-business-2026",
       "linkedInPosted": true,
       "category": "business-automation"
+    },
+    {
+      "slug": "chatgpt-computer-history-business-privacy",
+      "title": "ChatGPT Computer History: What Business Owners Should Do Before AI Watches the Workflow",
+      "status": "published",
+      "publishDate": "2026-08-20",
+      "draftPath": "approved/chatgpt-computer-history-business-privacy.html",
+      "publishedUrl": "https://apolloagent.ai/blog/chatgpt-computer-history-business-privacy",
+      "linkedInPosted": false,
+      "category": "ai-news"
     }
   ]
 }
