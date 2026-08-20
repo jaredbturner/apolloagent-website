@@ -10,11 +10,10 @@
     <lastBuildDate>Thu, 20 Aug 2026 12:00:00 GMT</lastBuildDate>
     <atom:link href="https://apolloagent.ai/blog/feed.xml" rel="self" type="application/rss+xml" />
 
-
     <item>
       <title>ChatGPT Computer History: What Business Owners Should Do Before AI Watches the Workflow</title>
       <link>https://apolloagent.ai/blog/chatgpt-computer-history-business-privacy</link>
-      <description>OpenAI&#x27;s Computer History feature shows where workplace AI is heading. Here&#x27;s how business owners should use it without losing control of privacy, access, or approvals.</description>
+      <description>OpenAI's Computer History feature shows where workplace AI is heading. Here's how business owners should use it without losing control of privacy, access, or approvals.</description>
       <pubDate>Thu, 20 Aug 2026 12:00:00 GMT</pubDate>
       <guid>https://apolloagent.ai/blog/chatgpt-computer-history-business-privacy</guid>
     </item>
@@ -30,7 +29,7 @@
     <item>
       <title>AI Agents Now Get Their Own Login: Identity and Audit Trails for Small Business</title>
       <link>https://apolloagent.ai/blog/ai-agent-identity-audit-trails-small-business-2026</link>
-      <description>Gemini&#x27;s Enterprise Agent Platform just made agent identity a standard feature. Here&#x27;s why every AI agent in your business needs its own login and an audit trail.</description>
+      <description>Gemini's Enterprise Agent Platform just made agent identity a standard feature. Here's why every AI agent in your business needs its own login and an audit trail.</description>
       <pubDate>Sat, 15 Aug 2026 12:00:00 GMT</pubDate>
       <guid>https://apolloagent.ai/blog/ai-agent-identity-audit-trails-small-business-2026</guid>
     </item>
@@ -38,7 +37,7 @@
     <item>
       <title>Meta Just Open-Sourced a Frontier AI Model: What Muse Glimmer Means for Your Business</title>
       <link>https://apolloagent.ai/blog/meta-muse-glimmer-open-weight-ai-business-2026</link>
-      <description>Meta released Muse Glimmer, a free, Apache 2.0-licensed AI model built for agents. Here&#x27;s what &#x27;open weight&#x27; actually means for small business owners — and when it matters.</description>
+      <description>Meta released Muse Glimmer, a free, Apache 2.0-licensed AI model built for agents. Here's what 'open weight' actually means for small business owners — and when it matters.</description>
       <pubDate>Thu, 13 Aug 2026 12:00:00 GMT</pubDate>
       <guid>https://apolloagent.ai/blog/meta-muse-glimmer-open-weight-ai-business-2026</guid>
     </item>
@@ -78,7 +77,7 @@
     <item>
       <title>AI Job Redesign for Small Business: What to Delegate, What to Keep Human in 2026</title>
       <link>https://apolloagent.ai/blog/ai-job-redesign-small-business-2026</link>
-      <description>AI is changing who does what at work. Here&#x27;s how small businesses should redesign roles, delegate tasks, and keep humans in control.</description>
+      <description>AI is changing who does what at work. Here's how small businesses should redesign roles, delegate tasks, and keep humans in control.</description>
       <pubDate>Sat, 01 Aug 2026 12:00:00 GMT</pubDate>
       <guid>https://apolloagent.ai/blog/ai-job-redesign-small-business-2026</guid>
     </item>
@@ -102,7 +101,7 @@
     <item>
       <title>The Workplace AI Agent Stack Small Businesses Should Build First</title>
       <link>https://apolloagent.ai/blog/workplace-ai-agent-stack-small-business-2026</link>
-      <description>ChatGPT Work, Claude Cowork, and Gemini Enterprise show where workplace AI agents are headed. Here&#x27;s what small businesses should adopt first.</description>
+      <description>ChatGPT Work, Claude Cowork, and Gemini Enterprise show where workplace AI agents are headed. Here's what small businesses should adopt first.</description>
       <pubDate>Sat, 25 Jul 2026 12:00:00 GMT</pubDate>
       <guid>https://apolloagent.ai/blog/workplace-ai-agent-stack-small-business-2026</guid>
     </item>
@@ -140,9 +139,9 @@
     </item>
 
     <item>
-      <title>What Claude 4&#x27;s 1M Token Context Window Means for Your Business</title>
+      <title>What Claude 4's 1M Token Context Window Means for Your Business</title>
       <link>https://apolloagent.ai/blog/claude-4-1m-context-window-business</link>
-      <description>Claude&#x27;s 1M token context window changes what businesses can hand to AI. Here&#x27;s where it helps, where it doesn&#x27;t, and how to use it safely.</description>
+      <description>Claude's 1M token context window changes what businesses can hand to AI. Here's where it helps, where it doesn't, and how to use it safely.</description>
       <pubDate>Tue, 14 Jul 2026 12:00:00 GMT</pubDate>
       <guid>https://apolloagent.ai/blog/claude-4-1m-context-window-business</guid>
     </item>
@@ -172,7 +171,7 @@
     </item>
 
     <item>
-      <title>Google Workspace + Gemini: The AI Toolkit You're Already Paying For</title>
+      <title>Google Workspace + Gemini: The AI Toolkit You're Already Paying For (But Probably Not Using)</title>
       <link>https://apolloagent.ai/blog/google-workspace-gemini-business-guide-2026</link>
       <description>Gemini is now built into every Google Workspace Business plan. Here's how to actually use it — from Gmail drafts to NotebookLM knowledge bases — and what most teams are still missing.</description>
       <pubDate>Sun, 05 Jul 2026 12:00:00 GMT</pubDate>
@@ -230,9 +229,17 @@
     <item>
       <title>AI for Marketing Teams: Content, Analytics, and Campaign Automation</title>
       <link>https://apolloagent.ai/blog/ai-marketing-teams-guide</link>
-      <description>Practical guide to using AI for marketing: content generation, performance analytics, A/B testing, and campaign automation — with real tools and workflows that work in 2026.</description>
+      <description>Practical guide to using AI for marketing: content generation, performance analytics, A/B testing, and campaign automation — with real tools and workflows...</description>
       <pubDate>Tue, 16 Jun 2026 12:00:00 GMT</pubDate>
       <guid>https://apolloagent.ai/blog/ai-marketing-teams-guide</guid>
+    </item>
+
+    <item>
+      <title>How a Law Firm Automated 80% of Client Intake with AI Agents</title>
+      <link>https://apolloagent.ai/blog/law-firm-ai-intake-automation-case-study</link>
+      <description>A small law firm was losing $250K/year to slow intake. Here's exactly how they deployed AI agents to automate 80% of client intake — and what happened next.</description>
+      <pubDate>Sat, 13 Jun 2026 12:00:00 GMT</pubDate>
+      <guid>https://apolloagent.ai/blog/law-firm-ai-intake-automation-case-study</guid>
     </item>
 
     <item>
@@ -286,7 +293,7 @@
     <item>
       <title>Mid-2026 AI Landscape: Winners, Losers, and What's Coming Next</title>
       <link>https://apolloagent.ai/blog/mid-2026-ai-landscape</link>
-      <description>65% of Americans now use AI weekly. But which tools actually delivered ROI — and which ones overpromised? A grounded mid-2026 AI landscape review for business owners.</description>
+      <description>65% of Americans now use AI weekly. But which tools actually delivered ROI — and which ones overpromised? A grounded mid-2026 AI landscape review for...</description>
       <pubDate>Thu, 28 May 2026 12:00:00 GMT</pubDate>
       <guid>https://apolloagent.ai/blog/mid-2026-ai-landscape</guid>
     </item>
@@ -294,49 +301,121 @@
     <item>
       <title>How to Measure ROI on Your AI Investments (With Real Formulas)</title>
       <link>https://apolloagent.ai/blog/ai-roi-measurement-guide</link>
-      <description>Stop guessing whether AI is worth it. Here are the exact formulas, frameworks, and dashboards small business owners use to measure real ROI on their AI investments in 2026.</description>
+      <description>Stop guessing whether AI is worth it. Here are the exact formulas, frameworks, and dashboards small business owners use to measure real ROI on their AI...</description>
       <pubDate>Tue, 26 May 2026 12:00:00 GMT</pubDate>
       <guid>https://apolloagent.ai/blog/ai-roi-measurement-guide</guid>
     </item>
 
     <item>
-      <title>How a 12-Person Agency Cut Admin Work by 60% with AI</title>
-      <link>https://apolloagent.ai/blog/agency-60-percent-admin-reduction-case-study.html</link>
-      <description>A composite case study showing how a 12-person marketing agency used AI automation to reclaim 400+ hours per quarter — without adding headcount. Based on typical results across similar engagements.</description>
-      <pubDate>Tue, 14 Apr 2026 12:00:00 GMT</pubDate>
-      <guid>https://apolloagent.ai/blog/agency-60-percent-admin-reduction-case-study.html</guid>
+      <title>AI for HR Teams: Recruiting, Onboarding, and Employee Experience</title>
+      <link>https://apolloagent.ai/blog/ai-for-hr-teams</link>
+      <description>How HR teams are using AI to screen candidates faster, automate onboarding, and answer employee questions around the clock — without losing the human element.</description>
+      <pubDate>Sat, 23 May 2026 12:00:00 GMT</pubDate>
+      <guid>https://apolloagent.ai/blog/ai-for-hr-teams</guid>
     </item>
 
     <item>
-      <title>5 AI Automations Every Small Business Should Set Up This Quarter</title>
-      <link>https://apolloagent.ai/blog/5-ai-automations-small-business.html</link>
-      <description>Five practical AI automations — email triage, scheduling, customer support, social media, and weekly reporting — that small businesses can set up this quarter to save 10+ hours per week.</description>
-      <pubDate>Wed, 01 Apr 2026 12:00:00 GMT</pubDate>
-      <guid>https://apolloagent.ai/blog/5-ai-automations-small-business.html</guid>
+      <title>Building Your First AI Automation: A Weekend Project for Business Owners</title>
+      <link>https://apolloagent.ai/blog/building-first-ai-automation</link>
+      <description>A practical, no-code guide to building your first real AI automation in a single weekend — choose a process, map it, pick the tools, and ship it. No...</description>
+      <pubDate>Sat, 16 May 2026 12:00:00 GMT</pubDate>
+      <guid>https://apolloagent.ai/blog/building-first-ai-automation</guid>
+    </item>
+
+    <item>
+      <title>The AI Hype Detector: How to Tell Real AI Value from Marketing Fluff</title>
+      <link>https://apolloagent.ai/blog/ai-hype-detector</link>
+      <description>AI vendors are flooding the market with inflated claims. Learn the exact red flags to spot, the questions to ask, and how to separate real AI value from...</description>
+      <pubDate>Fri, 15 May 2026 12:00:00 GMT</pubDate>
+      <guid>https://apolloagent.ai/blog/ai-hype-detector</guid>
+    </item>
+
+    <item>
+      <title>How an E-Commerce Brand Scaled to $5M with a 3-Person Team Using AI</title>
+      <link>https://apolloagent.ai/blog/ecommerce-scaled-5m-3-person-team-ai</link>
+      <description>See how real e-commerce brands are automating customer service, product research, listing optimization, and compliance with AI — and scaling revenue without...</description>
+      <pubDate>Tue, 12 May 2026 12:00:00 GMT</pubDate>
+      <guid>https://apolloagent.ai/blog/ecommerce-scaled-5m-3-person-team-ai</guid>
+    </item>
+
+    <item>
+      <title>AI for Legal Teams: Contract Review, Intake, and Research Automation</title>
+      <link>https://apolloagent.ai/blog/ai-for-legal-teams</link>
+      <description>AI is transforming legal work. Learn how to automate contract review, client intake, and legal research — plus the compliance issues you need to know about.</description>
+      <pubDate>Sun, 10 May 2026 12:00:00 GMT</pubDate>
+      <guid>https://apolloagent.ai/blog/ai-for-legal-teams</guid>
+    </item>
+
+    <item>
+      <title>How to Write AI Prompts That Actually Work for Business Tasks</title>
+      <link>https://apolloagent.ai/blog/how-to-write-ai-prompts-that-actually-work-for-business-tasks</link>
+      <description>Most business prompts are vague questions that get vague answers. Learn the anatomy of a prompt that works — and copy‑paste templates for sales, marketing,...</description>
+      <pubDate>Thu, 07 May 2026 12:00:00 GMT</pubDate>
+      <guid>https://apolloagent.ai/blog/how-to-write-ai-prompts-that-actually-work-for-business-tasks</guid>
+    </item>
+
+    <item>
+      <title>GPT-5.5 Multimodal Capabilities: What Business Owners Need to Know</title>
+      <link>https://apolloagent.ai/blog/gpt-5-5-multimodal-business</link>
+      <description>GPT-5.5 just shipped with native image, video, and audio understanding. Here's what it means for your business, what you can do with it today, and why waiting costs you competitive ground.</description>
+      <pubDate>Wed, 06 May 2026 12:00:00 GMT</pubDate>
+      <guid>https://apolloagent.ai/blog/gpt-5-5-multimodal-business</guid>
+    </item>
+
+    <item>
+      <title>The Real Cost of NOT Using AI in 2026: A Business Owner's Reality Check</title>
+      <link>https://apolloagent.ai/blog/the-real-cost-of-not-using-ai-2026</link>
+      <description>Every month you delay AI adoption costs your business tens of thousands in wasted time, missed opportunities, and competitive ground. Here's the hard math and what to do about it.</description>
+      <pubDate>Sat, 02 May 2026 12:00:00 GMT</pubDate>
+      <guid>https://apolloagent.ai/blog/the-real-cost-of-not-using-ai-2026</guid>
+    </item>
+
+    <item>
+      <title>AI for Operations Managers: Streamlining Workflows Without the Complexity</title>
+      <link>https://apolloagent.ai/blog/ai-for-operations-managers</link>
+      <description>Operations managers face endless complexity. AI can cut through it — if you know where to start. A practical guide to identifying, mapping, and automating...</description>
+      <pubDate>Tue, 28 Apr 2026 12:00:00 GMT</pubDate>
+      <guid>https://apolloagent.ai/blog/ai-for-operations-managers</guid>
+    </item>
+
+    <item>
+      <title>How a 12-Person Agency Cut Admin Work by 60% with AI</title>
+      <link>https://apolloagent.ai/blog/agency-60-percent-admin-reduction-case-study</link>
+      <description>A composite case study showing how a 12-person marketing agency used AI automation to reclaim 400+ hours per quarter — without adding headcount. Based on...</description>
+      <pubDate>Wed, 08 Apr 2026 12:00:00 GMT</pubDate>
+      <guid>https://apolloagent.ai/blog/agency-60-percent-admin-reduction-case-study</guid>
     </item>
 
     <item>
       <title>AI-Powered Business Intelligence: From Raw Data to Weekly Insights</title>
-      <link>https://apolloagent.ai/blog/ai-powered-business-intelligence.html</link>
+      <link>https://apolloagent.ai/blog/ai-powered-business-intelligence</link>
       <description>Dashboards don't drive decisions — insights do. Learn how automated AI reporting turns raw business data into plain-English weekly intelligence your team can actually act on.</description>
       <pubDate>Sat, 04 Apr 2026 12:00:00 GMT</pubDate>
-      <guid>https://apolloagent.ai/blog/ai-powered-business-intelligence.html</guid>
+      <guid>https://apolloagent.ai/blog/ai-powered-business-intelligence</guid>
+    </item>
+
+    <item>
+      <title>The AI Tools Reshaping How Businesses Operate in 2026: What Actually Matters</title>
+      <link>https://apolloagent.ai/blog/ai-news-march-2026</link>
+      <description>Claude 4, GPT-5, and AI agents that take action — here's what actually matters for your business in 2026. Practical analysis from Apollo Intelligence.</description>
+      <pubDate>Wed, 01 Apr 2026 12:00:00 GMT</pubDate>
+      <guid>https://apolloagent.ai/blog/ai-news-march-2026</guid>
+    </item>
+
+    <item>
+      <title>5 AI Automations Every Small Business Should Set Up This Quarter</title>
+      <link>https://apolloagent.ai/blog/5-ai-automations-small-business</link>
+      <description>Five practical AI automations — email triage, scheduling, customer support, social media, and weekly reporting — that small businesses can set up this...</description>
+      <pubDate>Wed, 01 Apr 2026 12:00:00 GMT</pubDate>
+      <guid>https://apolloagent.ai/blog/5-ai-automations-small-business</guid>
     </item>
 
     <item>
       <title>The Business Leader's Guide to AI Agents: What They Are and Why They Matter</title>
-      <link>https://apolloagent.ai/blog/ai-agents-guide-2026.html</link>
+      <link>https://apolloagent.ai/blog/ai-agents-guide-2026</link>
       <description>AI agents don't just answer questions — they take action. Learn what AI agents are, how they work, real use cases, and what to ask vendors before you buy.</description>
-      <pubDate>Wed, 08 Apr 2026 12:00:00 GMT</pubDate>
-      <guid>https://apolloagent.ai/blog/ai-agents-guide-2026.html</guid>
-    </item>
-
-    <item>
-      <title>The AI Tools Reshaping How Businesses Operate in 2026</title>
-      <link>https://apolloagent.ai/blog/ai-news-march-2026.html</link>
-      <description>Claude 4, GPT-5, and AI agents that take action — here's what actually matters for your business in 2026.</description>
       <pubDate>Wed, 25 Mar 2026 12:00:00 GMT</pubDate>
-      <guid>https://apolloagent.ai/blog/ai-news-march-2026.html</guid>
+      <guid>https://apolloagent.ai/blog/ai-agents-guide-2026</guid>
     </item>
 
   </channel>
