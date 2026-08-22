@@ -124,7 +124,7 @@
       "publishDate": "2026-06-13",
       "draftPath": "drafts/law-firm-ai-intake-automation-case-study.html",
       "publishedUrl": "https://apolloagent.ai/blog/law-firm-ai-intake-automation-case-study",
-      "linkedInPosted": false
+      "linkedInPosted": true
     },
     {
       "slug": "ai-marketing-teams-guide",
@@ -428,6 +428,16 @@
       "publishDate": "2026-08-20",
       "draftPath": "approved/chatgpt-computer-history-business-privacy.html",
       "publishedUrl": "https://apolloagent.ai/blog/chatgpt-computer-history-business-privacy",
+      "linkedInPosted": true,
+      "category": "ai-news"
+    },
+    {
+      "slug": "agentic-commerce-small-business-retailers-2026",
+      "title": "Agentic Commerce: What Small Business Retailers Need to Do Before AI Agents Do the Shopping",
+      "status": "published",
+      "publishDate": "2026-08-22",
+      "draftPath": "drafts/agentic-commerce-small-business-retailers-2026.html",
+      "publishedUrl": "https://apolloagent.ai/blog/agentic-commerce-small-business-retailers-2026",
       "linkedInPosted": false,
       "category": "ai-news"
     }
