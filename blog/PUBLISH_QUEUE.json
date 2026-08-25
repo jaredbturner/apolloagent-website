@@ -133,7 +133,7 @@
       "publishDate": "2026-06-16",
       "draftPath": "drafts/ai-marketing-teams-guide.html",
       "publishedUrl": "https://apolloagent.ai/blog/ai-marketing-teams-guide",
-      "linkedInPosted": false
+      "linkedInPosted": true
     },
     {
       "slug": "ai-voice-agents-small-business",
@@ -169,7 +169,7 @@
       "publishDate": "2026-06-18",
       "draftPath": "drafts/ai-model-showdown-mid-2026.html",
       "publishedUrl": "https://apolloagent.ai/blog/ai-model-showdown-mid-2026",
-      "linkedInPosted": false
+      "linkedInPosted": true
     },
     {
       "slug": "ai-customer-success-automation",
@@ -438,8 +438,18 @@
       "publishDate": "2026-08-22",
       "draftPath": "drafts/agentic-commerce-small-business-retailers-2026.html",
       "publishedUrl": "https://apolloagent.ai/blog/agentic-commerce-small-business-retailers-2026",
-      "linkedInPosted": false,
+      "linkedInPosted": true,
       "category": "ai-news"
+    },
+    {
+      "slug": "ai-pilot-death-valley-production-gap-2026",
+      "title": "The AI Pilot \"Death Valley\": Why 99% of Companies Plan AI Agents But Only 9-14% Reach Production",
+      "status": "published",
+      "publishDate": "2026-08-25",
+      "draftPath": "drafts/ai-pilot-death-valley-production-gap-2026.html",
+      "linkedInPosted": false,
+      "category": "ai-news",
+      "publishedUrl": "https://apolloagent.ai/blog/ai-pilot-death-valley-production-gap-2026"
     }
   ]
 }

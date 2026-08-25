@@ -7,8 +7,16 @@
     <language>en-us</language>
     <managingEditor>hello@apolloagent.ai (Apollo Intelligence)</managingEditor>
     <webMaster>hello@apolloagent.ai (Apollo Intelligence)</webMaster>
-    <lastBuildDate>Sat, 22 Aug 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 25 Aug 2026 12:00:00 GMT</lastBuildDate>
     <atom:link href="https://apolloagent.ai/blog/feed.xml" rel="self" type="application/rss+xml" />
+
+    <item>
+      <title>The AI Pilot "Death Valley": Why 99% of Companies Plan AI Agents But Only 9-14% Reach Production</title>
+      <link>https://apolloagent.ai/blog/ai-pilot-death-valley-production-gap-2026</link>
+      <description>A new report finds nearly every company plans agentic AI, but almost none reach production. Here's why the gap exists and how small businesses skip it.</description>
+      <pubDate>Tue, 25 Aug 2026 12:00:00 GMT</pubDate>
+      <guid>https://apolloagent.ai/blog/ai-pilot-death-valley-production-gap-2026</guid>
+    </item>
 
     <item>
       <title>Agentic Commerce: What Small Business Retailers Need to Do Before AI Agents Do the Shopping</title>
