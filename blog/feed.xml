@@ -7,8 +7,16 @@
     <language>en-us</language>
     <managingEditor>hello@apolloagent.ai (Apollo Intelligence)</managingEditor>
     <webMaster>hello@apolloagent.ai (Apollo Intelligence)</webMaster>
-    <lastBuildDate>Tue, 25 Aug 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 27 Aug 2026 12:00:00 GMT</lastBuildDate>
     <atom:link href="https://apolloagent.ai/blog/feed.xml" rel="self" type="application/rss+xml" />
+
+    <item>
+      <title>AI Prices Are Rising: What Small Businesses Should Do Before Their AI Bill Jumps</title>
+      <link>https://apolloagent.ai/blog/ai-price-increases-small-business-budget-2026</link>
+      <description>Nvidia's AI hardware price hikes and rising token costs are reaching business AI bills. Here's how small businesses should audit spend before renewal.</description>
+      <pubDate>Thu, 27 Aug 2026 12:00:00 GMT</pubDate>
+      <guid>https://apolloagent.ai/blog/ai-price-increases-small-business-budget-2026</guid>
+    </item>
 
     <item>
       <title>The AI Pilot "Death Valley": Why 99% of Companies Plan AI Agents But Only 9-14% Reach Production</title>
