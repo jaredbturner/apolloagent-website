@@ -196,7 +196,7 @@
       "publishDate": "2026-06-25",
       "draftPath": "drafts/ai-lead-generation-system-guide.html",
       "publishedUrl": "https://apolloagent.ai/blog/ai-lead-generation-system-guide",
-      "linkedInPosted": false
+      "linkedInPosted": true
     },
     {
       "slug": "ai-meeting-automation-guide",
@@ -460,6 +460,16 @@
       "linkedInPosted": true,
       "category": "ai-news",
       "publishedUrl": "https://apolloagent.ai/blog/ai-price-increases-small-business-budget-2026"
+    },
+    {
+      "slug": "ai-crm-claudeforce-small-business-2026",
+      "title": "Salesforce and Anthropic Just Merged the CRM and the AI Agent: What Small Business Should Do Next",
+      "status": "published",
+      "publishDate": "2026-08-29",
+      "draftPath": "drafts/ai-crm-claudeforce-small-business-2026.html",
+      "linkedInPosted": false,
+      "category": "ai-news",
+      "publishedUrl": "https://apolloagent.ai/blog/ai-crm-claudeforce-small-business-2026"
     }
   ]
 }

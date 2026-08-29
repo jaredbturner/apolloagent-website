@@ -7,8 +7,16 @@
     <language>en-us</language>
     <managingEditor>hello@apolloagent.ai (Apollo Intelligence)</managingEditor>
     <webMaster>hello@apolloagent.ai (Apollo Intelligence)</webMaster>
-    <lastBuildDate>Thu, 27 Aug 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 29 Aug 2026 12:00:00 GMT</lastBuildDate>
     <atom:link href="https://apolloagent.ai/blog/feed.xml" rel="self" type="application/rss+xml" />
+
+    <item>
+      <title>Salesforce and Anthropic Just Merged the CRM and the AI Agent: What Small Business Should Do Next</title>
+      <link>https://apolloagent.ai/blog/ai-crm-claudeforce-small-business-2026</link>
+      <description>Salesforce and Anthropic's new Claudeforce partnership fuses Claude into the CRM. Here's what the AI-agent-in-every-tool trend means for small business.</description>
+      <pubDate>Sat, 29 Aug 2026 12:00:00 GMT</pubDate>
+      <guid>https://apolloagent.ai/blog/ai-crm-claudeforce-small-business-2026</guid>
+    </item>
 
     <item>
       <title>AI Prices Are Rising: What Small Businesses Should Do Before Their AI Bill Jumps</title>
