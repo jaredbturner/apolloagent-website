@@ -7,8 +7,16 @@
     <language>en-us</language>
     <managingEditor>hello@apolloagent.ai (Apollo Intelligence)</managingEditor>
     <webMaster>hello@apolloagent.ai (Apollo Intelligence)</webMaster>
-    <lastBuildDate>Sat, 29 Aug 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 01 Sep 2026 12:00:00 GMT</lastBuildDate>
     <atom:link href="https://apolloagent.ai/blog/feed.xml" rel="self" type="application/rss+xml" />
+
+    <item>
+      <title>Meta's New AI Tools for Small Business: What's Actually Worth Using</title>
+      <link>https://apolloagent.ai/blog/meta-ai-small-business-features-2026</link>
+      <description>Meta rolled out AI tools that connect Instagram, Facebook, ads, and Google Workspace. Here's what small businesses should adopt first — and what to skip.</description>
+      <pubDate>Tue, 01 Sep 2026 12:00:00 GMT</pubDate>
+      <guid>https://apolloagent.ai/blog/meta-ai-small-business-features-2026</guid>
+    </item>
 
     <item>
       <title>Salesforce and Anthropic Just Merged the CRM and the AI Agent: What Small Business Should Do Next</title>

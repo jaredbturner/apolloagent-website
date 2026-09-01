@@ -205,7 +205,7 @@
       "publishDate": "2026-06-28",
       "draftPath": "drafts/ai-meeting-automation-guide.html",
       "publishedUrl": "https://apolloagent.ai/blog/ai-meeting-automation-guide",
-      "linkedInPosted": false
+      "linkedInPosted": true
     },
     {
       "slug": "ai-productivity-gap-how-to-fix-it",
@@ -214,7 +214,7 @@
       "publishDate": "2026-07-01",
       "draftPath": "drafts/ai-productivity-gap-how-to-fix-it.html",
       "publishedUrl": "https://apolloagent.ai/blog/ai-productivity-gap-how-to-fix-it",
-      "linkedInPosted": false
+      "linkedInPosted": true
     },
     {
       "slug": "ai-project-management-guide-2026",
@@ -470,6 +470,16 @@
       "linkedInPosted": true,
       "category": "ai-news",
       "publishedUrl": "https://apolloagent.ai/blog/ai-crm-claudeforce-small-business-2026"
+    },
+    {
+      "slug": "meta-ai-small-business-features-2026",
+      "title": "Meta's New AI Tools for Small Business: What's Actually Worth Using",
+      "status": "published",
+      "publishDate": "2026-09-01",
+      "draftPath": "drafts/meta-ai-small-business-features-2026.html",
+      "linkedInPosted": false,
+      "category": "business-automation",
+      "publishedUrl": "https://apolloagent.ai/blog/meta-ai-small-business-features-2026"
     }
   ]
 }
