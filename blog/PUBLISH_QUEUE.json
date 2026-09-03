@@ -223,7 +223,7 @@
       "publishDate": "2026-07-02",
       "draftPath": "drafts/ai-project-management-guide-2026.html",
       "publishedUrl": "https://apolloagent.ai/blog/ai-project-management-guide-2026",
-      "linkedInPosted": false
+      "linkedInPosted": true
     },
     {
       "slug": "google-workspace-gemini-business-guide-2026",
@@ -480,6 +480,16 @@
       "linkedInPosted": true,
       "category": "business-automation",
       "publishedUrl": "https://apolloagent.ai/blog/meta-ai-small-business-features-2026"
+    },
+    {
+      "slug": "meta-hatch-ai-agent-customer-bookings-small-business-2026",
+      "title": "Meta's Hatch AI Agent Will Book Tables and Buy Things For Your Customers: Is Your Business Ready?",
+      "status": "published",
+      "publishDate": "2026-09-03",
+      "draftPath": "drafts/meta-hatch-ai-agent-customer-bookings-small-business-2026.html",
+      "linkedInPosted": false,
+      "category": "ai-news",
+      "publishedUrl": "https://apolloagent.ai/blog/meta-hatch-ai-agent-customer-bookings-small-business-2026"
     }
   ]
 }
