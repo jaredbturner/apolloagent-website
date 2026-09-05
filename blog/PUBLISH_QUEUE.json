@@ -232,7 +232,7 @@
       "publishDate": "2026-07-05",
       "draftPath": "drafts/google-workspace-gemini-business-guide-2026.html",
       "publishedUrl": "https://apolloagent.ai/blog/google-workspace-gemini-business-guide-2026",
-      "linkedInPosted": false
+      "linkedInPosted": true
     },
     {
       "slug": "vibe-coding-for-business-owners-2026",
@@ -487,9 +487,19 @@
       "status": "published",
       "publishDate": "2026-09-03",
       "draftPath": "drafts/meta-hatch-ai-agent-customer-bookings-small-business-2026.html",
-      "linkedInPosted": false,
+      "linkedInPosted": true,
       "category": "ai-news",
       "publishedUrl": "https://apolloagent.ai/blog/meta-hatch-ai-agent-customer-bookings-small-business-2026"
+    },
+    {
+      "slug": "gpt-6-astra-business-2026",
+      "title": "GPT-6 Astra Just Launched: What OpenAI's Most Capable Model Means for Your Business",
+      "status": "published",
+      "publishDate": "2026-09-05",
+      "draftPath": "drafts/gpt-6-astra-business-2026.html",
+      "linkedInPosted": false,
+      "category": "ai-news",
+      "publishedUrl": "https://apolloagent.ai/blog/gpt-6-astra-business-2026"
     }
   ]
 }
