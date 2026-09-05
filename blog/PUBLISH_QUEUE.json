@@ -497,7 +497,7 @@
       "status": "published",
       "publishDate": "2026-09-05",
       "draftPath": "drafts/gpt-6-astra-business-2026.html",
-      "linkedInPosted": false,
+      "linkedInPosted": true,
       "category": "ai-news",
       "publishedUrl": "https://apolloagent.ai/blog/gpt-6-astra-business-2026"
     }
