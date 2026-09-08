@@ -241,7 +241,7 @@
       "publishDate": "2026-07-07",
       "draftPath": "drafts/vibe-coding-for-business-owners-2026.html",
       "publishedUrl": "https://apolloagent.ai/blog/vibe-coding-for-business-owners-2026",
-      "linkedInPosted": false
+      "linkedInPosted": true
     },
     {
       "slug": "hvac-plumbing-ai-voice-agent-case-study",
@@ -250,7 +250,7 @@
       "publishDate": "2026-07-09",
       "draftPath": "drafts/hvac-plumbing-ai-voice-agent-case-study.html",
       "publishedUrl": "https://apolloagent.ai/blog/hvac-plumbing-ai-voice-agent-case-study",
-      "linkedInPosted": false
+      "linkedInPosted": true
     },
     {
       "slug": "long-context-ai-business-guide-2026",
@@ -500,6 +500,26 @@
       "linkedInPosted": true,
       "category": "ai-news",
       "publishedUrl": "https://apolloagent.ai/blog/gpt-6-astra-business-2026"
+    },
+    {
+      "slug": "soundhound-liveperson-voice-chat-ai-merger-small-business-2026",
+      "title": "SoundHound and LivePerson Just Merged Voice AI and Chat AI: What Small Businesses Should Do Next",
+      "status": "published",
+      "publishDate": "2026-09-08",
+      "draftPath": "drafts/soundhound-liveperson-voice-chat-ai-merger-small-business-2026.html",
+      "linkedInPosted": false,
+      "category": "ai-news",
+      "publishedUrl": "https://apolloagent.ai/blog/soundhound-liveperson-voice-chat-ai-merger-small-business-2026"
+    },
+    {
+      "slug": "ai-content-provenance-small-business-2026",
+      "title": "AI Content Provenance for Small Business: Prove What Is Real",
+      "status": "pending_review",
+      "publishDate": "2026-09-08",
+      "draftPath": "drafts/ai-content-provenance-small-business-2026.html",
+      "publishedUrl": null,
+      "linkedInPosted": false,
+      "category": "ai-news"
     }
   ]
 }
