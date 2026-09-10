@@ -259,7 +259,7 @@
       "publishDate": "2026-07-11",
       "draftPath": "drafts/long-context-ai-business-guide-2026.html",
       "publishedUrl": "https://apolloagent.ai/blog/long-context-ai-business-guide-2026",
-      "linkedInPosted": false
+      "linkedInPosted": true
     },
     {
       "slug": "claude-4-1m-context-window-business",
@@ -514,12 +514,22 @@
     {
       "slug": "ai-content-provenance-small-business-2026",
       "title": "AI Content Provenance for Small Business: Prove What Is Real",
-      "status": "pending_review",
+      "status": "published",
       "publishDate": "2026-09-08",
       "draftPath": "drafts/ai-content-provenance-small-business-2026.html",
-      "publishedUrl": null,
+      "publishedUrl": "https://apolloagent.ai/blog/ai-content-provenance-small-business-2026",
       "linkedInPosted": false,
       "category": "ai-news"
+    },
+    {
+      "slug": "chatgpt-small-business-collection-2026",
+      "title": "OpenAI's Small Business Collection: 16 Tools Are Now Live Inside ChatGPT \u2014 What to Connect First",
+      "status": "pending_review",
+      "publishDate": "2026-09-10",
+      "draftPath": "drafts/chatgpt-small-business-collection-2026.html",
+      "publishedUrl": null,
+      "linkedInPosted": false,
+      "category": "business-automation"
     }
   ]
 }
