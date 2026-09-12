@@ -408,7 +408,7 @@
       "publishDate": "2026-08-15",
       "draftPath": "approved/ai-agent-identity-audit-trails-small-business-2026.html",
       "publishedUrl": "https://apolloagent.ai/blog/ai-agent-identity-audit-trails-small-business-2026",
-      "linkedInPosted": false,
+      "linkedInPosted": true,
       "category": "ai-news"
     },
     {
@@ -524,12 +524,22 @@
     {
       "slug": "chatgpt-small-business-collection-2026",
       "title": "OpenAI's Small Business Collection: 16 Tools Are Now Live Inside ChatGPT \u2014 What to Connect First",
-      "status": "pending_review",
+      "status": "published",
       "publishDate": "2026-09-10",
       "draftPath": "drafts/chatgpt-small-business-collection-2026.html",
-      "publishedUrl": null,
+      "publishedUrl": "https://apolloagent.ai/blog/chatgpt-small-business-collection-2026",
       "linkedInPosted": false,
       "category": "business-automation"
+    },
+    {
+      "slug": "ai-for-real-estate-teams-2026",
+      "title": "AI for Real Estate Teams: Lead Qualification, Showings, and Client Follow-Up",
+      "status": "pending_review",
+      "publishDate": "2026-09-12",
+      "draftPath": "drafts/ai-for-real-estate-teams-2026.html",
+      "publishedUrl": null,
+      "linkedInPosted": false,
+      "category": "role-guides"
     }
   ]
 }

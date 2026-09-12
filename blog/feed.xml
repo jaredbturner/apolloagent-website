@@ -7,8 +7,16 @@
     <language>en-us</language>
     <managingEditor>hello@apolloagent.ai (Apollo Intelligence)</managingEditor>
     <webMaster>hello@apolloagent.ai (Apollo Intelligence)</webMaster>
-    <lastBuildDate>Tue, 08 Sep 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 10 Sep 2026 12:00:00 GMT</lastBuildDate>
     <atom:link href="https://apolloagent.ai/blog/feed.xml" rel="self" type="application/rss+xml" />
+
+    <item>
+      <title>OpenAI's Small Business Collection: 16 Tools Are Now Live Inside ChatGPT — What to Connect First</title>
+      <link>https://apolloagent.ai/blog/chatgpt-small-business-collection-2026</link>
+      <description>OpenAI added HoneyBook, Canva, Stripe, Gusto and more to a 16-tool Small Business Collection in ChatGPT. What to connect first.</description>
+      <pubDate>Thu, 10 Sep 2026 12:00:00 GMT</pubDate>
+      <guid>https://apolloagent.ai/blog/chatgpt-small-business-collection-2026</guid>
+    </item>
 
     <item>
       <title>SoundHound and LivePerson Just Merged Voice AI and Chat AI: What Small Businesses Should Do Next</title>
