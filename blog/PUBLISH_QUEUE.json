@@ -528,18 +528,38 @@
       "publishDate": "2026-09-10",
       "draftPath": "drafts/chatgpt-small-business-collection-2026.html",
       "publishedUrl": "https://apolloagent.ai/blog/chatgpt-small-business-collection-2026",
-      "linkedInPosted": false,
+      "linkedInPosted": true,
       "category": "business-automation"
     },
     {
       "slug": "ai-for-real-estate-teams-2026",
       "title": "AI for Real Estate Teams: Lead Qualification, Showings, and Client Follow-Up",
-      "status": "pending_review",
+      "status": "published",
       "publishDate": "2026-09-12",
       "draftPath": "drafts/ai-for-real-estate-teams-2026.html",
-      "publishedUrl": null,
+      "publishedUrl": "https://apolloagent.ai/blog/ai-for-real-estate-teams-2026",
       "linkedInPosted": false,
       "category": "role-guides"
+    },
+    {
+      "slug": "salesforce-long-horizon-ai-agents-small-business-2026",
+      "title": "Salesforce's New AI Agents Work for Weeks, Not Minutes: What Small Business Should Learn From It",
+      "status": "pending_review",
+      "publishDate": "2026-09-15",
+      "draftPath": "drafts/salesforce-long-horizon-ai-agents-small-business-2026.html",
+      "publishedUrl": null,
+      "linkedInPosted": false,
+      "category": "ai-news"
+    },
+    {
+      "slug": "google-workspace-ai-admin-controls-small-business-2026",
+      "title": "Google Workspace AI Admin Controls: The Small Business Playbook for Safe Automation",
+      "status": "pending_review",
+      "publishDate": "2026-09-15",
+      "draftPath": "drafts/google-workspace-ai-admin-controls-small-business-2026.html",
+      "publishedUrl": null,
+      "linkedInPosted": false,
+      "category": "business-automation"
     }
   ]
 }
