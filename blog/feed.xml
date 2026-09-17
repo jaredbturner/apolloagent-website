@@ -7,8 +7,16 @@
     <language>en-us</language>
     <managingEditor>hello@apolloagent.ai (Apollo Intelligence)</managingEditor>
     <webMaster>hello@apolloagent.ai (Apollo Intelligence)</webMaster>
-    <lastBuildDate>Sat, 12 Sep 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 15 Sep 2026 12:00:00 GMT</lastBuildDate>
     <atom:link href="https://apolloagent.ai/blog/feed.xml" rel="self" type="application/rss+xml" />
+
+    <item>
+      <title>Salesforce's New AI Agents Work for Weeks, Not Minutes: What Small Business Should Learn From It</title>
+      <link>https://apolloagent.ai/blog/salesforce-long-horizon-ai-agents-small-business-2026</link>
+      <description>Salesforce just launched AI agents that pursue goals across days and weeks instead of single tasks. Here's what long-horizon agents mean for small business.</description>
+      <pubDate>Tue, 15 Sep 2026 12:00:00 GMT</pubDate>
+      <guid>https://apolloagent.ai/blog/salesforce-long-horizon-ai-agents-small-business-2026</guid>
+    </item>
 
     <item>
       <title>AI for Real Estate Teams: Lead Qualification, Showings, and Client Follow-Up</title>

@@ -544,10 +544,10 @@
     {
       "slug": "salesforce-long-horizon-ai-agents-small-business-2026",
       "title": "Salesforce's New AI Agents Work for Weeks, Not Minutes: What Small Business Should Learn From It",
-      "status": "pending_review",
+      "status": "published",
       "publishDate": "2026-09-15",
       "draftPath": "drafts/salesforce-long-horizon-ai-agents-small-business-2026.html",
-      "publishedUrl": null,
+      "publishedUrl": "https://apolloagent.ai/blog/salesforce-long-horizon-ai-agents-small-business-2026",
       "linkedInPosted": false,
       "category": "ai-news"
     },
@@ -557,6 +557,16 @@
       "status": "pending_review",
       "publishDate": "2026-09-15",
       "draftPath": "drafts/google-workspace-ai-admin-controls-small-business-2026.html",
+      "publishedUrl": null,
+      "linkedInPosted": false,
+      "category": "business-automation"
+    },
+    {
+      "slug": "ai-agent-approval-inbox-small-business-2026",
+      "title": "AI Agents Can Now Work for Days Without You: The Approval Inbox You Need",
+      "status": "pending_review",
+      "publishDate": "2026-09-17",
+      "draftPath": "drafts/ai-agent-approval-inbox-small-business-2026.html",
       "publishedUrl": null,
       "linkedInPosted": false,
       "category": "business-automation"
