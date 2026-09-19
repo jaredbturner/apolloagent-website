@@ -554,10 +554,10 @@
     {
       "slug": "google-workspace-ai-admin-controls-small-business-2026",
       "title": "Google Workspace AI Admin Controls: The Small Business Playbook for Safe Automation",
-      "status": "pending_review",
+      "status": "published",
       "publishDate": "2026-09-15",
       "draftPath": "drafts/google-workspace-ai-admin-controls-small-business-2026.html",
-      "publishedUrl": null,
+      "publishedUrl": "https://apolloagent.ai/blog/google-workspace-ai-admin-controls-small-business-2026",
       "linkedInPosted": false,
       "category": "business-automation"
     },
@@ -567,6 +567,16 @@
       "status": "pending_review",
       "publishDate": "2026-09-17",
       "draftPath": "drafts/ai-agent-approval-inbox-small-business-2026.html",
+      "publishedUrl": null,
+      "linkedInPosted": false,
+      "category": "business-automation"
+    },
+    {
+      "slug": "self-updating-crm-ai-agents-small-business-2026",
+      "title": "Self-Updating CRM AI Agents: What Small Businesses Should Automate First",
+      "status": "pending_review",
+      "publishDate": "2026-09-19",
+      "draftPath": "drafts/self-updating-crm-ai-agents-small-business-2026.html",
       "publishedUrl": null,
       "linkedInPosted": false,
       "category": "business-automation"
