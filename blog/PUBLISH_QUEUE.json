@@ -564,10 +564,10 @@
     {
       "slug": "ai-agent-approval-inbox-small-business-2026",
       "title": "AI Agents Can Now Work for Days Without You: The Approval Inbox You Need",
-      "status": "pending_review",
+      "status": "published",
       "publishDate": "2026-09-17",
       "draftPath": "drafts/ai-agent-approval-inbox-small-business-2026.html",
-      "publishedUrl": null,
+      "publishedUrl": "https://apolloagent.ai/blog/ai-agent-approval-inbox-small-business-2026",
       "linkedInPosted": false,
       "category": "business-automation"
     },
@@ -577,6 +577,26 @@
       "status": "pending_review",
       "publishDate": "2026-09-19",
       "draftPath": "drafts/self-updating-crm-ai-agents-small-business-2026.html",
+      "publishedUrl": null,
+      "linkedInPosted": false,
+      "category": "business-automation"
+    },
+    {
+      "slug": "claude-fable-5-1-zapier-automation-stack-2026",
+      "title": "Claude Fable 5.1 + Zapier MCP: What the New AI Automation Stack Means for Small Business",
+      "status": "pending_review",
+      "publishDate": "2026-09-22",
+      "draftPath": "drafts/claude-fable-5-1-zapier-automation-stack-2026.html",
+      "publishedUrl": null,
+      "linkedInPosted": false,
+      "category": "business-automation"
+    },
+    {
+      "slug": "agent-ready-checkout-small-business-2026",
+      "title": "Agent-Ready Checkout: How Small Businesses Should Prepare for AI Shoppers",
+      "status": "pending_review",
+      "publishDate": "2026-09-29",
+      "draftPath": "drafts/agent-ready-checkout-small-business-2026.html",
       "publishedUrl": null,
       "linkedInPosted": false,
       "category": "business-automation"

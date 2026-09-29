@@ -7,8 +7,16 @@
     <language>en-us</language>
     <managingEditor>hello@apolloagent.ai (Apollo Intelligence)</managingEditor>
     <webMaster>hello@apolloagent.ai (Apollo Intelligence)</webMaster>
-    <lastBuildDate>Tue, 15 Sep 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 17 Sep 2026 12:00:00 GMT</lastBuildDate>
     <atom:link href="https://apolloagent.ai/blog/feed.xml" rel="self" type="application/rss+xml" />
+
+    <item>
+      <title>AI Agents Can Now Work for Days Without You: The Approval Inbox You Need</title>
+      <link>https://apolloagent.ai/blog/ai-agent-approval-inbox-small-business-2026</link>
+      <description>Salesforce, OpenAI, and AWS just made long-running AI agent work more practical. Here's how small businesses build an approval inbox first.</description>
+      <pubDate>Thu, 17 Sep 2026 12:00:00 GMT</pubDate>
+      <guid>https://apolloagent.ai/blog/ai-agent-approval-inbox-small-business-2026</guid>
+    </item>
 
     <item>
       <title>Salesforce's New AI Agents Work for Weeks, Not Minutes: What Small Business Should Learn From It</title>
