@@ -574,10 +574,10 @@
     {
       "slug": "self-updating-crm-ai-agents-small-business-2026",
       "title": "Self-Updating CRM AI Agents: What Small Businesses Should Automate First",
-      "status": "pending_review",
+      "status": "published",
       "publishDate": "2026-09-19",
       "draftPath": "drafts/self-updating-crm-ai-agents-small-business-2026.html",
-      "publishedUrl": null,
+      "publishedUrl": "https://apolloagent.ai/blog/self-updating-crm-ai-agents-small-business-2026",
       "linkedInPosted": false,
       "category": "business-automation"
     },
@@ -597,6 +597,16 @@
       "status": "pending_review",
       "publishDate": "2026-09-29",
       "draftPath": "drafts/agent-ready-checkout-small-business-2026.html",
+      "publishedUrl": null,
+      "linkedInPosted": false,
+      "category": "business-automation"
+    },
+    {
+      "slug": "ai-skills-agent-registry-small-business-2026",
+      "title": "AI Skills and Agent Registries: How Small Businesses Should Capture Team Know-How in 2026",
+      "status": "pending_review",
+      "publishDate": "2026-10-06",
+      "draftPath": "drafts/ai-skills-agent-registry-small-business-2026.html",
       "publishedUrl": null,
       "linkedInPosted": false,
       "category": "business-automation"

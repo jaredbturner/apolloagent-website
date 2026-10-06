@@ -7,8 +7,16 @@
     <language>en-us</language>
     <managingEditor>hello@apolloagent.ai (Apollo Intelligence)</managingEditor>
     <webMaster>hello@apolloagent.ai (Apollo Intelligence)</webMaster>
-    <lastBuildDate>Thu, 17 Sep 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 19 Sep 2026 12:00:00 GMT</lastBuildDate>
     <atom:link href="https://apolloagent.ai/blog/feed.xml" rel="self" type="application/rss+xml" />
+
+    <item>
+      <title>Self-Updating CRM AI Agents: What Small Businesses Should Automate First</title>
+      <link>https://apolloagent.ai/blog/self-updating-crm-ai-agents-small-business-2026</link>
+      <description>HubSpot's Fall 2026 AI rollout points to the next CRM shift: self-updating records and agents that coordinate follow-up, campaigns, and support.</description>
+      <pubDate>Sat, 19 Sep 2026 12:00:00 GMT</pubDate>
+      <guid>https://apolloagent.ai/blog/self-updating-crm-ai-agents-small-business-2026</guid>
+    </item>
 
     <item>
       <title>AI Agents Can Now Work for Days Without You: The Approval Inbox You Need</title>
