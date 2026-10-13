@@ -600,6 +600,16 @@
       "publishedUrl": "https://apolloagent.ai/blog/ai-skills-agent-registry-small-business-2026",
       "linkedInPosted": false,
       "category": "business-automation"
+    },
+    {
+      "slug": "gemini-agent-small-business-workflows-2026",
+      "title": "Google's Gemini Agent Is a Warning Shot for Small Business Workflows",
+      "status": "published",
+      "publishDate": "2026-10-13",
+      "draftPath": "drafts/gemini-agent-small-business-workflows-2026.html",
+      "publishedUrl": "https://apolloagent.ai/blog/gemini-agent-small-business-workflows-2026",
+      "linkedInPosted": false,
+      "category": "ai-news"
     }
   ]
 }
