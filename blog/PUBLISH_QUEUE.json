@@ -610,6 +610,16 @@
       "publishedUrl": "https://apolloagent.ai/blog/gemini-agent-small-business-workflows-2026",
       "linkedInPosted": false,
       "category": "ai-news"
+    },
+    {
+      "slug": "ai-agent-incident-response-playbook-small-business-2026",
+      "title": "The AI Agent Kill Switch: An Incident Response Playbook for Small Business",
+      "status": "published",
+      "publishDate": "2026-10-20",
+      "draftPath": "approved/ai-agent-incident-response-playbook-small-business-2026.html",
+      "publishedUrl": "https://apolloagent.ai/blog/ai-agent-incident-response-playbook-small-business-2026",
+      "linkedInPosted": false,
+      "category": "business-automation"
     }
   ]
 }
