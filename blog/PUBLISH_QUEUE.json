@@ -620,6 +620,16 @@
       "publishedUrl": "https://apolloagent.ai/blog/ai-agent-incident-response-playbook-small-business-2026",
       "linkedInPosted": false,
       "category": "business-automation"
+    },
+    {
+      "slug": "persistent-ai-agents-recurring-business-processes-2026",
+      "title": "Persistent AI Agents: How to Automate Recurring Business Processes Safely",
+      "status": "published",
+      "publishDate": "2026-10-27",
+      "draftPath": "drafts/persistent-ai-agents-recurring-business-processes-2026.html",
+      "publishedUrl": "https://apolloagent.ai/blog/persistent-ai-agents-recurring-business-processes-2026",
+      "linkedInPosted": false,
+      "category": "business-automation"
     }
   ]
 }
