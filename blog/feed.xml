@@ -7,8 +7,16 @@
     <language>en-us</language>
     <managingEditor>hello@apolloagent.ai (Apollo Intelligence)</managingEditor>
     <webMaster>hello@apolloagent.ai (Apollo Intelligence)</webMaster>
-    <lastBuildDate>Tue, 27 Oct 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 03 Nov 2026 12:00:00 GMT</lastBuildDate>
     <atom:link href="https://apolloagent.ai/blog/feed.xml" rel="self" type="application/rss+xml" />
+
+    <item>
+      <title>Self-Improving AI Automations: The Small Business Governance Playbook</title>
+      <link>https://apolloagent.ai/blog/self-improving-ai-automations-governance-small-business-2026</link>
+      <description>AI workflows can now propose their own improvements. Learn the controls small businesses need before letting automations rewrite how work gets done.</description>
+      <pubDate>Tue, 03 Nov 2026 12:00:00 GMT</pubDate>
+      <guid>https://apolloagent.ai/blog/self-improving-ai-automations-governance-small-business-2026</guid>
+    </item>
 
     <item>
       <title>Persistent AI Agents: How to Automate Recurring Business Processes Safely</title>

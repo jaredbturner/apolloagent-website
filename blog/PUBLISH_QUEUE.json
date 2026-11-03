@@ -630,6 +630,16 @@
       "publishedUrl": "https://apolloagent.ai/blog/persistent-ai-agents-recurring-business-processes-2026",
       "linkedInPosted": false,
       "category": "business-automation"
+    },
+    {
+      "slug": "self-improving-ai-automations-governance-small-business-2026",
+      "title": "Self-Improving AI Automations: The Small Business Governance Playbook",
+      "status": "published",
+      "publishDate": "2026-11-03",
+      "draftPath": "drafts/self-improving-ai-automations-governance-small-business-2026.html",
+      "publishedUrl": "https://apolloagent.ai/blog/self-improving-ai-automations-governance-small-business-2026",
+      "linkedInPosted": false,
+      "category": "business-automation"
     }
   ]
 }
