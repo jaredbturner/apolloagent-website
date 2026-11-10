@@ -640,6 +640,16 @@
       "publishedUrl": "https://apolloagent.ai/blog/self-improving-ai-automations-governance-small-business-2026",
       "linkedInPosted": false,
       "category": "business-automation"
+    },
+    {
+      "slug": "ai-automation-observability-dashboard-small-business-2026",
+      "title": "AI Automation Observability: The Small Business Dashboard You Need",
+      "status": "published",
+      "publishDate": "2026-11-10",
+      "draftPath": "approved/ai-automation-observability-dashboard-small-business-2026.html",
+      "publishedUrl": "https://apolloagent.ai/blog/ai-automation-observability-dashboard-small-business-2026",
+      "linkedInPosted": false,
+      "category": "business-automation"
     }
   ]
 }

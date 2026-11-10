@@ -7,8 +7,16 @@
     <language>en-us</language>
     <managingEditor>hello@apolloagent.ai (Apollo Intelligence)</managingEditor>
     <webMaster>hello@apolloagent.ai (Apollo Intelligence)</webMaster>
-    <lastBuildDate>Tue, 03 Nov 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 10 Nov 2026 12:00:00 GMT</lastBuildDate>
     <atom:link href="https://apolloagent.ai/blog/feed.xml" rel="self" type="application/rss+xml" />
+
+    <item>
+      <title>AI Automation Observability: The Small Business Dashboard You Need</title>
+      <link>https://apolloagent.ai/blog/ai-automation-observability-dashboard-small-business-2026</link>
+      <description>Build a practical AI automation observability dashboard that tracks cost, quality, failures, and business outcomes before problems reach customers.</description>
+      <pubDate>Tue, 10 Nov 2026 12:00:00 GMT</pubDate>
+      <guid>https://apolloagent.ai/blog/ai-automation-observability-dashboard-small-business-2026</guid>
+    </item>
 
     <item>
       <title>Self-Improving AI Automations: The Small Business Governance Playbook</title>
