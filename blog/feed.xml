@@ -7,8 +7,16 @@
     <language>en-us</language>
     <managingEditor>hello@apolloagent.ai (Apollo Intelligence)</managingEditor>
     <webMaster>hello@apolloagent.ai (Apollo Intelligence)</webMaster>
-    <lastBuildDate>Tue, 10 Nov 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 17 Nov 2026 12:00:00 GMT</lastBuildDate>
     <atom:link href="https://apolloagent.ai/blog/feed.xml" rel="self" type="application/rss+xml" />
+
+    <item>
+      <title>AI Data Retention Policy for Small Business: A Practical 2026 Playbook</title>
+      <link>https://apolloagent.ai/blog/ai-data-retention-policy-small-business-2026</link>
+      <description>Create an AI data retention policy that covers approved tools, vendor terms, deletion, employee rules, and confidential business data.</description>
+      <pubDate>Tue, 17 Nov 2026 12:00:00 GMT</pubDate>
+      <guid>https://apolloagent.ai/blog/ai-data-retention-policy-small-business-2026</guid>
+    </item>
 
     <item>
       <title>AI Automation Observability: The Small Business Dashboard You Need</title>

@@ -650,6 +650,16 @@
       "publishedUrl": "https://apolloagent.ai/blog/ai-automation-observability-dashboard-small-business-2026",
       "linkedInPosted": true,
       "category": "business-automation"
+    },
+    {
+      "slug": "ai-data-retention-policy-small-business-2026",
+      "title": "AI Data Retention Policy for Small Business: A Practical 2026 Playbook",
+      "status": "published",
+      "publishDate": "2026-11-17",
+      "draftPath": "approved/ai-data-retention-policy-small-business-2026.html",
+      "publishedUrl": "https://apolloagent.ai/blog/ai-data-retention-policy-small-business-2026",
+      "linkedInPosted": false,
+      "category": "business-automation"
     }
   ]
 }
